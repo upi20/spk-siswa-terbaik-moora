@@ -34,24 +34,24 @@ class AlternatifNilai extends Model
         return $this->belongsTo(Kriteria::class, 'kriteria_id', 'id');
     }
 
-    public function nilai()
+    public function kirteria_nilai()
     {
-        return $this->belongsTo(AlternatifNilai::class, 'kirteria_nilai_id', 'id');
+        return $this->belongsTo(KriteriaNilai::class, 'kirteria_nilai_id', 'id');
     }
 
     public static function datatable(Request $request)
     {
-        $tahapans = Kriteria::orderBy('kode')->get();
-        $alternatifs = Alternatif::with(['nilais'])->get();
+        $kriterias = Kriteria::orderBy('kode')->get();
+        $alternatifs = Alternatif::with(['nilais.kirteria_nilai'])->get();
 
-        // sort nilai berdasarkan tahapan
+        // sort nilai berdasarkan kriteria
         $results = [];
         foreach ($alternatifs as $alternatif) {
             $new_nilais = [];
-            foreach ($tahapans as $tahapan) {
+            foreach ($kriterias as $kriteria) {
                 $get_nilai = null;
                 foreach ($alternatif->nilais as $nilai) {
-                    if ($nilai->tahapan_id == $tahapan->id) $get_nilai = $nilai;
+                    if ($nilai->kriteria_id == $kriteria->id) $get_nilai = $nilai;
                 }
                 $new_nilais[] = $get_nilai;
             }
@@ -62,7 +62,7 @@ class AlternatifNilai extends Model
         }
 
         return [
-            'header' => $tahapans,
+            'header' => $kriterias,
             'body' => $results
         ];
     }

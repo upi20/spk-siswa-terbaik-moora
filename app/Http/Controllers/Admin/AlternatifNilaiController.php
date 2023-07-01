@@ -20,10 +20,9 @@ class AlternatifNilaiController extends Controller
     public function index(Request $request)
     {
         $page_attr = adminBreadcumb(h_prefix());
-        $kecamatans = Kecamatan::orderBy('nama')->get();
 
-        $view = path_view('pages.admin.calon_nilai');
-        $data = compact('page_attr', 'view', 'kecamatans');
+        $view = path_view('pages.admin.alternatif.nilai');
+        $data = compact('page_attr', 'view');
         $data['compact'] = $data;
         return view($view, $data);
     }
