@@ -23,39 +23,6 @@
                     @endif
                 </div>
             </div>
-
-            <hr class="mt-1 mb-0" />
-            <div class="accordion accordion-flush" id="accordionOption">
-                <div class="accordion-item">
-                    <h6 class="accordion-header" id="headingSix">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#filterData" aria-expanded="false" aria-controls="filterData">
-                            Filter Data
-                        </button>
-                    </h6>
-                    <div id="filterData" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                        data-bs-parent="#accordionOption">
-                        <div class="accordion-body">
-                            <form action="javascript:void(0)" id="FilterForm">
-                                <div class="form-group  float-start me-2 mt-lg-0">
-                                    <label for="filter_jenis" class="me-md-2">Jenis</label>
-                                    <select class="form-control select2" id="filter_jenis" name="filter_jenis"
-                                        style="width: 200px">
-                                        <option value="">Semua Jenis</option>
-                                        <option value="Benefit">Benefit</option>
-                                        <option value="Cost">Cost</option>
-                                    </select>
-                                </div>
-                            </form>
-                            <div style="clear: both"></div>
-                            <button type="submit" form="FilterForm" class="btn btn-rounded btn-sm btn-secondary mt-2"
-                                data-toggle="tooltip" title="Refresh Filter Table">
-                                <i class="fas fa-sync-alt me-1"></i> Terapkan filter
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <table class="table table-striped table-hover w-100" id="tbl_main">
                 <thead>
                     <tr>
@@ -64,12 +31,10 @@
                                 class="form-check-input position-relative ms-1">
                         </th>
                         <th>No</th>
-                        <th>Kode</th>
                         <th>Nama</th>
-                        <th>Satuan</th>
-                        <th>Jenis</th>
-                        <th>Bobot</th>
-                        <th>Aksi</th>
+                        <th>Alamat</th>
+                        <th>Deskripsi</th>
+                        {!! $can_delete || $can_update ? '<th>Aksi</th>' : '' !!}
                     </tr>
                 </thead>
                 <tbody> </tbody>
@@ -89,27 +54,16 @@
                         enctype="multipart/form-data">
                         <input type="hidden" id="id" name="id">
                         <div class="form-group">
-                            <label for="kode">Kode</label>
-                            <input type="text" class="form-control" id="kode" name="kode" required />
-                        </div>
-                        <div class="form-group">
                             <label for="nama">Nama</label>
                             <input type="text" class="form-control" id="nama" name="nama" required />
                         </div>
                         <div class="form-group">
-                            <label for="satuan">Satuan</label>
-                            <input type="text" class="form-control" id="satuan" name="satuan" required />
+                            <label for="alamat">Alamat</label>
+                            <input type="text" class="form-control" id="alamat" name="alamat" />
                         </div>
                         <div class="form-group">
-                            <label for="jenis">Jenis</label>
-                            <select class="form-control" id="jenis" name="jenis" required>
-                                <option value="Benefit">Benefit</option>
-                                <option value="Cost">Cost</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="bobot">Bobot</label>
-                            <input type="number" class="form-control" id="bobot" name="bobot" required />
+                            <label for="deskripsi">Deskripsi</label>
+                            <textarea class="form-control" id="deskripsi" name="deskripsi" rows="3"></textarea>
                         </div>
                     </form>
                 </div>

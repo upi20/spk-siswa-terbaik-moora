@@ -18,13 +18,13 @@ return new class extends Migration
         Schema::create(AlternatifNilai::tableName, function (Blueprint $table) {
             $table->id();
             $table->bigInteger('alternatif_id', false, true)->nullable()->default(null);
-            $table->bigInteger('kirteria_id', false, true)->nullable()->default(null);
+            $table->bigInteger('kriteria_id', false, true)->nullable()->default(null);
             $table->bigInteger('kirteria_nilai_id', false, true)->nullable()->default(null);
             $table->integer('nilai')->nullable()->default(0);
             $table->timestamps();
 
             $table->foreign('alternatif_id')->references('id')->on(Alternatif::tableName)->cascadeOnDelete()->cascadeOnUpdate();
-            $table->foreign('kirteria_id')->references('id')->on(Kriteria::tableName)->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreign('kriteria_id')->references('id')->on(Kriteria::tableName)->cascadeOnDelete()->cascadeOnUpdate();
             $table->foreign('kirteria_nilai_id')->references('id')->on(KriteriaNilai::tableName)->cascadeOnDelete()->cascadeOnUpdate();
         });
     }

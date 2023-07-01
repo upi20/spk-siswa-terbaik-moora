@@ -25,7 +25,7 @@ $(document).ready(function () {
     ajax: {
       url: "{{ route(l_prefix($hpu)) }}",
       data: function (d) {
-        d['filter[jenis]'] = $('#filter_jenis').val();
+        d['filter[alamat]'] = $('#filter_alamat').val();
       },
       complete: function (data) {
         data.responseJSON.data.forEach(e => {
@@ -50,39 +50,29 @@ $(document).ready(function () {
       name: 'id'
     },
     {
-      data: 'kode',
-      name: 'kode'
-    },
-    {
       data: 'nama',
       name: 'nama'
     },
     {
-      data: 'satuan',
-      name: 'satuan'
+      data: 'alamat',
+      name: 'alamat'
     },
     {
-      data: 'jenis',
-      name: 'jenis'
+      data: 'deskripsi',
+      name: 'deskripsi'
     },
-    {
-      data: 'bobot',
-      name: 'bobot'
-    },
-    {
+    ...(can_update || can_delete ? [{
       data: 'id',
       name: 'id',
       render(data, type, full, meta) {
-        const btn_nilai = `<a class="btn btn-rounded btn-secondary btn-sm me-1 mt-1" href="{{url(l_prefix_uri($hpu, 'nilai'))}}/${full.slug}" data-toggle="tooltip" title="Daftar Nilai Kriteria">
-                        <i class="fas fa-square-root-alt"></i></a>`;
         const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1 mt-1" data-toggle="tooltip" title="Ubah Data" onClick="editFunc('${data}')">
                         <i class="fas fa-edit"></i></button>` : '';
         const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm me-1 mt-1" data-toggle="tooltip" title="Hapus Data" onClick="deleteFunc('${data}')">
                         <i class="fas fa-trash"></i></button>` : '';
-        return btn_nilai + btn_update + btn_delete;
+        return btn_update + btn_delete;
       },
       orderable: false
-    },
+    }] : []),
     ],
     language: { url: datatable_indonesia_language_url },
     order: [
@@ -180,11 +170,9 @@ function editFunc(id) {
       $('#modal-default-title').html("Ubah");
       $('#modal-default').modal('show');
       $('#id').val(data.id);
-      $('#kode').val(data.kode);
       $('#nama').val(data.nama);
-      $('#jenis').val(data.jenis);
-      $('#bobot').val(data.bobot);
-      $('#satuan').val(data.satuan);
+      $('#alamat').val(data.alamat);
+      $('#deskripsi').val(data.deskripsi);
 
     },
     error: function (data) {

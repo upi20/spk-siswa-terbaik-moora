@@ -17,10 +17,9 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('kriteria_id', false, true)->nullable()->default(null);
             $table->text('nama')->nullable()->default(null);
-            $table->text('satuan')->nullable()->default(null);
             $table->integer('nilai')->nullable()->default(null);
-            $table->integer('dari')->nullable()->default(null);
-            $table->integer('sampai')->nullable()->default(null);
+            $table->integer('dari')->nullable()->default(0);
+            $table->integer('sampai')->nullable()->default(0);
             $table->timestamps();
 
             $table->foreign('kriteria_id')->references('id')->on(Kriteria::tableName)->cascadeOnDelete()->cascadeOnUpdate();

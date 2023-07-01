@@ -17,7 +17,6 @@ class KriteriaNilai extends Model
         'kriteria_id',
         'nama',
         'nilai',
-        'satuan',
         'dari',
         'sampai',
     ];

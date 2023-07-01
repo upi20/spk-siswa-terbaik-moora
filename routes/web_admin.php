@@ -1,6 +1,9 @@
 <?php
 // ====================================================================================================================
 // utility ============================================================================================================
+
+use App\Http\Controllers\Admin\AlternatifController;
+use App\Http\Controllers\Admin\AlternatifNilaiController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Redirect;
 
@@ -25,7 +28,7 @@ use App\Http\Controllers\Admin\KecamatanController;
 use App\Http\Controllers\Admin\TahapanController;
 use App\Http\Controllers\Admin\CalonController;
 use App\Http\Controllers\Admin\CalonNilaiController;
-
+use App\Http\Controllers\Admin\Import\AlternatifController as ImportAlternatifController;
 // Import =============================================================================================================
 use App\Http\Controllers\Admin\Import\KecamatanController as ImportKecamatanController;
 use App\Http\Controllers\Admin\Import\CalonController as ImportCalonController;
@@ -235,6 +238,33 @@ Route::prefix($prefix)->group(function () use ($name, $prefix) {
     });
 });
 
+$prefix = 'alternatif';
+Route::prefix($prefix)->group(function () use ($name, $prefix) {
+    $name = "$name.$prefix"; // admin.alternatif
+    Route::controller(AlternatifController::class)->group(function () use ($name, $prefix) {
+        Route::get('/', 'index')->name($name)->middleware("permission:$name");
+        Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
+        Route::get('/export', 'export')->name("$name.export")->middleware("permission:$name");
+        Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
+        Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
+        Route::post('/delete', 'delete_bulk')->name("$name.delete_bulk")->middleware("permission:$name.delete");
+        Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
+    });
+
+    $prefix = 'nilai';
+    Route::controller(AlternatifNilaiController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
+        $name = "$name.$prefix"; // admin.alternatif.nilai
+        Route::get('/', 'index')->name($name)->middleware("permission:$name");
+        Route::get('/datatable', 'datatable')->name($name)->middleware("permission:$name");
+        Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
+        Route::get('/export', 'export')->name("$name.export")->middleware("permission:$name");
+        Route::get('/datatable', 'datatable')->name("$name.datatable")->middleware("permission:$name");
+        Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
+        Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
+        Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
+    });
+});
+
 
 
 
@@ -288,6 +318,17 @@ Route::prefix($prefix)->group(function () use ($name, $prefix) {
     $prefix = 'calon';
     Route::controller(ImportCalonController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
         $name = "$name.$prefix"; // admin.import.calon
+        Route::get('/', 'index')->name($name)->middleware("permission:$name");
+        Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
+        Route::get('/format', 'format')->name("$name.format")->middleware("permission:$name");
+        Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
+        Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
+        Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
+    });
+
+    $prefix = 'alternatif';
+    Route::controller(ImportAlternatifController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
+        $name = "$name.$prefix"; // admin.import.alternatif
         Route::get('/', 'index')->name($name)->middleware("permission:$name");
         Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
         Route::get('/format', 'format')->name("$name.format")->middleware("permission:$name");

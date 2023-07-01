@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Kriteria;
 use App\Models\KriteriaNilai;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use League\Config\Exception\ValidationException;
 
 class KriteriaNilaiController extends Controller
@@ -13,7 +14,6 @@ class KriteriaNilaiController extends Controller
     private $validate_model = [
         'kriteria_id' => ['required', 'integer'],
         'nama' => ['required', 'string'],
-        'satuan' => ['required', 'string'],
         'nilai' => ['nullable', 'integer'],
         'dari' => ['nullable', 'integer'],
         'sampai' => ['nullable', 'integer'],
@@ -39,14 +39,18 @@ class KriteriaNilaiController extends Controller
         try {
             $request->validate($this->validate_model);
 
+            DB::beginTransaction();
             $model = new KriteriaNilai();
             $model->kriteria_id = $request->kriteria_id;
             $model->nama = $request->nama;
-            $model->satuan = $request->satuan;
             $model->nilai = $request->nilai;
             $model->dari = $request->dari;
             $model->sampai = $request->sampai;
             $model->save();
+
+            $model->kriteria->refersDariSampai();
+
+            DB::commit();
             return response()->json();
         } catch (ValidationException $error) {
             return response()->json([
@@ -65,13 +69,16 @@ class KriteriaNilaiController extends Controller
                 'required', 'int',
             ]], $this->validate_model));
 
+            DB::beginTransaction();
             $model->kriteria_id = $request->kriteria_id;
             $model->nama = $request->nama;
-            $model->satuan = $request->satuan;
             $model->nilai = $request->nilai;
             $model->dari = $request->dari;
             $model->sampai = $request->sampai;
             $model->save();
+
+            $model->kriteria->refersDariSampai();
+            DB::commit();
 
             return response()->json();
         } catch (ValidationException $error) {
@@ -85,7 +92,12 @@ class KriteriaNilaiController extends Controller
     public function delete(KriteriaNilai $model): mixed
     {
         try {
+            DB::beginTransaction();
+            $kriteria = $model->kriteria;
             $model->delete();
+
+            $kriteria->refersDariSampai();
+            DB::commit();
             return response()->json();
         } catch (ValidationException $error) {
             return response()->json([

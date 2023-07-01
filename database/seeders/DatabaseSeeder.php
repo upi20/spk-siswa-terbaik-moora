@@ -35,5 +35,8 @@ class DatabaseSeeder extends Seeder
         $this->call(CalonNilaiTableSeeder::class);
         $this->call(KriteriaTableSeeder::class);
         $this->call(KriteriaNilaiTableSeeder::class);
+        $this->call(ImportAlternatifTableSeeder::class);
+        $this->call(AlternatifTableSeeder::class);
+        $this->call(AlternatifNilaiTableSeeder::class);
     }
 }

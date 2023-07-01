@@ -38,7 +38,6 @@
                         <th>No</th>
                         <th>Nama</th>
                         <th>Nilai</th>
-                        <th>Satuan</th>
                         <th>Dari</th>
                         <th>Sampai</th>
                         {!! $can_delete || $can_update ? '<th>Aksi</th>' : '' !!}
@@ -69,20 +68,16 @@
                             <label for="nilai">Nilai</label>
                             <input type="number" class="form-control" id="nilai" name="nilai" required />
                         </div>
-                        <div class="form-group">
-                            <label for="satuan">Satuan</label>
-                            <input type="text" class="form-control" id="satuan" name="satuan" required />
-                        </div>
                         <div class="row">
                             <div class="col-6">
                                 <div class="form-group">
-                                    <label for="dari">Dari</label>
+                                    <label for="dari">Dari ({{ $kriteria->satuan }})</label>
                                     <input type="number" class="form-control" id="dari" name="dari" required />
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="form-group">
-                                    <label for="sampai">Sampai</label>
+                                    <label for="sampai">Sampai ({{ $kriteria->satuan }})</label>
                                     <input type="number" class="form-control" id="sampai" name="sampai" required />
                                 </div>
                             </div>

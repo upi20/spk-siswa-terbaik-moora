@@ -2,8 +2,11 @@
 
 namespace App\Console\Commands;
 
+use App\Models\Alternatif;
+use App\Models\AlternatifNilai;
 use App\Models\Calon;
 use App\Models\CalonNilai;
+use App\Models\Import\Alternatif as ImportAlternatif;
 use App\Models\Import\Calon as ImportCalon;
 use App\Models\Import\Kecamatan as ImportKecamatan;
 use App\Models\Import\Kriteria as ImportKriteria;
@@ -82,19 +85,22 @@ class backup extends Command
                 'logs',
             ],
             'import' => [
-                ImportKecamatan::tableName,
-                ImportTahapan::tableName,
-                ImportCalon::tableName,
+                // ImportKecamatan::tableName,
+                // ImportTahapan::tableName,
+                // ImportCalon::tableName,
+                ImportAlternatif::tableName
             ],
-            'spk' => [
-                Kecamatan::tableName,
-                Tahapan::tableName,
-                Calon::tableName,
-                CalonNilai::tableName,
-            ],
+            // 'spk' => [
+            //     Kecamatan::tableName,
+            //     Tahapan::tableName,
+            //     Calon::tableName,
+            //     CalonNilai::tableName,
+            // ],
             'spk_moora' => [
                 Kriteria::tableName,
                 KriteriaNilai::tableName,
+                Alternatif::tableName,
+                AlternatifNilai::tableName,
             ],
         ];
         if ($opt_users == 1 || $arg_type == 'users') echo shell_exec('php artisan iseed users --force');

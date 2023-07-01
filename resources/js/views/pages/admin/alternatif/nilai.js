@@ -59,6 +59,10 @@ $(document).ready(function () {
             name: 'nilai'
         },
         {
+            data: 'satuan',
+            name: 'satuan'
+        },
+        {
             data: 'dari',
             name: 'dari'
         },
@@ -174,6 +178,7 @@ function editFunc(id) {
             $('#modal-default').modal('show');
             $('#id').val(data.id);
             $('#kriteria_id').val(data.kriteria_id);
+            $('#satuan').val(data.satuan);
             $('#dari').val(data.dari);
             $('#sampai').val(data.sampai);
             $('#nama').val(data.nama);

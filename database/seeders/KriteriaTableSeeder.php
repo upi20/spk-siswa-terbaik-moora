@@ -27,8 +27,11 @@ class KriteriaTableSeeder extends Seeder
                 'nama' => 'Biaya',
                 'slug' => 'biaya',
                 'kode' => 'C1',
+                'satuan' => 'Rupiah',
+                'dari' => 10000,
+                'sampai' => 35000,
                 'created_at' => '2023-07-01 16:01:00',
-                'updated_at' => '2023-07-01 16:29:14',
+                'updated_at' => '2023-07-01 18:57:00',
             ),
             1 => 
             array (
@@ -38,8 +41,11 @@ class KriteriaTableSeeder extends Seeder
                 'nama' => 'Jarak',
                 'slug' => 'jarak',
                 'kode' => 'C2',
+                'satuan' => 'KM',
+                'dari' => 11,
+                'sampai' => 70,
                 'created_at' => '2023-07-01 16:01:18',
-                'updated_at' => '2023-07-01 16:01:18',
+                'updated_at' => '2023-07-01 18:57:13',
             ),
             2 => 
             array (
@@ -49,8 +55,11 @@ class KriteriaTableSeeder extends Seeder
                 'nama' => 'Waktu',
                 'slug' => 'waktu',
                 'kode' => 'C3',
+                'satuan' => 'Menit',
+                'dari' => 30,
+                'sampai' => 150,
                 'created_at' => '2023-07-01 16:01:32',
-                'updated_at' => '2023-07-01 16:01:32',
+                'updated_at' => '2023-07-01 18:57:23',
             ),
             3 => 
             array (
@@ -60,8 +69,11 @@ class KriteriaTableSeeder extends Seeder
                 'nama' => 'Ketinggian',
                 'slug' => 'ketinggian',
                 'kode' => 'C4',
+                'satuan' => 'MDPL',
+                'dari' => 601,
+                'sampai' => 3000,
                 'created_at' => '2023-07-01 16:01:48',
-                'updated_at' => '2023-07-01 16:01:48',
+                'updated_at' => '2023-07-01 18:57:36',
             ),
         ));
         

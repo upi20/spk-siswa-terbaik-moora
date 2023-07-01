@@ -19,6 +19,9 @@ return new class extends Migration
             $table->text('nama')->nullable()->default(null);
             $table->text('slug')->nullable()->default(null);
             $table->string('kode')->nullable()->default(null);
+            $table->text('satuan')->nullable()->default(null);
+            $table->integer('dari')->nullable()->default(0);
+            $table->integer('sampai')->nullable()->default(0);
             $table->timestamps();
         });
     }

@@ -15,8 +15,9 @@ class AlternatifNilai extends Model
 
     protected $fillable = [
         'alternatif_id',
-        'kirteria_id',
+        'kriteria_id',
         'kirteria_nilai_id',
+        'nilai',
     ];
 
     protected $primaryKey = 'id';
@@ -36,5 +37,33 @@ class AlternatifNilai extends Model
     public function nilai()
     {
         return $this->belongsTo(AlternatifNilai::class, 'kirteria_nilai_id', 'id');
+    }
+
+    public static function datatable(Request $request)
+    {
+        $tahapans = Kriteria::orderBy('kode')->get();
+        $alternatifs = Alternatif::with(['nilais'])->get();
+
+        // sort nilai berdasarkan tahapan
+        $results = [];
+        foreach ($alternatifs as $alternatif) {
+            $new_nilais = [];
+            foreach ($tahapans as $tahapan) {
+                $get_nilai = null;
+                foreach ($alternatif->nilais as $nilai) {
+                    if ($nilai->tahapan_id == $tahapan->id) $get_nilai = $nilai;
+                }
+                $new_nilais[] = $get_nilai;
+            }
+
+            unset($alternatif->nilais);
+            $alternatif['nilais'] = $new_nilais;
+            $results[] = $alternatif;
+        }
+
+        return [
+            'header' => $tahapans,
+            'body' => $results
+        ];
     }
 }
