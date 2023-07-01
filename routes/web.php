@@ -1,12 +1,11 @@
 <?php
 
-use App\Http\Controllers\Frontend\HomeController;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoaderController;
 use App\Http\Controllers\LoginController;
 // ====================================================================================================================
-Route::get('/', fn () => Redirect::route('dashboard'));
+Route::get('/', fn () => Redirect::route('dashboard'))->name('home');
 
 // dashboard ==========================================================================================================
 Route::get('/dashboard', function () {
