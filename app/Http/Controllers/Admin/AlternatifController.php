@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Alternatif;
+use App\Models\Import\Alternatif as ImportAlternatif;
 use Illuminate\Http\Request;
 use League\Config\Exception\ValidationException;
 
@@ -84,5 +85,10 @@ class AlternatifController extends Controller
     public function find(Request $request)
     {
         return Alternatif::findOrFail($request->id);
+    }
+
+    public function export(Request $request)
+    {
+        return ImportAlternatif::export($request);
     }
 }

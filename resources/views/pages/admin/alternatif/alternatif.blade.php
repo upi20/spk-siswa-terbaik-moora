@@ -11,6 +11,10 @@
             <div class="card-title d-md-flex flex-row justify-content-between">
                 <h6 class="mt-2 text-uppercase">Data {{ $page_attr['title'] }}</h6>
                 <div>
+                    <a href="{{ route(h_prefix('export')) }}" class="btn btn-success btn-primary btn-sm" data-toggle="tooltip"
+                        title="Export Semua Data">
+                        <i class="fas fa-upload"></i> Export
+                    </a>
                     @if ($can_delete)
                         <button type="button" class="btn btn-rounded btn-danger btn-sm me-1" data-toggle="tooltip"
                             title="Hapus Data Yang Dipilih" id="btnCheckboxDelete" style="display: none"
