@@ -24644,6 +24644,483 @@ class LogsTableSeeder extends Seeder
                 'log_type' => 'create',
                 'data' => '{"name":"Yogi Setiawan","email":"yogis@gmail.com","active":"1","updated_at":"2023-07-01T16:09:58.000000Z","created_at":"2023-07-01T16:09:58.000000Z","id":2,"profile_photo_url":"https:\\/\\/ui-avatars.com\\/api\\/?name=Y+S&color=7F9CF5&background=EBF4FF"}',
             ),
+            235 => 
+            array (
+                'id' => 10138,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:29',
+                'table_name' => 'import_alternatif',
+                'log_type' => 'delete',
+                'data' => '{"id":18,"nama":"Data Testing","slug":"data-testing","file":"20230701104545-data-testing.xlsx","count":10,"created_at":"2023-07-01 22:45:45","updated_at":"2023-07-01 22:45:46"}',
+            ),
+            236 => 
+            array (
+                'id' => 10139,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'import_alternatif',
+                'log_type' => 'create',
+                'data' => '{"nama":"Data testing","slug":"data-testing","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":19}',
+            ),
+            237 => 
+            array (
+                'id' => 10140,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif',
+                'log_type' => 'create',
+                'data' => '{"nama":"G. Burangrang","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-burangrang","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":31}',
+            ),
+            238 => 
+            array (
+                'id' => 10141,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":31,"kriteria_id":1,"kirteria_nilai_id":2,"nilai":"15000","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":137}',
+            ),
+            239 => 
+            array (
+                'id' => 10142,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":31,"kriteria_id":2,"kirteria_nilai_id":7,"nilai":"22","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":138}',
+            ),
+            240 => 
+            array (
+                'id' => 10143,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":31,"kriteria_id":3,"kirteria_nilai_id":12,"nilai":"90","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":139}',
+            ),
+            241 => 
+            array (
+                'id' => 10144,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":31,"kriteria_id":4,"kirteria_nilai_id":17,"nilai":"2064","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":140}',
+            ),
+            242 => 
+            array (
+                'id' => 10145,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif',
+                'log_type' => 'create',
+                'data' => '{"nama":"G. Putri Lembang","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-putri-lembang","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":32}',
+            ),
+            243 => 
+            array (
+                'id' => 10146,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":32,"kriteria_id":1,"kirteria_nilai_id":4,"nilai":"25000","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":141}',
+            ),
+            244 => 
+            array (
+                'id' => 10147,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":32,"kriteria_id":2,"kirteria_nilai_id":7,"nilai":"16","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":142}',
+            ),
+            245 => 
+            array (
+                'id' => 10148,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":32,"kriteria_id":3,"kirteria_nilai_id":11,"nilai":"60","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":143}',
+            ),
+            246 => 
+            array (
+                'id' => 10149,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":32,"kriteria_id":4,"kirteria_nilai_id":16,"nilai":"1587","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":144}',
+            ),
+            247 => 
+            array (
+                'id' => 10150,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif',
+                'log_type' => 'create',
+                'data' => '{"nama":"G. Bukit Tunggul","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-bukit-tunggul","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":33}',
+            ),
+            248 => 
+            array (
+                'id' => 10151,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":33,"kriteria_id":1,"kirteria_nilai_id":1,"nilai":"10000","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":145}',
+            ),
+            249 => 
+            array (
+                'id' => 10152,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":33,"kriteria_id":2,"kirteria_nilai_id":8,"nilai":"28","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":146}',
+            ),
+            250 => 
+            array (
+                'id' => 10153,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":33,"kriteria_id":3,"kirteria_nilai_id":12,"nilai":"90","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":147}',
+            ),
+            251 => 
+            array (
+                'id' => 10154,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":33,"kriteria_id":4,"kirteria_nilai_id":17,"nilai":"2208","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":148}',
+            ),
+            252 => 
+            array (
+                'id' => 10155,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif',
+                'log_type' => 'create',
+                'data' => '{"nama":"G. Manglayang","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-manglayang","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":34}',
+            ),
+            253 => 
+            array (
+                'id' => 10156,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":34,"kriteria_id":1,"kirteria_nilai_id":2,"nilai":"15000","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":149}',
+            ),
+            254 => 
+            array (
+                'id' => 10157,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":34,"kriteria_id":2,"kirteria_nilai_id":10,"nilai":"58","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":150}',
+            ),
+            255 => 
+            array (
+                'id' => 10158,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":34,"kriteria_id":3,"kirteria_nilai_id":13,"nilai":"110","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":151}',
+            ),
+            256 => 
+            array (
+                'id' => 10159,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":34,"kriteria_id":4,"kirteria_nilai_id":17,"nilai":"1824","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":152}',
+            ),
+            257 => 
+            array (
+                'id' => 10160,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif',
+                'log_type' => 'create',
+                'data' => '{"nama":"G. Mandalawangi","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-mandalawangi","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":35}',
+            ),
+            258 => 
+            array (
+                'id' => 10161,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:57',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":35,"kriteria_id":1,"kirteria_nilai_id":3,"nilai":"20000","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":153}',
+            ),
+            259 => 
+            array (
+                'id' => 10162,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":35,"kriteria_id":2,"kirteria_nilai_id":8,"nilai":"39","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":154}',
+            ),
+            260 => 
+            array (
+                'id' => 10163,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":35,"kriteria_id":3,"kirteria_nilai_id":12,"nilai":"90","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":155}',
+            ),
+            261 => 
+            array (
+                'id' => 10164,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":35,"kriteria_id":4,"kirteria_nilai_id":16,"nilai":"1650","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":156}',
+            ),
+            262 => 
+            array (
+                'id' => 10165,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif',
+                'log_type' => 'create',
+                'data' => '{"nama":"G. Artapela ","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-artapela","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":36}',
+            ),
+            263 => 
+            array (
+                'id' => 10166,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":36,"kriteria_id":1,"kirteria_nilai_id":2,"nilai":"15000","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":157}',
+            ),
+            264 => 
+            array (
+                'id' => 10167,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":36,"kriteria_id":2,"kirteria_nilai_id":9,"nilai":"46","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":158}',
+            ),
+            265 => 
+            array (
+                'id' => 10168,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":36,"kriteria_id":3,"kirteria_nilai_id":14,"nilai":"130","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":159}',
+            ),
+            266 => 
+            array (
+                'id' => 10169,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":36,"kriteria_id":4,"kirteria_nilai_id":17,"nilai":"2194","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":160}',
+            ),
+            267 => 
+            array (
+                'id' => 10170,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif',
+                'log_type' => 'create',
+                'data' => '{"nama":"G. Patuha","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-patuha","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":37}',
+            ),
+            268 => 
+            array (
+                'id' => 10171,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":37,"kriteria_id":1,"kirteria_nilai_id":5,"nilai":"30000","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":161}',
+            ),
+            269 => 
+            array (
+                'id' => 10172,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":37,"kriteria_id":2,"kirteria_nilai_id":10,"nilai":"56","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":162}',
+            ),
+            270 => 
+            array (
+                'id' => 10173,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":37,"kriteria_id":3,"kirteria_nilai_id":13,"nilai":"105","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":163}',
+            ),
+            271 => 
+            array (
+                'id' => 10174,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":37,"kriteria_id":4,"kirteria_nilai_id":18,"nilai":"2434","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":164}',
+            ),
+            272 => 
+            array (
+                'id' => 10175,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif',
+                'log_type' => 'create',
+                'data' => '{"nama":"G. Puntang","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-puntang","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":38}',
+            ),
+            273 => 
+            array (
+                'id' => 10176,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":38,"kriteria_id":1,"kirteria_nilai_id":5,"nilai":"35000","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":165}',
+            ),
+            274 => 
+            array (
+                'id' => 10177,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":38,"kriteria_id":2,"kirteria_nilai_id":9,"nilai":"45","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":166}',
+            ),
+            275 => 
+            array (
+                'id' => 10178,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":38,"kriteria_id":3,"kirteria_nilai_id":12,"nilai":"90","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":167}',
+            ),
+            276 => 
+            array (
+                'id' => 10179,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":38,"kriteria_id":4,"kirteria_nilai_id":17,"nilai":"2223","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":168}',
+            ),
+            277 => 
+            array (
+                'id' => 10180,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif',
+                'log_type' => 'create',
+                'data' => '{"nama":"G. Tambakruyung","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-tambakruyung","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":39}',
+            ),
+            278 => 
+            array (
+                'id' => 10181,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":39,"kriteria_id":1,"kirteria_nilai_id":3,"nilai":"20000","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":169}',
+            ),
+            279 => 
+            array (
+                'id' => 10182,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":39,"kriteria_id":2,"kirteria_nilai_id":9,"nilai":"47","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":170}',
+            ),
+            280 => 
+            array (
+                'id' => 10183,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":39,"kriteria_id":3,"kirteria_nilai_id":12,"nilai":"90","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":171}',
+            ),
+            281 => 
+            array (
+                'id' => 10184,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":39,"kriteria_id":4,"kirteria_nilai_id":17,"nilai":"1994","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":172}',
+            ),
+            282 => 
+            array (
+                'id' => 10185,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif',
+                'log_type' => 'create',
+                'data' => '{"nama":"G. Bendera","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-bendera","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":40}',
+            ),
+            283 => 
+            array (
+                'id' => 10186,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":40,"kriteria_id":1,"kirteria_nilai_id":1,"nilai":"10000","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":173}',
+            ),
+            284 => 
+            array (
+                'id' => 10187,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":40,"kriteria_id":2,"kirteria_nilai_id":7,"nilai":"25","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":174}',
+            ),
+            285 => 
+            array (
+                'id' => 10188,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":40,"kriteria_id":3,"kirteria_nilai_id":11,"nilai":"60","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":175}',
+            ),
+            286 => 
+            array (
+                'id' => 10189,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"alternatif_id":40,"kriteria_id":4,"kirteria_nilai_id":16,"nilai":"1408","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":176}',
+            ),
+            287 => 
+            array (
+                'id' => 10190,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:16:58',
+                'table_name' => 'import_alternatif',
+                'log_type' => 'edit',
+                'data' => '{"nama":"Data testing","slug":"data-testing","updated_at":"2023-07-01 23:16:57","created_at":"2023-07-01 23:16:57","id":19}',
+            ),
         ));
         
         
