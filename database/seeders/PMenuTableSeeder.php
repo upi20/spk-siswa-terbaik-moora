@@ -300,10 +300,10 @@ class PMenuTableSeeder extends Seeder
                 'icon' => 'fas fa-calculator',
                 'route' => 'admin.perhitungan',
                 'sequence' => 9,
-                'active' => 0,
+                'active' => 1,
                 'type' => 1,
                 'created_at' => '2023-05-31 22:08:34',
-                'updated_at' => '2023-07-01 18:19:04',
+                'updated_at' => '2023-07-01 20:47:39',
             ),
             22 => 
             array (

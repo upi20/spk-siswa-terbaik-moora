@@ -21,13 +21,13 @@ class ImportAlternatifTableSeeder extends Seeder
         \DB::table('import_alternatif')->insert(array (
             0 => 
             array (
-                'id' => 17,
+                'id' => 18,
                 'nama' => 'Data Testing',
                 'slug' => 'data-testing',
-                'file' => '20230701082406-data-testing.xlsx',
+                'file' => '20230701104545-data-testing.xlsx',
                 'count' => 10,
-                'created_at' => '2023-07-01 20:24:06',
-                'updated_at' => '2023-07-01 20:24:12',
+                'created_at' => '2023-07-01 22:45:45',
+                'updated_at' => '2023-07-01 22:45:46',
             ),
         ));
         
