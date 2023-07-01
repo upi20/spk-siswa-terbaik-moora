@@ -174,6 +174,8 @@ Route::prefix($prefix)->group(function () use ($name, $prefix) {
         Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
         Route::get('/{kriteria:slug}', 'index')->name($name)->middleware("permission:$name");
         Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
+        Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
+        Route::post('/delete', 'delete_bulk')->name("$name.delete_bulk")->middleware("permission:$name.delete");
     });
 });
 
