@@ -9,13 +9,17 @@
     <div class="card mt-3">
         <div class="card-body">
             <div class="card-title d-md-flex flex-row justify-content-between">
-                <h6 class="mt-2 text-uppercase">Data {{ $page_attr['title'] }}</h6>
+                <div>
+                    <h6 class="mt-2 text-uppercase">Data {{ $page_attr['title'] }}</h6>
+                </div>
                 <div>
                     @if ($can_delete)
                         <button type="button" class="btn btn-rounded btn-danger btn-sm me-1" data-toggle="tooltip"
                             title="Hapus Data Yang Dipilih" id="btnCheckboxDelete" style="display: none"
                             onclick="checkBoxActionDelete()">
                             <i class="fas fa-trash"></i> Hapus Data</button>
+                    @endif
+                    @if ($can_insert)
                         <button type="button" class="btn btn-rounded btn-primary btn-sm" data-bs-effect="effect-scale"
                             data-bs-toggle="modal" href="#modal-default" onclick="addFunc()" data-target="#modal-default">
                             <i class="fas fa-plus"></i> Tambah

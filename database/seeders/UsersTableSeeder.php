@@ -38,6 +38,25 @@ class UsersTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2023-04-19 17:19:26',
             ),
+            1 => 
+            array (
+                'id' => 2,
+                'name' => 'Yogi Setiawan',
+                'email' => 'yogis@gmail.com',
+                'foto' => NULL,
+                'username' => NULL,
+                'email_verified_at' => NULL,
+                'password' => '$2y$10$U8mC5GglQoGnaCsa79.5l.psRfQmiKn1ciwIC2xM6GqOAst383idi',
+                'active' => 1,
+                'two_factor_secret' => NULL,
+                'two_factor_recovery_codes' => NULL,
+                'two_factor_confirmed_at' => NULL,
+                'current_team_id' => NULL,
+                'profile_photo_path' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2023-07-01 23:09:58',
+                'updated_at' => '2023-07-01 23:09:58',
+            ),
         ));
         
         

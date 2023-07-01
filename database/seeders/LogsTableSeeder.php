@@ -24383,6 +24383,267 @@ class LogsTableSeeder extends Seeder
                 'log_type' => 'edit',
                 'data' => '{"nama":"Data Testing","slug":"data-testing","updated_at":"2023-07-01 22:45:45","created_at":"2023-07-01 22:45:45","id":18}',
             ),
+            206 => 
+            array (
+                'id' => 10109,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:01:32',
+                'table_name' => 'p_menu',
+                'log_type' => 'delete',
+                'data' => '{"id":439,"parent_id":null,"title":"Kecamatan","icon":"fas fa-clipboard-list","route":"admin.kecamatan","sequence":5,"active":0,"type":1,"created_at":"2023-05-31 16:27:10","updated_at":"2023-07-01 18:18:28"}',
+            ),
+            207 => 
+            array (
+                'id' => 10110,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:01:35',
+                'table_name' => 'p_menu',
+                'log_type' => 'delete',
+                'data' => '{"id":440,"parent_id":null,"title":"Tahapan","icon":"fas fa-edit","route":"admin.tahapan","sequence":6,"active":0,"type":1,"created_at":"2023-05-31 16:27:42","updated_at":"2023-07-01 18:18:44"}',
+            ),
+            208 => 
+            array (
+                'id' => 10111,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:01:38',
+                'table_name' => 'p_menu',
+                'log_type' => 'delete',
+                'data' => '{"id":444,"parent_id":null,"title":"Calon","icon":"fas fa-user","route":"admin.calon","sequence":7,"active":0,"type":1,"created_at":"2023-05-31 16:53:25","updated_at":"2023-07-01 18:18:49"}',
+            ),
+            209 => 
+            array (
+                'id' => 10112,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:01:41',
+                'table_name' => 'p_menu',
+                'log_type' => 'delete',
+                'data' => '{"id":445,"parent_id":null,"title":"Calon Nilai","icon":"fas fa-user-edit","route":"admin.calon.nilai","sequence":8,"active":0,"type":1,"created_at":"2023-05-31 16:53:42","updated_at":"2023-07-01 18:18:37"}',
+            ),
+            210 => 
+            array (
+                'id' => 10113,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:01:46',
+                'table_name' => 'p_menu',
+                'log_type' => 'delete',
+                'data' => '{"id":447,"parent_id":null,"title":"Perbandingan","icon":"fas fa-layer-group","route":"admin.perbandingan","sequence":10,"active":0,"type":1,"created_at":"2023-06-26 18:14:39","updated_at":"2023-07-01 18:18:33"}',
+            ),
+            211 => 
+            array (
+                'id' => 10114,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:01:50',
+                'table_name' => 'p_menu',
+                'log_type' => 'delete',
+                'data' => '{"id":443,"parent_id":430,"title":"Calon","icon":null,"route":"admin.import.calon","sequence":16,"active":1,"type":1,"created_at":"2023-05-31 16:51:20","updated_at":"2023-07-01 18:34:21"}',
+            ),
+            212 => 
+            array (
+                'id' => 10115,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:01:53',
+                'table_name' => 'p_menu',
+                'log_type' => 'delete',
+                'data' => '{"id":442,"parent_id":430,"title":"Tahapan","icon":null,"route":"admin.import.tahapan","sequence":15,"active":1,"type":1,"created_at":"2023-05-31 16:51:02","updated_at":"2023-07-01 18:34:21"}',
+            ),
+            213 => 
+            array (
+                'id' => 10116,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:01:56',
+                'table_name' => 'p_menu',
+                'log_type' => 'delete',
+                'data' => '{"id":441,"parent_id":430,"title":"Kecamatan","icon":null,"route":"admin.import.kecamatan","sequence":14,"active":1,"type":1,"created_at":"2023-05-31 16:28:12","updated_at":"2023-07-01 18:34:21"}',
+            ),
+            214 => 
+            array (
+                'id' => 10117,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:02:01',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":446,"parent_id":null,"title":"Perhitungan","icon":"fas fa-calculator","route":"admin.perhitungan","sequence":9,"active":1,"type":1,"created_at":"2023-05-31 22:08:34","updated_at":"2023-07-01 20:47:39"}',
+            ),
+            215 => 
+            array (
+                'id' => 10118,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:02:01',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":411,"parent_id":null,"title":"Menu Lainnya","icon":null,"route":null,"sequence":11,"active":1,"type":0,"created_at":"2022-09-15 21:18:04","updated_at":"2023-07-01 18:18:11"}',
+            ),
+            216 => 
+            array (
+                'id' => 10119,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:02:01',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":430,"parent_id":null,"title":"Import","icon":"fas fa-upload","route":null,"sequence":12,"active":1,"type":1,"created_at":"2023-05-16 18:10:19","updated_at":"2023-07-01 18:18:11"}',
+            ),
+            217 => 
+            array (
+                'id' => 10120,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:02:01',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":451,"parent_id":430,"title":"Alternatif","icon":null,"route":"admin.import.alternatif","sequence":13,"active":1,"type":1,"created_at":"2023-07-01 18:34:15","updated_at":"2023-07-01 18:34:21"}',
+            ),
+            218 => 
+            array (
+                'id' => 10121,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:02:01',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":397,"parent_id":null,"title":"Pengaturan","icon":"fas fa-wrench","route":null,"sequence":17,"active":1,"type":1,"created_at":"2022-08-14 21:10:57","updated_at":"2023-07-01 18:34:21"}',
+            ),
+            219 => 
+            array (
+                'id' => 10122,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:02:01',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":398,"parent_id":397,"title":"Informasi Admin","icon":null,"route":"admin.setting.admin","sequence":18,"active":1,"type":1,"created_at":"2022-08-14 21:11:42","updated_at":"2023-07-01 18:34:21"}',
+            ),
+            220 => 
+            array (
+                'id' => 10123,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:02:01',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":438,"parent_id":397,"title":"Halaman Dashboard","icon":null,"route":"admin.setting.dashboard","sequence":19,"active":1,"type":1,"created_at":"2023-05-29 20:03:50","updated_at":"2023-07-01 18:34:21"}',
+            ),
+            221 => 
+            array (
+                'id' => 10124,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:02:01',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":367,"parent_id":null,"title":"Akses Pengguna","icon":"fas fa-user-check","route":null,"sequence":20,"active":1,"type":1,"created_at":"2022-08-05 23:50:28","updated_at":"2023-07-01 18:34:21"}',
+            ),
+            222 => 
+            array (
+                'id' => 10125,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:02:01',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":368,"parent_id":367,"title":"Perizinan","icon":null,"route":"admin.user_access.permission","sequence":21,"active":1,"type":1,"created_at":"2022-08-05 23:50:28","updated_at":"2023-07-01 18:34:21"}',
+            ),
+            223 => 
+            array (
+                'id' => 10126,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:02:01',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":369,"parent_id":367,"title":"Sebagai","icon":null,"route":"admin.user_access.role","sequence":22,"active":1,"type":1,"created_at":"2022-08-05 23:50:28","updated_at":"2023-07-01 18:34:21"}',
+            ),
+            224 => 
+            array (
+                'id' => 10127,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:02:01',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":346,"parent_id":null,"title":"Pengguna","icon":"fas fa-list","route":"admin.user","sequence":23,"active":1,"type":1,"created_at":"2022-08-05 23:50:28","updated_at":"2023-07-01 18:34:21"}',
+            ),
+            225 => 
+            array (
+                'id' => 10128,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:02:01',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":361,"parent_id":null,"title":"Menu Management","icon":"fas fa-stream","route":"admin.menu.admin","sequence":24,"active":1,"type":1,"created_at":"2022-08-05 23:50:28","updated_at":"2023-07-01 18:34:21"}',
+            ),
+            226 => 
+            array (
+                'id' => 10129,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:02:01',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":373,"parent_id":null,"title":"Profile","icon":"fas fa-user","route":"admin.profile","sequence":25,"active":1,"type":1,"created_at":"2022-08-05 23:50:28","updated_at":"2023-07-01 18:34:21"}',
+            ),
+            227 => 
+            array (
+                'id' => 10130,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:02:01',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":386,"parent_id":null,"title":"Logout","icon":"fas fa-sign-out-alt","route":"logout","sequence":26,"active":1,"type":1,"created_at":"2022-08-05 23:54:09","updated_at":"2023-07-01 18:34:21"}',
+            ),
+            228 => 
+            array (
+                'id' => 10131,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:05:05',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":1,"alternatif_id":26,"kirteria_nilai_id":2,"nilai":"15000","updated_at":"2023-07-01T16:05:05.000000Z","created_at":"2023-07-01T16:05:05.000000Z","id":133}',
+            ),
+            229 => 
+            array (
+                'id' => 10132,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:05:05',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":2,"alternatif_id":26,"kirteria_nilai_id":9,"nilai":"46","updated_at":"2023-07-01T16:05:05.000000Z","created_at":"2023-07-01T16:05:05.000000Z","id":134}',
+            ),
+            230 => 
+            array (
+                'id' => 10133,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:05:05',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":3,"alternatif_id":26,"kirteria_nilai_id":14,"nilai":"130","updated_at":"2023-07-01T16:05:05.000000Z","created_at":"2023-07-01T16:05:05.000000Z","id":135}',
+            ),
+            231 => 
+            array (
+                'id' => 10134,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:05:05',
+                'table_name' => 'alternatif_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":4,"alternatif_id":26,"kirteria_nilai_id":17,"nilai":"2194","updated_at":"2023-07-01T16:05:05.000000Z","created_at":"2023-07-01T16:05:05.000000Z","id":136}',
+            ),
+            232 => 
+            array (
+                'id' => 10135,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:09:34',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":367,"parent_id":null,"title":"Akses Pengguna","icon":"fas fa-user-check","route":null,"sequence":12,"active":1,"type":1,"created_at":"2022-08-05 23:50:28","updated_at":"2023-07-01 23:02:01"}',
+            ),
+            233 => 
+            array (
+                'id' => 10136,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:09:34',
+                'table_name' => 'p_role_has_menu',
+                'log_type' => 'create',
+                'data' => '{"role_id":1,"menu_id":367,"updated_at":"2023-07-01T16:09:34.000000Z","created_at":"2023-07-01T16:09:34.000000Z","id":349}',
+            ),
+            234 => 
+            array (
+                'id' => 10137,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 23:09:58',
+                'table_name' => 'users',
+                'log_type' => 'create',
+                'data' => '{"name":"Yogi Setiawan","email":"yogis@gmail.com","active":"1","updated_at":"2023-07-01T16:09:58.000000Z","created_at":"2023-07-01T16:09:58.000000Z","id":2,"profile_photo_url":"https:\\/\\/ui-avatars.com\\/api\\/?name=Y+S&color=7F9CF5&background=EBF4FF"}',
+            ),
         ));
         
         

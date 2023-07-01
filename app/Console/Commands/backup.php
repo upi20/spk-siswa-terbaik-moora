@@ -4,22 +4,11 @@ namespace App\Console\Commands;
 
 use App\Models\Alternatif;
 use App\Models\AlternatifNilai;
-use App\Models\Calon;
-use App\Models\CalonNilai;
 use App\Models\Import\Alternatif as ImportAlternatif;
-use App\Models\Import\Calon as ImportCalon;
-use App\Models\Import\Kecamatan as ImportKecamatan;
-use App\Models\Import\Kriteria as ImportKriteria;
-use App\Models\Import\Penduduk as ImportPenduduk;
-use App\Models\Import\Tahapan as ImportTahapan;
-use App\Models\Kecamatan;
 use App\Models\Kriteria;
 use App\Models\KriteriaNilai;
 use App\Models\Menu\Admin as MenuAdmin;
-use App\Models\Penduduk;
-use App\Models\PendudukNilai;
 use App\Models\RoleHasMenu;
-use App\Models\Tahapan;
 use Illuminate\Console\Command;
 
 class backup extends Command
@@ -85,17 +74,8 @@ class backup extends Command
                 'logs',
             ],
             'import' => [
-                // ImportKecamatan::tableName,
-                // ImportTahapan::tableName,
-                // ImportCalon::tableName,
                 ImportAlternatif::tableName
             ],
-            // 'spk' => [
-            //     Kecamatan::tableName,
-            //     Tahapan::tableName,
-            //     Calon::tableName,
-            //     CalonNilai::tableName,
-            // ],
             'spk_moora' => [
                 Kriteria::tableName,
                 KriteriaNilai::tableName,

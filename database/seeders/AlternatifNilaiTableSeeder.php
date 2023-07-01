@@ -221,46 +221,6 @@ class AlternatifNilaiTableSeeder extends Seeder
             ),
             20 => 
             array (
-                'id' => 113,
-                'alternatif_id' => 26,
-                'kriteria_id' => 1,
-                'kirteria_nilai_id' => 2,
-                'nilai' => 15000,
-                'created_at' => '2023-07-01 22:45:45',
-                'updated_at' => '2023-07-01 22:45:45',
-            ),
-            21 => 
-            array (
-                'id' => 114,
-                'alternatif_id' => 26,
-                'kriteria_id' => 2,
-                'kirteria_nilai_id' => 9,
-                'nilai' => 46,
-                'created_at' => '2023-07-01 22:45:45',
-                'updated_at' => '2023-07-01 22:45:45',
-            ),
-            22 => 
-            array (
-                'id' => 115,
-                'alternatif_id' => 26,
-                'kriteria_id' => 3,
-                'kirteria_nilai_id' => 14,
-                'nilai' => 130,
-                'created_at' => '2023-07-01 22:45:45',
-                'updated_at' => '2023-07-01 22:45:45',
-            ),
-            23 => 
-            array (
-                'id' => 116,
-                'alternatif_id' => 26,
-                'kriteria_id' => 4,
-                'kirteria_nilai_id' => 17,
-                'nilai' => 2194,
-                'created_at' => '2023-07-01 22:45:46',
-                'updated_at' => '2023-07-01 22:45:46',
-            ),
-            24 => 
-            array (
                 'id' => 117,
                 'alternatif_id' => 27,
                 'kriteria_id' => 1,
@@ -269,7 +229,7 @@ class AlternatifNilaiTableSeeder extends Seeder
                 'created_at' => '2023-07-01 22:45:46',
                 'updated_at' => '2023-07-01 22:45:46',
             ),
-            25 => 
+            21 => 
             array (
                 'id' => 118,
                 'alternatif_id' => 27,
@@ -279,7 +239,7 @@ class AlternatifNilaiTableSeeder extends Seeder
                 'created_at' => '2023-07-01 22:45:46',
                 'updated_at' => '2023-07-01 22:45:46',
             ),
-            26 => 
+            22 => 
             array (
                 'id' => 119,
                 'alternatif_id' => 27,
@@ -289,7 +249,7 @@ class AlternatifNilaiTableSeeder extends Seeder
                 'created_at' => '2023-07-01 22:45:46',
                 'updated_at' => '2023-07-01 22:45:46',
             ),
-            27 => 
+            23 => 
             array (
                 'id' => 120,
                 'alternatif_id' => 27,
@@ -299,7 +259,7 @@ class AlternatifNilaiTableSeeder extends Seeder
                 'created_at' => '2023-07-01 22:45:46',
                 'updated_at' => '2023-07-01 22:45:46',
             ),
-            28 => 
+            24 => 
             array (
                 'id' => 121,
                 'alternatif_id' => 28,
@@ -309,7 +269,7 @@ class AlternatifNilaiTableSeeder extends Seeder
                 'created_at' => '2023-07-01 22:45:46',
                 'updated_at' => '2023-07-01 22:45:46',
             ),
-            29 => 
+            25 => 
             array (
                 'id' => 122,
                 'alternatif_id' => 28,
@@ -319,7 +279,7 @@ class AlternatifNilaiTableSeeder extends Seeder
                 'created_at' => '2023-07-01 22:45:46',
                 'updated_at' => '2023-07-01 22:45:46',
             ),
-            30 => 
+            26 => 
             array (
                 'id' => 123,
                 'alternatif_id' => 28,
@@ -329,7 +289,7 @@ class AlternatifNilaiTableSeeder extends Seeder
                 'created_at' => '2023-07-01 22:45:46',
                 'updated_at' => '2023-07-01 22:45:46',
             ),
-            31 => 
+            27 => 
             array (
                 'id' => 124,
                 'alternatif_id' => 28,
@@ -339,7 +299,7 @@ class AlternatifNilaiTableSeeder extends Seeder
                 'created_at' => '2023-07-01 22:45:46',
                 'updated_at' => '2023-07-01 22:45:46',
             ),
-            32 => 
+            28 => 
             array (
                 'id' => 125,
                 'alternatif_id' => 29,
@@ -349,7 +309,7 @@ class AlternatifNilaiTableSeeder extends Seeder
                 'created_at' => '2023-07-01 22:45:46',
                 'updated_at' => '2023-07-01 22:45:46',
             ),
-            33 => 
+            29 => 
             array (
                 'id' => 126,
                 'alternatif_id' => 29,
@@ -359,7 +319,7 @@ class AlternatifNilaiTableSeeder extends Seeder
                 'created_at' => '2023-07-01 22:45:46',
                 'updated_at' => '2023-07-01 22:45:46',
             ),
-            34 => 
+            30 => 
             array (
                 'id' => 127,
                 'alternatif_id' => 29,
@@ -369,7 +329,7 @@ class AlternatifNilaiTableSeeder extends Seeder
                 'created_at' => '2023-07-01 22:45:46',
                 'updated_at' => '2023-07-01 22:45:46',
             ),
-            35 => 
+            31 => 
             array (
                 'id' => 128,
                 'alternatif_id' => 29,
@@ -379,7 +339,7 @@ class AlternatifNilaiTableSeeder extends Seeder
                 'created_at' => '2023-07-01 22:45:46',
                 'updated_at' => '2023-07-01 22:45:46',
             ),
-            36 => 
+            32 => 
             array (
                 'id' => 129,
                 'alternatif_id' => 30,
@@ -389,7 +349,7 @@ class AlternatifNilaiTableSeeder extends Seeder
                 'created_at' => '2023-07-01 22:45:46',
                 'updated_at' => '2023-07-01 22:45:46',
             ),
-            37 => 
+            33 => 
             array (
                 'id' => 130,
                 'alternatif_id' => 30,
@@ -399,7 +359,7 @@ class AlternatifNilaiTableSeeder extends Seeder
                 'created_at' => '2023-07-01 22:45:46',
                 'updated_at' => '2023-07-01 22:45:46',
             ),
-            38 => 
+            34 => 
             array (
                 'id' => 131,
                 'alternatif_id' => 30,
@@ -409,7 +369,7 @@ class AlternatifNilaiTableSeeder extends Seeder
                 'created_at' => '2023-07-01 22:45:46',
                 'updated_at' => '2023-07-01 22:45:46',
             ),
-            39 => 
+            35 => 
             array (
                 'id' => 132,
                 'alternatif_id' => 30,
@@ -418,6 +378,46 @@ class AlternatifNilaiTableSeeder extends Seeder
                 'nilai' => 1408,
                 'created_at' => '2023-07-01 22:45:46',
                 'updated_at' => '2023-07-01 22:45:46',
+            ),
+            36 => 
+            array (
+                'id' => 133,
+                'alternatif_id' => 26,
+                'kriteria_id' => 1,
+                'kirteria_nilai_id' => 2,
+                'nilai' => 15000,
+                'created_at' => '2023-07-01 23:05:05',
+                'updated_at' => '2023-07-01 23:05:05',
+            ),
+            37 => 
+            array (
+                'id' => 134,
+                'alternatif_id' => 26,
+                'kriteria_id' => 2,
+                'kirteria_nilai_id' => 9,
+                'nilai' => 46,
+                'created_at' => '2023-07-01 23:05:05',
+                'updated_at' => '2023-07-01 23:05:05',
+            ),
+            38 => 
+            array (
+                'id' => 135,
+                'alternatif_id' => 26,
+                'kriteria_id' => 3,
+                'kirteria_nilai_id' => 14,
+                'nilai' => 130,
+                'created_at' => '2023-07-01 23:05:05',
+                'updated_at' => '2023-07-01 23:05:05',
+            ),
+            39 => 
+            array (
+                'id' => 136,
+                'alternatif_id' => 26,
+                'kriteria_id' => 4,
+                'kirteria_nilai_id' => 17,
+                'nilai' => 2194,
+                'created_at' => '2023-07-01 23:05:05',
+                'updated_at' => '2023-07-01 23:05:05',
             ),
         ));
         

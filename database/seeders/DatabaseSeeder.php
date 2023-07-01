@@ -24,15 +24,6 @@ class DatabaseSeeder extends Seeder
         $this->call(SessionsTableSeeder::class);
         $this->call(LogsTableSeeder::class);
 
-        $this->call(ImportKecamatanTableSeeder::class);
-        $this->call(KecamatanTableSeeder::class);
-
-        $this->call(ImportTahapanTableSeeder::class);
-        $this->call(TahapanTableSeeder::class);
-
-        $this->call(ImportCalonTableSeeder::class);
-        $this->call(CalonTableSeeder::class);
-        $this->call(CalonNilaiTableSeeder::class);
         $this->call(KriteriaTableSeeder::class);
         $this->call(KriteriaNilaiTableSeeder::class);
         $this->call(ImportAlternatifTableSeeder::class);

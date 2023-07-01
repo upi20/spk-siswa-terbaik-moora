@@ -24,7 +24,7 @@ class AlternatifController extends Controller
             return Alternatif::datatable($request);
         }
         $page_attr = adminBreadcumb(h_prefix());
-        $view = path_view('pages.admin.import.calon');
+        $view = path_view('pages.admin.import.alternatif');
         $data = compact('page_attr', 'view');
         $data['compact'] = $data;
         return view($view, $data);

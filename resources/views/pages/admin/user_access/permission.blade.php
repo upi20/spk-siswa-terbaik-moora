@@ -12,19 +12,30 @@
                 <div>
                     <h6 class="mt-2 text-uppercase">Data {{ $page_attr['title'] }}</h6>
                 </div>
-                @if ($can_insert)
-                    <div>
+                <div>
+                    @if ($can_delete)
+                        <button type="button" class="btn btn-rounded btn-danger btn-sm me-1" data-toggle="tooltip"
+                            title="Hapus Data Yang Dipilih" id="btnCheckboxDelete" style="display: none"
+                            onclick="checkBoxActionDelete()">
+                            <i class="fas fa-trash"></i> Hapus Data</button>
+                    @endif
+                    @if ($can_insert)
                         <button type="button" class="btn btn-rounded btn-primary btn-sm" data-bs-effect="effect-scale"
                             data-bs-toggle="modal" href="#modal-default" onclick="addFunc()" data-target="#modal-default">
                             <i class="fas fa-plus"></i> Tambah
                         </button>
-                    </div>
-                @endif
+                    @endif
+                </div>
             </div>
+
             <hr class="mt-1" />
             <table class="table table-striped table-hover" id="tbl_main">
                 <thead>
                     <tr>
+                        <th>
+                            <input type="checkbox" id="checkboxAll" onclick="checkBoxSetAll(this)"
+                                class="form-check-input position-relative ms-1">
+                        </th>
                         <th>No</th>
                         <th>Name</th>
                         <th>Guard</th>

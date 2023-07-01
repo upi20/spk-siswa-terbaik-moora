@@ -107,4 +107,25 @@ class PermissionController extends Controller
             return response()->json($error, 500);
         }
     }
+
+    public function delete_bulk(Request $request): mixed
+    {
+        try {
+            DB::beginTransaction();
+            foreach ($request->ids as $id) {
+                $request->{'id'} = $id;
+                $return = $this->delete($request);
+                if ($return->getStatusCode() != 200) {
+                    return response()->json($return->original, $return->getStatusCode());
+                }
+            }
+            DB::commit();
+            return response()->json();
+        } catch (ValidationException $error) {
+            return response()->json([
+                'message' => 'Something went wrong',
+                'error' => $error,
+            ], 500);
+        }
+    }
 }

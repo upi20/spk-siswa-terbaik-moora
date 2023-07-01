@@ -23,19 +23,10 @@ use App\Http\Controllers\Admin\Menu\AdminController as MenuAdminController;
 use App\Http\Controllers\Admin\Setting\AdminController;
 use App\Http\Controllers\Admin\Setting\DashboardController as SettingDashboardController;
 
-// SPK ================================================================================================================
-use App\Http\Controllers\Admin\KecamatanController;
-use App\Http\Controllers\Admin\TahapanController;
-use App\Http\Controllers\Admin\CalonController;
-use App\Http\Controllers\Admin\CalonNilaiController;
-use App\Http\Controllers\Admin\Import\AlternatifController as ImportAlternatifController;
 // Import =============================================================================================================
-use App\Http\Controllers\Admin\Import\KecamatanController as ImportKecamatanController;
-use App\Http\Controllers\Admin\Import\CalonController as ImportCalonController;
-use App\Http\Controllers\Admin\Import\TahapanController as ImportTahapanController;
+use App\Http\Controllers\Admin\Import\AlternatifController as ImportAlternatifController;
 use App\Http\Controllers\Admin\KriteriaController;
 use App\Http\Controllers\Admin\KriteriaNilaiController;
-use App\Http\Controllers\Admin\PerbandinganController;
 use App\Http\Controllers\Admin\PerhitunganController;
 
 // ====================================================================================================================
@@ -83,6 +74,7 @@ Route::group(['prefix' => $prefix], function () use ($name, $prefix) {
         Route::post('/', 'store')->name("$name.store")->middleware("permission:$name.insert");
         Route::delete('/{id}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
         Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
+        Route::post('/delete', 'delete_bulk')->name("$name.delete_bulk")->middleware("permission:$name.delete");
     });
 
     $prefix = 'role';
@@ -162,55 +154,6 @@ Route::controller(UserController::class)->prefix($prefix)->group(function () use
     Route::post('/save', 'save_password')->name("$name.save")->middleware("permission:$name.save");
 });
 
-$prefix = 'kecamatan';
-Route::controller(KecamatanController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
-    $name = "$name.$prefix"; // admin.kecamatan
-    Route::get('/', 'index')->name($name)->middleware("permission:$name");
-    Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
-    Route::get('/export', 'export')->name("$name.export")->middleware("permission:$name");
-    Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
-    Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
-    Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
-});
-
-$prefix = 'tahapan';
-Route::controller(TahapanController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
-    $name = "$name.$prefix"; // admin.tahapan
-    Route::get('/', 'index')->name($name)->middleware("permission:$name");
-    Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
-    Route::get('/export', 'export')->name("$name.export")->middleware("permission:$name");
-    Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
-    Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
-    Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
-});
-
-$prefix = 'calon';
-Route::prefix($prefix)->group(function () use ($name, $prefix) {
-    $name = "$name.$prefix"; // admin.calon
-    Route::controller(CalonController::class)->group(function () use ($name, $prefix) {
-        Route::get('/', 'index')->name($name)->middleware("permission:$name");
-        Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
-        Route::get('/export', 'export')->name("$name.export")->middleware("permission:$name");
-        Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
-        Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
-        Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
-    });
-
-    $prefix = 'nilai';
-    Route::controller(CalonNilaiController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
-        $name = "$name.$prefix"; // admin.calon.nilai
-        Route::get('/', 'index')->name($name)->middleware("permission:$name");
-        Route::get('/datatable', 'datatable')->name($name)->middleware("permission:$name");
-        Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
-        Route::get('/export', 'export')->name("$name.export")->middleware("permission:$name");
-        Route::get('/datatable', 'datatable')->name("$name.datatable")->middleware("permission:$name");
-        Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
-        Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
-        Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
-    });
-});
-
-
 $prefix = 'kriteria';
 Route::prefix($prefix)->group(function () use ($name, $prefix) {
     $name = "$name.$prefix"; // admin.kriteria
@@ -230,11 +173,7 @@ Route::prefix($prefix)->group(function () use ($name, $prefix) {
         Route::get('/format', 'format')->name("$name.format")->middleware("permission:$name");
         Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
         Route::get('/{kriteria:slug}', 'index')->name($name)->middleware("permission:$name");
-
-        Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
         Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
-        Route::post('/delete', 'delete_bulk')->name("$name.delete_bulk")->middleware("permission:$name.delete");
-        Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
     });
 });
 
@@ -263,66 +202,9 @@ Route::prefix($prefix)->group(function () use ($name, $prefix) {
     });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $prefix = 'import';
 Route::prefix($prefix)->group(function () use ($name, $prefix) {
     $name = "$name.$prefix"; // admin.import
-
-    $prefix = 'kecamatan';
-    Route::controller(ImportKecamatanController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
-        $name = "$name.$prefix"; // admin.import.kecamatan
-        Route::get('/', 'index')->name($name)->middleware("permission:$name");
-        Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
-        Route::get('/format', 'format')->name("$name.format")->middleware("permission:$name");
-        Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
-        Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
-        Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
-    });
-
-    $prefix = 'tahapan';
-    Route::controller(ImportTahapanController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
-        $name = "$name.$prefix"; // admin.import.tahapan
-        Route::get('/', 'index')->name($name)->middleware("permission:$name");
-        Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
-        Route::get('/format', 'format')->name("$name.format")->middleware("permission:$name");
-        Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
-        Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
-        Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
-    });
-
-    $prefix = 'calon';
-    Route::controller(ImportCalonController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
-        $name = "$name.$prefix"; // admin.import.calon
-        Route::get('/', 'index')->name($name)->middleware("permission:$name");
-        Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
-        Route::get('/format', 'format')->name("$name.format")->middleware("permission:$name");
-        Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
-        Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
-        Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
-    });
 
     $prefix = 'alternatif';
     Route::controller(ImportAlternatifController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
@@ -340,12 +222,4 @@ $prefix = 'perhitungan';
 Route::controller(PerhitunganController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
     $name = "$name.$prefix"; // admin.calon.perhitungan
     Route::get('/', 'index')->name($name)->middleware("permission:$name");
-    Route::post('/pengumuman', 'pengumuman')->name("$name.pengumuman")->middleware("permission:$name");
-});
-
-$prefix = 'perbandingan';
-Route::controller(PerbandinganController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
-    $name = "$name.$prefix"; // admin.calon.perbandingan
-    Route::get('/', 'index')->name($name)->middleware("permission:$name");
-    Route::post('/pengumuman', 'pengumuman')->name("$name.pengumuman")->middleware("permission:$name");
 });
