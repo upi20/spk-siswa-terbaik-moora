@@ -21,403 +21,403 @@ class AlternatifNilaiTableSeeder extends Seeder
         \DB::table('alternatif_nilai')->insert(array (
             0 => 
             array (
-                'id' => 1,
-                'alternatif_id' => 1,
-                'kriteria_id' => 1,
-                'kirteria_nilai_id' => 2,
-                'nilai' => 15000,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
-            ),
-            1 => 
-            array (
-                'id' => 2,
-                'alternatif_id' => 1,
-                'kriteria_id' => 2,
-                'kirteria_nilai_id' => 7,
-                'nilai' => 22,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
-            ),
-            2 => 
-            array (
-                'id' => 3,
-                'alternatif_id' => 1,
-                'kriteria_id' => 3,
-                'kirteria_nilai_id' => 12,
-                'nilai' => 90,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
-            ),
-            3 => 
-            array (
-                'id' => 4,
-                'alternatif_id' => 1,
-                'kriteria_id' => 4,
-                'kirteria_nilai_id' => 17,
-                'nilai' => 2064,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
-            ),
-            4 => 
-            array (
-                'id' => 5,
-                'alternatif_id' => 2,
+                'id' => 53,
+                'alternatif_id' => 12,
                 'kriteria_id' => 1,
                 'kirteria_nilai_id' => 4,
                 'nilai' => 25000,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            5 => 
+            1 => 
             array (
-                'id' => 6,
-                'alternatif_id' => 2,
+                'id' => 54,
+                'alternatif_id' => 12,
                 'kriteria_id' => 2,
                 'kirteria_nilai_id' => 7,
                 'nilai' => 16,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            6 => 
+            2 => 
             array (
-                'id' => 7,
-                'alternatif_id' => 2,
+                'id' => 55,
+                'alternatif_id' => 12,
                 'kriteria_id' => 3,
                 'kirteria_nilai_id' => 11,
                 'nilai' => 60,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            7 => 
+            3 => 
             array (
-                'id' => 8,
-                'alternatif_id' => 2,
+                'id' => 56,
+                'alternatif_id' => 12,
                 'kriteria_id' => 4,
                 'kirteria_nilai_id' => 16,
                 'nilai' => 1587,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            8 => 
+            4 => 
             array (
-                'id' => 9,
-                'alternatif_id' => 3,
+                'id' => 57,
+                'alternatif_id' => 13,
                 'kriteria_id' => 1,
                 'kirteria_nilai_id' => 1,
                 'nilai' => 10000,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            9 => 
+            5 => 
             array (
-                'id' => 10,
-                'alternatif_id' => 3,
+                'id' => 58,
+                'alternatif_id' => 13,
                 'kriteria_id' => 2,
                 'kirteria_nilai_id' => 8,
                 'nilai' => 28,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            10 => 
+            6 => 
             array (
-                'id' => 11,
-                'alternatif_id' => 3,
+                'id' => 59,
+                'alternatif_id' => 13,
                 'kriteria_id' => 3,
                 'kirteria_nilai_id' => 12,
                 'nilai' => 90,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            11 => 
+            7 => 
             array (
-                'id' => 12,
-                'alternatif_id' => 3,
+                'id' => 60,
+                'alternatif_id' => 13,
                 'kriteria_id' => 4,
                 'kirteria_nilai_id' => 17,
                 'nilai' => 2208,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            12 => 
+            8 => 
             array (
-                'id' => 13,
-                'alternatif_id' => 4,
+                'id' => 61,
+                'alternatif_id' => 14,
                 'kriteria_id' => 1,
                 'kirteria_nilai_id' => 2,
                 'nilai' => 15000,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            13 => 
+            9 => 
             array (
-                'id' => 14,
-                'alternatif_id' => 4,
+                'id' => 62,
+                'alternatif_id' => 14,
                 'kriteria_id' => 2,
                 'kirteria_nilai_id' => 10,
                 'nilai' => 58,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            14 => 
+            10 => 
             array (
-                'id' => 15,
-                'alternatif_id' => 4,
+                'id' => 63,
+                'alternatif_id' => 14,
                 'kriteria_id' => 3,
                 'kirteria_nilai_id' => 13,
                 'nilai' => 110,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            15 => 
+            11 => 
             array (
-                'id' => 16,
-                'alternatif_id' => 4,
+                'id' => 64,
+                'alternatif_id' => 14,
                 'kriteria_id' => 4,
                 'kirteria_nilai_id' => 17,
                 'nilai' => 1824,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            16 => 
+            12 => 
             array (
-                'id' => 17,
-                'alternatif_id' => 5,
+                'id' => 65,
+                'alternatif_id' => 15,
                 'kriteria_id' => 1,
                 'kirteria_nilai_id' => 3,
                 'nilai' => 20000,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            17 => 
+            13 => 
             array (
-                'id' => 18,
-                'alternatif_id' => 5,
+                'id' => 66,
+                'alternatif_id' => 15,
                 'kriteria_id' => 2,
                 'kirteria_nilai_id' => 8,
                 'nilai' => 39,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            18 => 
+            14 => 
             array (
-                'id' => 19,
-                'alternatif_id' => 5,
+                'id' => 67,
+                'alternatif_id' => 15,
                 'kriteria_id' => 3,
                 'kirteria_nilai_id' => 12,
                 'nilai' => 90,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            19 => 
+            15 => 
             array (
-                'id' => 20,
-                'alternatif_id' => 5,
+                'id' => 68,
+                'alternatif_id' => 15,
                 'kriteria_id' => 4,
                 'kirteria_nilai_id' => 16,
                 'nilai' => 1650,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            20 => 
+            16 => 
             array (
-                'id' => 21,
-                'alternatif_id' => 6,
+                'id' => 69,
+                'alternatif_id' => 16,
                 'kriteria_id' => 1,
                 'kirteria_nilai_id' => 2,
                 'nilai' => 15000,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            21 => 
+            17 => 
             array (
-                'id' => 22,
-                'alternatif_id' => 6,
+                'id' => 70,
+                'alternatif_id' => 16,
                 'kriteria_id' => 2,
                 'kirteria_nilai_id' => 9,
                 'nilai' => 46,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            22 => 
+            18 => 
             array (
-                'id' => 23,
-                'alternatif_id' => 6,
+                'id' => 71,
+                'alternatif_id' => 16,
                 'kriteria_id' => 3,
                 'kirteria_nilai_id' => 14,
                 'nilai' => 130,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            23 => 
+            19 => 
             array (
-                'id' => 24,
-                'alternatif_id' => 6,
+                'id' => 72,
+                'alternatif_id' => 16,
                 'kriteria_id' => 4,
                 'kirteria_nilai_id' => 17,
                 'nilai' => 2194,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            24 => 
+            20 => 
             array (
-                'id' => 25,
-                'alternatif_id' => 7,
+                'id' => 73,
+                'alternatif_id' => 17,
                 'kriteria_id' => 1,
                 'kirteria_nilai_id' => 5,
                 'nilai' => 30000,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            25 => 
+            21 => 
             array (
-                'id' => 26,
-                'alternatif_id' => 7,
+                'id' => 74,
+                'alternatif_id' => 17,
                 'kriteria_id' => 2,
                 'kirteria_nilai_id' => 10,
                 'nilai' => 56,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            26 => 
+            22 => 
             array (
-                'id' => 27,
-                'alternatif_id' => 7,
+                'id' => 75,
+                'alternatif_id' => 17,
                 'kriteria_id' => 3,
                 'kirteria_nilai_id' => 13,
                 'nilai' => 105,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            27 => 
+            23 => 
             array (
-                'id' => 28,
-                'alternatif_id' => 7,
+                'id' => 76,
+                'alternatif_id' => 17,
                 'kriteria_id' => 4,
                 'kirteria_nilai_id' => 18,
                 'nilai' => 2434,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            28 => 
+            24 => 
             array (
-                'id' => 29,
-                'alternatif_id' => 8,
+                'id' => 77,
+                'alternatif_id' => 18,
                 'kriteria_id' => 1,
                 'kirteria_nilai_id' => 5,
                 'nilai' => 35000,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            29 => 
+            25 => 
             array (
-                'id' => 30,
-                'alternatif_id' => 8,
+                'id' => 78,
+                'alternatif_id' => 18,
                 'kriteria_id' => 2,
                 'kirteria_nilai_id' => 9,
                 'nilai' => 45,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            30 => 
+            26 => 
             array (
-                'id' => 31,
-                'alternatif_id' => 8,
+                'id' => 79,
+                'alternatif_id' => 18,
                 'kriteria_id' => 3,
                 'kirteria_nilai_id' => 12,
                 'nilai' => 90,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            31 => 
+            27 => 
             array (
-                'id' => 32,
-                'alternatif_id' => 8,
+                'id' => 80,
+                'alternatif_id' => 18,
                 'kriteria_id' => 4,
                 'kirteria_nilai_id' => 17,
                 'nilai' => 2223,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            32 => 
+            28 => 
             array (
-                'id' => 33,
-                'alternatif_id' => 9,
+                'id' => 81,
+                'alternatif_id' => 19,
                 'kriteria_id' => 1,
                 'kirteria_nilai_id' => 3,
                 'nilai' => 20000,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            33 => 
+            29 => 
             array (
-                'id' => 34,
-                'alternatif_id' => 9,
+                'id' => 82,
+                'alternatif_id' => 19,
                 'kriteria_id' => 2,
                 'kirteria_nilai_id' => 9,
                 'nilai' => 47,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            34 => 
+            30 => 
             array (
-                'id' => 35,
-                'alternatif_id' => 9,
+                'id' => 83,
+                'alternatif_id' => 19,
                 'kriteria_id' => 3,
                 'kirteria_nilai_id' => 12,
                 'nilai' => 90,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            35 => 
+            31 => 
             array (
-                'id' => 36,
-                'alternatif_id' => 9,
+                'id' => 84,
+                'alternatif_id' => 19,
                 'kriteria_id' => 4,
                 'kirteria_nilai_id' => 17,
                 'nilai' => 1994,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            36 => 
+            32 => 
             array (
-                'id' => 37,
-                'alternatif_id' => 10,
+                'id' => 85,
+                'alternatif_id' => 20,
                 'kriteria_id' => 1,
                 'kirteria_nilai_id' => 1,
                 'nilai' => 10000,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:06',
+                'updated_at' => '2023-07-01 20:24:06',
             ),
-            37 => 
+            33 => 
             array (
-                'id' => 38,
-                'alternatif_id' => 10,
+                'id' => 86,
+                'alternatif_id' => 20,
                 'kriteria_id' => 2,
                 'kirteria_nilai_id' => 7,
                 'nilai' => 25,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:07',
+                'updated_at' => '2023-07-01 20:24:07',
             ),
-            38 => 
+            34 => 
             array (
-                'id' => 39,
-                'alternatif_id' => 10,
+                'id' => 87,
+                'alternatif_id' => 20,
                 'kriteria_id' => 3,
                 'kirteria_nilai_id' => 11,
                 'nilai' => 60,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:07',
+                'updated_at' => '2023-07-01 20:24:07',
             ),
-            39 => 
+            35 => 
             array (
-                'id' => 40,
-                'alternatif_id' => 10,
+                'id' => 88,
+                'alternatif_id' => 20,
                 'kriteria_id' => 4,
                 'kirteria_nilai_id' => 16,
                 'nilai' => 1408,
-                'created_at' => '2023-07-01 19:34:47',
-                'updated_at' => '2023-07-01 19:34:47',
+                'created_at' => '2023-07-01 20:24:07',
+                'updated_at' => '2023-07-01 20:24:07',
+            ),
+            36 => 
+            array (
+                'id' => 89,
+                'alternatif_id' => 11,
+                'kriteria_id' => 1,
+                'kirteria_nilai_id' => 1,
+                'nilai' => 10000,
+                'created_at' => '2023-07-01 20:28:47',
+                'updated_at' => '2023-07-01 20:28:47',
+            ),
+            37 => 
+            array (
+                'id' => 90,
+                'alternatif_id' => 11,
+                'kriteria_id' => 2,
+                'kirteria_nilai_id' => 7,
+                'nilai' => 22,
+                'created_at' => '2023-07-01 20:28:47',
+                'updated_at' => '2023-07-01 20:28:47',
+            ),
+            38 => 
+            array (
+                'id' => 91,
+                'alternatif_id' => 11,
+                'kriteria_id' => 3,
+                'kirteria_nilai_id' => 12,
+                'nilai' => 90,
+                'created_at' => '2023-07-01 20:28:47',
+                'updated_at' => '2023-07-01 20:28:47',
+            ),
+            39 => 
+            array (
+                'id' => 92,
+                'alternatif_id' => 11,
+                'kriteria_id' => 4,
+                'kirteria_nilai_id' => 17,
+                'nilai' => 2064,
+                'created_at' => '2023-07-01 20:28:47',
+                'updated_at' => '2023-07-01 20:28:47',
             ),
         ));
         

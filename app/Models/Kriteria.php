@@ -43,6 +43,12 @@ class Kriteria extends Model
         return $this->hasMany(KriteriaNilai::class, 'kriteria_id', 'id');
     }
 
+
+    public function alternatif_nilais()
+    {
+        return $this->hasMany(AlternatifNilai::class, 'kriteria_id', 'id');
+    }
+
     public static function datatable(Request $request): mixed
     {
         $query = [];

@@ -63,11 +63,11 @@ function editFunc(id) {
         const conteiner = $('#myForm');
         let html = '';
 
-        datas.tahapans.forEach(e => {
-            const values = e.nilais.length ? e.nilais[0].nilai : '';
+        datas.kriterias.forEach(e => {
+            const values = e.alternatif_nilais.length ? e.alternatif_nilais[0].nilai : '';
             html += `<div class="form-group">
-                <label class="form-label mb-1" for="nilai${e.id}" title="nilai${e.kode}">${e.nama}<span class="text-danger">*</span> </label>
-                <input type="number" step="any" min="1" max="100" class="form-control" id="nilai${e.id}" name="nilais[${e.id}]" placeholder="0-100" required="" value="${values}" />
+                <label class="form-label mb-1" for="nilai${e.id}" title="nilai${e.kode}">${e.nama} (${e.satuan})<span class="text-danger">*</span> </label>
+                <input type="number" step="any" min="${e.dari}" max="${e.sampai}" class="form-control" id="nilai${e.id}" name="nilais[${e.id}]" placeholder="${e.dari}-${e.sampai}" required="" value="${values}" />
             </div>`;
         });
 
@@ -168,7 +168,13 @@ function getTable() {
         datas.body.forEach(e => {
             let table_body_html_item = '';
             e.nilais.forEach((j, i) => {
-                table_body_html_item += ` <td  data-toggle="tooltip" title="${j ? `${j.kirteria_nilai.nilai} | ${j.kirteria_nilai.nama} (${j.kirteria_nilai.dari} - ${j.kirteria_nilai.sampai})` : ''}">
+                let title = 'Nilai Tidak Valid';
+                let danger = true;
+                if (j) {
+                    danger = j.kirteria_nilai ? false : true;
+                    title = j.kirteria_nilai ? `${j.kirteria_nilai.nilai} | ${j.kirteria_nilai.nama} (${j.kirteria_nilai.dari} - ${j.kirteria_nilai.sampai})` : 'Nilai Tidak Valid';
+                }
+                table_body_html_item += ` <td data-toggle="tooltip" title="${title}" class=${danger ? 'text-danger' : ''}>
                     ${j ? j.nilai : ''}
                 </td> `;
             });

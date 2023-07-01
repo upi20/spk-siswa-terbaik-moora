@@ -129,20 +129,6 @@ $notifikasi = beTopNotification();
 
 <body>
     <div class="container  mb-5">
-        <div class="card radius-10 border-start mt-4">
-            <div class="card-body">
-                <div class="d-flex justify-content-center">
-                    <img src="{{ asset(setting_get(set_admin('app.foto_dark_landscape_mode'))) }}"
-                        alt="{{ setting_get(set_admin('app.title'), env('APP_NAME')) }}"
-                        style="max-height: 150px; max-width: 100%">
-                </div>
-                <h4 class="my-1 text-center">
-                    Pengumuman Penerimaan Panwaslu Kecamatan (PANWASCAM)<br>pada Instansi Badan Pengawas pemilu
-                    (BAWASLU)<br>di Kabupaten Ciamis.
-                </h4>
-            </div>
-        </div>
-
         @yield('content')
     </div>
     <!--end page wrapper -->

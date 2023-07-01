@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\AlternatifNilai;
-use App\Models\Calon;
-use App\Models\CalonNilai;
-use App\Models\Kecamatan;
+use App\Models\Alternatif;
+use App\Models\Kriteria;
+use App\Models\KriteriaNilai;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use League\Config\Exception\ValidationException;
@@ -31,19 +31,29 @@ class AlternatifNilaiController extends Controller
     {
         try {
             DB::beginTransaction();
-            $model = Calon::findOrFail($request->id);
+
+            $model = Alternatif::findOrFail($request->id);
             $request->validate(array_merge(['id' => [
                 'required', 'int',
             ]], $this->validate_model));
 
             // hapus semua nilai
-            CalonNilai::where('calon_id', $model->id)->delete();
+            AlternatifNilai::where('alternatif_id', $model->id)->delete();
 
             // masukan nilai nya
-            foreach ($request->nilais as $tahapan_id => $nilai) {
-                $new_nilai = new CalonNilai();
-                $new_nilai->tahapan_id = $tahapan_id;
-                $new_nilai->calon_id = $model->id;
+            foreach ($request->nilais as $kriteria_id => $nilai) {
+                $kriteria = Kriteria::findOrFail($kriteria_id);
+
+                $new_nilai = new AlternatifNilai();
+                $new_nilai->kriteria_id = $kriteria_id;
+                $new_nilai->alternatif_id = $model->id;
+
+                // cek nilai valid atau tidak untuk kirteria_nilai_id
+                if ($nilai >= $kriteria->dari && $nilai <= $kriteria->sampai) {
+                    $kriteria_nilai = KriteriaNilai::whereRaw("$nilai <= sampai and kriteria_id = {$kriteria->id}")->orderBy('sampai')->first();
+                    $new_nilai->kirteria_nilai_id = $kriteria_nilai->id;
+                }
+
                 $new_nilai->nilai = $nilai;
                 $new_nilai->save();
             }
@@ -61,8 +71,8 @@ class AlternatifNilaiController extends Controller
 
     public function find(Request $request)
     {
-        $calon = Calon::findOrFail($request->id);
-        return CalonNilai::getEdit($calon);
+        $alternatif = Alternatif::findOrFail($request->id);
+        return AlternatifNilai::getEdit($alternatif);
     }
 
     public function datatable(Request $request)

@@ -257,9 +257,7 @@ Route::prefix($prefix)->group(function () use ($name, $prefix) {
         Route::get('/', 'index')->name($name)->middleware("permission:$name");
         Route::get('/datatable', 'datatable')->name($name)->middleware("permission:$name");
         Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
-        Route::get('/export', 'export')->name("$name.export")->middleware("permission:$name");
         Route::get('/datatable', 'datatable')->name("$name.datatable")->middleware("permission:$name");
-        Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
         Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
         Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
     });

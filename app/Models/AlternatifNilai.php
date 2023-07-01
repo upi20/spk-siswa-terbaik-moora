@@ -66,4 +66,11 @@ class AlternatifNilai extends Model
             'body' => $results
         ];
     }
+
+    public static function getEdit(Alternatif $alternatif)
+    {
+        $kriterias = Kriteria::with(['alternatif_nilais' => fn ($query) => $query->where('alternatif_id', $alternatif->id)])->orderBy('kode')->get();
+        $alternatif->kriterias = $kriterias;
+        return $alternatif;
+    }
 }
