@@ -6,11 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoaderController;
 use App\Http\Controllers\LoginController;
 // ====================================================================================================================
-Route::controller(HomeController::class)->group(function () {
-    Route::get('/', 'index')->name('home');
-    Route::get('/kecamatan/detail/semua', 'kecamatan_semua')->name('kecamatan.detail.semua');
-    Route::get('/kecamatan/{kecamatan:slug}', 'kecamatan')->name('kecamatan.detail');
-});
+Route::get('/', fn () => Redirect::route('dashboard'));
 
 // dashboard ==========================================================================================================
 Route::get('/dashboard', function () {

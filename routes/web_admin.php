@@ -30,6 +30,8 @@ use App\Http\Controllers\Admin\CalonNilaiController;
 use App\Http\Controllers\Admin\Import\KecamatanController as ImportKecamatanController;
 use App\Http\Controllers\Admin\Import\CalonController as ImportCalonController;
 use App\Http\Controllers\Admin\Import\TahapanController as ImportTahapanController;
+use App\Http\Controllers\Admin\KriteriaController;
+use App\Http\Controllers\Admin\KriteriaNilaiController;
 use App\Http\Controllers\Admin\PerbandinganController;
 use App\Http\Controllers\Admin\PerhitunganController;
 
@@ -204,6 +206,57 @@ Route::prefix($prefix)->group(function () use ($name, $prefix) {
         Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
     });
 });
+
+
+$prefix = 'kriteria';
+Route::prefix($prefix)->group(function () use ($name, $prefix) {
+    $name = "$name.$prefix"; // admin.kriteria
+    Route::controller(KriteriaController::class)->group(function () use ($name, $prefix) {
+        Route::get('/', 'index')->name($name)->middleware("permission:$name");
+        Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
+        Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
+        Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
+        Route::post('/delete', 'delete_bulk')->name("$name.delete_bulk")->middleware("permission:$name.delete");
+        Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
+    });
+
+    $prefix = 'nilai';
+    Route::controller(KriteriaNilaiController::class)->prefix($prefix)->group(function () use ($name, $prefix) {
+        $name = "$name.$prefix"; // admin.kriteria.nilai
+        Route::get('/datatable', 'datatable')->name("$name.datatable")->middleware("permission:$name");
+        Route::get('/format', 'format')->name("$name.format")->middleware("permission:$name");
+        Route::get('/find', 'find')->name("$name.find")->middleware("permission:$name.update");
+        Route::get('/{kriteria:slug}', 'index')->name($name)->middleware("permission:$name");
+
+        Route::post('/', 'insert')->name("$name.insert")->middleware("permission:$name.insert");
+        Route::post('/update', 'update')->name("$name.update")->middleware("permission:$name.update");
+        Route::post('/delete', 'delete_bulk')->name("$name.delete_bulk")->middleware("permission:$name.delete");
+        Route::delete('/{model}', 'delete')->name("$name.delete")->middleware("permission:$name.delete");
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 $prefix = 'import';

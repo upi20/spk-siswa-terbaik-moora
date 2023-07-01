@@ -11,6 +11,7 @@ use App\Models\Import\Penduduk as ImportPenduduk;
 use App\Models\Import\Tahapan as ImportTahapan;
 use App\Models\Kecamatan;
 use App\Models\Kriteria;
+use App\Models\KriteriaNilai;
 use App\Models\Menu\Admin as MenuAdmin;
 use App\Models\Penduduk;
 use App\Models\PendudukNilai;
@@ -90,6 +91,10 @@ class backup extends Command
                 Tahapan::tableName,
                 Calon::tableName,
                 CalonNilai::tableName,
+            ],
+            'spk_moora' => [
+                Kriteria::tableName,
+                KriteriaNilai::tableName,
             ],
         ];
         if ($opt_users == 1 || $arg_type == 'users') echo shell_exec('php artisan iseed users --force');

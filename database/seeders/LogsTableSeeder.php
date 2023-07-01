@@ -20475,6 +20475,456 @@ class LogsTableSeeder extends Seeder
                 'log_type' => 'edit',
                 'data' => '{"id":386,"parent_id":null,"title":"Logout","icon":"fas fa-sign-out-alt","route":"logout","sequence":21,"active":1,"type":1,"created_at":"2022-08-05 23:54:09","updated_at":"2023-05-31 22:08:40"}',
             ),
+            272 => 
+            array (
+                'id' => 9651,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:01:00',
+                'table_name' => 'kriteria',
+                'log_type' => 'create',
+                'data' => '{"bobot":"40","jenis":"Cost","nama":"Biaya","kode":"C1","slug":"biaya","updated_at":"2023-07-01T09:01:00.000000Z","created_at":"2023-07-01T09:01:00.000000Z","id":1}',
+            ),
+            273 => 
+            array (
+                'id' => 9652,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:01:18',
+                'table_name' => 'kriteria',
+                'log_type' => 'create',
+                'data' => '{"bobot":"25","jenis":"Benefit","nama":"Jarak","kode":"C2","slug":"jarak","updated_at":"2023-07-01T09:01:18.000000Z","created_at":"2023-07-01T09:01:18.000000Z","id":2}',
+            ),
+            274 => 
+            array (
+                'id' => 9653,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:01:32',
+                'table_name' => 'kriteria',
+                'log_type' => 'create',
+                'data' => '{"bobot":"20","jenis":"Benefit","nama":"Waktu","kode":"C3","slug":"waktu","updated_at":"2023-07-01T09:01:32.000000Z","created_at":"2023-07-01T09:01:32.000000Z","id":3}',
+            ),
+            275 => 
+            array (
+                'id' => 9654,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:01:48',
+                'table_name' => 'kriteria',
+                'log_type' => 'create',
+                'data' => '{"bobot":"15","jenis":"Benefit","nama":"Ketinggian","kode":"C4","slug":"ketinggian","updated_at":"2023-07-01T09:01:48.000000Z","created_at":"2023-07-01T09:01:48.000000Z","id":4}',
+            ),
+            276 => 
+            array (
+                'id' => 9655,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:47',
+                'table_name' => 'p_menu',
+                'log_type' => 'create',
+                'data' => '{"sequence":"22","parent_id":null,"active":"1","title":"Kriteria","icon":"fas fa-clipboard-list","route":"admin.kriteria","type":"1","updated_at":"2023-07-01T09:03:47.000000Z","created_at":"2023-07-01T09:03:47.000000Z","id":448}',
+            ),
+            277 => 
+            array (
+                'id' => 9656,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:47',
+                'table_name' => 'p_role_has_menu',
+                'log_type' => 'create',
+                'data' => '{"role_id":1,"menu_id":448,"updated_at":"2023-07-01T09:03:47.000000Z","created_at":"2023-07-01T09:03:47.000000Z","id":335}',
+            ),
+            278 => 
+            array (
+                'id' => 9657,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":448,"parent_id":null,"title":"Kriteria","icon":"fas fa-clipboard-list","route":"admin.kriteria","sequence":22,"active":1,"type":1,"created_at":"2023-07-01 16:03:47","updated_at":"2023-07-01 16:03:47"}',
+            ),
+            279 => 
+            array (
+                'id' => 9658,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":440,"parent_id":null,"title":"Tahapan","icon":"fas fa-edit","route":"admin.tahapan","sequence":3,"active":1,"type":1,"created_at":"2023-05-31 16:27:42","updated_at":"2023-05-31 16:27:49"}',
+            ),
+            280 => 
+            array (
+                'id' => 9659,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":444,"parent_id":null,"title":"Calon","icon":"fas fa-user","route":"admin.calon","sequence":4,"active":1,"type":1,"created_at":"2023-05-31 16:53:25","updated_at":"2023-05-31 16:53:57"}',
+            ),
+            281 => 
+            array (
+                'id' => 9660,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":445,"parent_id":null,"title":"Calon Nilai","icon":"fas fa-user-edit","route":"admin.calon.nilai","sequence":5,"active":1,"type":1,"created_at":"2023-05-31 16:53:42","updated_at":"2023-05-31 16:53:57"}',
+            ),
+            282 => 
+            array (
+                'id' => 9661,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":446,"parent_id":null,"title":"Perhitungan","icon":"fas fa-calculator","route":"admin.perhitungan","sequence":6,"active":1,"type":1,"created_at":"2023-05-31 22:08:34","updated_at":"2023-05-31 22:08:40"}',
+            ),
+            283 => 
+            array (
+                'id' => 9662,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":447,"parent_id":null,"title":"Perbandingan","icon":"fas fa-layer-group","route":"admin.perbandingan","sequence":7,"active":1,"type":1,"created_at":"2023-06-26 18:14:39","updated_at":"2023-06-26 18:14:46"}',
+            ),
+            284 => 
+            array (
+                'id' => 9663,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":411,"parent_id":null,"title":"Menu Lainnya","icon":null,"route":null,"sequence":8,"active":1,"type":0,"created_at":"2022-09-15 21:18:04","updated_at":"2023-06-26 18:14:46"}',
+            ),
+            285 => 
+            array (
+                'id' => 9664,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":430,"parent_id":null,"title":"Import","icon":"fas fa-upload","route":null,"sequence":9,"active":1,"type":1,"created_at":"2023-05-16 18:10:19","updated_at":"2023-06-26 18:14:46"}',
+            ),
+            286 => 
+            array (
+                'id' => 9665,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":441,"parent_id":430,"title":"Kecamatan","icon":null,"route":"admin.import.kecamatan","sequence":10,"active":1,"type":1,"created_at":"2023-05-31 16:28:12","updated_at":"2023-06-26 18:14:46"}',
+            ),
+            287 => 
+            array (
+                'id' => 9666,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":442,"parent_id":430,"title":"Tahapan","icon":null,"route":"admin.import.tahapan","sequence":11,"active":1,"type":1,"created_at":"2023-05-31 16:51:02","updated_at":"2023-06-26 18:14:46"}',
+            ),
+            288 => 
+            array (
+                'id' => 9667,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":443,"parent_id":430,"title":"Calon","icon":null,"route":"admin.import.calon","sequence":12,"active":1,"type":1,"created_at":"2023-05-31 16:51:20","updated_at":"2023-06-26 18:14:46"}',
+            ),
+            289 => 
+            array (
+                'id' => 9668,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":397,"parent_id":null,"title":"Pengaturan","icon":"fas fa-wrench","route":null,"sequence":13,"active":1,"type":1,"created_at":"2022-08-14 21:10:57","updated_at":"2023-06-26 18:14:46"}',
+            ),
+            290 => 
+            array (
+                'id' => 9669,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":398,"parent_id":397,"title":"Informasi Admin","icon":null,"route":"admin.setting.admin","sequence":14,"active":1,"type":1,"created_at":"2022-08-14 21:11:42","updated_at":"2023-06-26 18:14:46"}',
+            ),
+            291 => 
+            array (
+                'id' => 9670,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":438,"parent_id":397,"title":"Halaman Dashboard","icon":null,"route":"admin.setting.dashboard","sequence":15,"active":1,"type":1,"created_at":"2023-05-29 20:03:50","updated_at":"2023-06-26 18:14:46"}',
+            ),
+            292 => 
+            array (
+                'id' => 9671,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":367,"parent_id":null,"title":"Akses Pengguna","icon":"fas fa-user-check","route":null,"sequence":16,"active":1,"type":1,"created_at":"2022-08-05 23:50:28","updated_at":"2023-06-26 18:14:46"}',
+            ),
+            293 => 
+            array (
+                'id' => 9672,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":368,"parent_id":367,"title":"Perizinan","icon":null,"route":"admin.user_access.permission","sequence":17,"active":1,"type":1,"created_at":"2022-08-05 23:50:28","updated_at":"2023-06-26 18:14:46"}',
+            ),
+            294 => 
+            array (
+                'id' => 9673,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":369,"parent_id":367,"title":"Sebagai","icon":null,"route":"admin.user_access.role","sequence":18,"active":1,"type":1,"created_at":"2022-08-05 23:50:28","updated_at":"2023-06-26 18:14:46"}',
+            ),
+            295 => 
+            array (
+                'id' => 9674,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":346,"parent_id":null,"title":"Pengguna","icon":"fas fa-list","route":"admin.user","sequence":19,"active":1,"type":1,"created_at":"2022-08-05 23:50:28","updated_at":"2023-06-26 18:14:46"}',
+            ),
+            296 => 
+            array (
+                'id' => 9675,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":361,"parent_id":null,"title":"Menu Management","icon":"fas fa-stream","route":"admin.menu.admin","sequence":20,"active":1,"type":1,"created_at":"2022-08-05 23:50:28","updated_at":"2023-06-26 18:14:46"}',
+            ),
+            297 => 
+            array (
+                'id' => 9676,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":373,"parent_id":null,"title":"Profile","icon":"fas fa-user","route":"admin.profile","sequence":21,"active":1,"type":1,"created_at":"2022-08-05 23:50:28","updated_at":"2023-06-26 18:14:46"}',
+            ),
+            298 => 
+            array (
+                'id' => 9677,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:03:58',
+                'table_name' => 'p_menu',
+                'log_type' => 'edit',
+                'data' => '{"id":386,"parent_id":null,"title":"Logout","icon":"fas fa-sign-out-alt","route":"logout","sequence":22,"active":1,"type":1,"created_at":"2022-08-05 23:54:09","updated_at":"2023-06-26 18:14:46"}',
+            ),
+            299 => 
+            array (
+                'id' => 9678,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:27:30',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":"1","nama":"Sangat baik","keterangan":"Rp. 10.000 \\u2013 Rp. 14.999","nilai":"50","updated_at":"2023-07-01T09:27:30.000000Z","created_at":"2023-07-01T09:27:30.000000Z","id":1}',
+            ),
+            300 => 
+            array (
+                'id' => 9679,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:27:47',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":"1","nama":"Cukup baik","keterangan":"Rp. 15.000 \\u2013 Rp. 19.999","nilai":"40","updated_at":"2023-07-01T09:27:47.000000Z","created_at":"2023-07-01T09:27:47.000000Z","id":2}',
+            ),
+            301 => 
+            array (
+                'id' => 9680,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:28:07',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":"1","nama":"Baik","keterangan":"Rp. 20.000 \\u2013 Rp. 24.999","nilai":"30","updated_at":"2023-07-01T09:28:07.000000Z","created_at":"2023-07-01T09:28:07.000000Z","id":3}',
+            ),
+            302 => 
+            array (
+                'id' => 9681,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:28:20',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":"1","nama":"Cukup","keterangan":"Rp. 25.000 \\u2013 Rp. 29.999","nilai":"20","updated_at":"2023-07-01T09:28:20.000000Z","created_at":"2023-07-01T09:28:20.000000Z","id":4}',
+            ),
+            303 => 
+            array (
+                'id' => 9682,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:28:33',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":"1","nama":"Buruk","keterangan":"Rp. 30.000 \\u2013 Rp. 35.000","nilai":"10","updated_at":"2023-07-01T09:28:33.000000Z","created_at":"2023-07-01T09:28:33.000000Z","id":5}',
+            ),
+            304 => 
+            array (
+                'id' => 9683,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:29:10',
+                'table_name' => 'kriteria',
+                'log_type' => 'edit',
+                'data' => '{"id":1,"bobot":40,"jenis":"Cost","nama":"Biaya","slug":"biaya","kode":"C1","created_at":"2023-07-01 16:01:00","updated_at":"2023-07-01 16:01:00"}',
+            ),
+            305 => 
+            array (
+                'id' => 9684,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:29:14',
+                'table_name' => 'kriteria',
+                'log_type' => 'edit',
+                'data' => '{"id":1,"bobot":401,"jenis":"Cost","nama":"Biaya","slug":"biaya","kode":"C1","created_at":"2023-07-01 16:01:00","updated_at":"2023-07-01 16:29:10"}',
+            ),
+            306 => 
+            array (
+                'id' => 9685,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:29:21',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'edit',
+                'data' => '{"id":1,"kriteria_id":1,"nilai":50,"nama":"Sangat baik","keterangan":"Rp. 10.000 \\u2013 Rp. 14.999","created_at":"2023-07-01 16:27:30","updated_at":"2023-07-01 16:27:30"}',
+            ),
+            307 => 
+            array (
+                'id' => 9686,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:29:27',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":"1","nama":"1","keterangan":"1","nilai":"1","updated_at":"2023-07-01T09:29:27.000000Z","created_at":"2023-07-01T09:29:27.000000Z","id":6}',
+            ),
+            308 => 
+            array (
+                'id' => 9687,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:30:14',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'delete',
+                'data' => '{"id":6,"kriteria_id":1,"nilai":1,"nama":"1","keterangan":"1","created_at":"2023-07-01 16:29:27","updated_at":"2023-07-01 16:29:27"}',
+            ),
+            309 => 
+            array (
+                'id' => 9688,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:30:18',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'edit',
+                'data' => '{"id":1,"kriteria_id":1,"nilai":501,"nama":"Sangat baik","keterangan":"Rp. 10.000 \\u2013 Rp. 14.999","created_at":"2023-07-01 16:27:30","updated_at":"2023-07-01 16:29:21"}',
+            ),
+            310 => 
+            array (
+                'id' => 9689,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:32:38',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":"2","nama":"Sangat baik","keterangan":"11 Km \\u2013 25 Km","nilai":"50","updated_at":"2023-07-01T09:32:38.000000Z","created_at":"2023-07-01T09:32:38.000000Z","id":7}',
+            ),
+            311 => 
+            array (
+                'id' => 9690,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:32:50',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":"2","nama":"Cukup baik","keterangan":"26 Km \\u2013 40 Km","nilai":"40","updated_at":"2023-07-01T09:32:50.000000Z","created_at":"2023-07-01T09:32:50.000000Z","id":8}',
+            ),
+            312 => 
+            array (
+                'id' => 9691,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:33:11',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":"2","nama":"Baik","keterangan":"41 Km \\u2013 55 Km","nilai":"30","updated_at":"2023-07-01T09:33:11.000000Z","created_at":"2023-07-01T09:33:11.000000Z","id":9}',
+            ),
+            313 => 
+            array (
+                'id' => 9692,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:33:23',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":"2","nama":"Cukup","keterangan":"56 Km \\u2013 70 Km","nilai":"20","updated_at":"2023-07-01T09:33:23.000000Z","created_at":"2023-07-01T09:33:23.000000Z","id":10}',
+            ),
+            314 => 
+            array (
+                'id' => 9693,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:33:48',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":"3","nama":"Sangat baik","keterangan":"30 Menit \\u2013 60 Menit","nilai":"50","updated_at":"2023-07-01T09:33:48.000000Z","created_at":"2023-07-01T09:33:48.000000Z","id":11}',
+            ),
+            315 => 
+            array (
+                'id' => 9694,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:34:04',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":"3","nama":"Cukup baik","keterangan":"61 Menit \\u2013 90 Menit","nilai":"40","updated_at":"2023-07-01T09:34:04.000000Z","created_at":"2023-07-01T09:34:04.000000Z","id":12}',
+            ),
+            316 => 
+            array (
+                'id' => 9695,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:34:16',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":"3","nama":"Baik","keterangan":"91 Menit \\u2013 120 Menit","nilai":"30","updated_at":"2023-07-01T09:34:16.000000Z","created_at":"2023-07-01T09:34:16.000000Z","id":13}',
+            ),
+            317 => 
+            array (
+                'id' => 9696,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:34:32',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":"3","nama":"Cukup","keterangan":"121 Menit \\u2013 150 Menit","nilai":"20","updated_at":"2023-07-01T09:34:32.000000Z","created_at":"2023-07-01T09:34:32.000000Z","id":14}',
+            ),
+            318 => 
+            array (
+                'id' => 9697,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:34:59',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":"4","nama":"Sangat baik","keterangan":"601 Mdpl \\u2013 1200 Mdpl","nilai":"50","updated_at":"2023-07-01T09:34:59.000000Z","created_at":"2023-07-01T09:34:59.000000Z","id":15}',
+            ),
+            319 => 
+            array (
+                'id' => 9698,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:35:11',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":"4","nama":"Cukup baik","keterangan":"1201 Mdpl \\u2013 1800 Mdpl","nilai":"40","updated_at":"2023-07-01T09:35:11.000000Z","created_at":"2023-07-01T09:35:11.000000Z","id":16}',
+            ),
+            320 => 
+            array (
+                'id' => 9699,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:35:24',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":"4","nama":"Baik","keterangan":"1801 Mdpl \\u2013 2400 Mdpl","nilai":"30","updated_at":"2023-07-01T09:35:24.000000Z","created_at":"2023-07-01T09:35:24.000000Z","id":17}',
+            ),
+            321 => 
+            array (
+                'id' => 9700,
+                'user_id' => 1,
+                'log_date' => '2023-07-01 16:35:38',
+                'table_name' => 'kriteria_nilai',
+                'log_type' => 'create',
+                'data' => '{"kriteria_id":"4","nama":"Cukup","keterangan":"2401 Mdpl \\u2013 3000 Mdpl","nilai":"20","updated_at":"2023-07-01T09:35:38.000000Z","created_at":"2023-07-01T09:35:38.000000Z","id":18}',
+            ),
         ));
         
         

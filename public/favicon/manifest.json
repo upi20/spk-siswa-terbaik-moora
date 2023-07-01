@@ -1,7 +1,7 @@
 {
-    "name": "Sipankab Ciamis",
-    "short_name": "Sipankab",
-    "description": "Sistem Pendukung Keputusan untuk Proses seleksi penerimaan panwaslu kecamatan",
+    "name": "SPK Wisata Pendakian Bandung Raya",
+    "short_name": "Wipeban",
+    "description": "SISTEM PENDUKUNG KEPUTUSAN REKOMENDASI DESTINASI WISATA PENDAKIAN DI BANDUNG RAYA MENGGUNAKAN METODE MOORA",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
