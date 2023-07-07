@@ -42,7 +42,7 @@ class AlternatifNilai extends Model
     public static function datatable(Request $request)
     {
         $kriterias = Kriteria::orderBy('kode')->get();
-        $alternatifs = Alternatif::with(['nilais.kirteria_nilai'])->get();
+        $alternatifs = Alternatif::with(['nilais.kirteria_nilai'])->orderBy('nama')->get();
 
         // sort nilai berdasarkan kriteria
         $results = [];
