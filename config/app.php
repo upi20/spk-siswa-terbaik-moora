@@ -215,6 +215,10 @@ return [
             'https://assets.iseplutpi.site/rockeradmin/vertical/',
             'http://localhost:8080/aplikasi/assets/rockeradmin/vertical/',
         ],
+        'sbadmin' => [
+            'https://assets.iseplutpi.site/sbadmin/',
+            'http://localhost:8080/aplikasi/assets/sbadmin/',
+        ],
     ],
     'admin_assets_default' => env('ADMIN_ASSETS_DEFAULT', 'rockeradmin'),
     'admin_assets_number' => env('ADMIN_ASSETS_NUMBER', 0),
