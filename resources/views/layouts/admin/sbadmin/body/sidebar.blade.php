@@ -1,7 +1,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('dashboard') }}">
         <img style="height: 45px" src="{{ asset(setting_get(set_admin('app.foto_light_mode'))) }}" class="logo-icon"
             alt="logo icon">
         <img style="height: 45px" src="{{ asset(setting_get(set_admin('app.foto_light_landscape_mode'))) }}"

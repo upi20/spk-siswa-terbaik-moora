@@ -270,3 +270,83 @@ if (!function_exists('sidebar_menu_admin_sbadmin')) {
         return $menu_head . $menu_body . $menu_footer;
     }
 }
+
+if (!function_exists('sidebar_menu_admin_adminlte3')) {
+    /**
+     * Helpers for build menu admin sidebar admin.
+     *
+     * @return array
+     */
+    function sidebar_menu_admin_adminlte3($navigation = null)
+    {
+        // $user_id = auth_has_role(config('app.role_super_admin')) ? null : auth()->user()->id;
+        $user_id = auth()->user()->id;
+        $menus = menu($user_id);
+        $menu_body = '';
+        foreach ($menus as $k => $m) {
+            $menu = (object)$m;
+
+            // 1 check separator
+            $separator = $menu->type == 0;
+
+            // active
+            $menu->active = $menu->active || ($menu->route === $navigation);
+            $active_class = $menu->active ? 'active' : '';
+
+            if ($separator) {
+                // separator
+                $menu_body .= <<<HTML
+                        <li class="nav-header">$menu->title</li>
+                    HTML;
+            } elseif ($menu->children) {
+                $child_menu = '';
+                $child_active = false;
+                foreach ($menu->children as $c) {
+                    $child = (object)$c;
+                    $child->active = $child->active || ($child->route === $navigation);
+                    $active = $child->active ? 'active' : '';
+                    $child_menu .= <<<HTML
+                            <li class="nav-item">
+                                <a href="$child->url" class="nav-link $active">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>$child->title</p>
+                                </a>
+                            </li>
+                    HTML;
+                    if ($child->active) $child_active = $child->active;
+                }
+
+                $active_2 = ($menu->active || $child_active) ? 'menu-open' : '';
+                $active_3 = ($menu->active || $child_active) ? 'active' : '';
+                $menu_body .= <<<HTML
+                    <li class="nav-item $active_2">
+                        <a href="javascript:void(0);" class="nav-link  $active_3">
+                            <i class="nav-icon $menu->icon"></i>
+                            <p>
+                                $menu->title
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            $child_menu
+                        </ul>
+                    </li>
+                HTML;
+            } else {
+                $menu_body .= <<<HTML
+                    <li class="nav-item">
+                        <a href="$menu->url" class="nav-link $active_class">
+                            <i class="nav-icon $menu->icon"></i>
+                            <p>$menu->title</p>
+                        </a>
+                    </li>
+                HTML;
+            }
+        }
+
+        // head element
+        $menu_head = '<nav class="mt-2"><ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">';
+        $menu_footer = '</ul></nav>';
+        return $menu_head . $menu_body . $menu_footer;
+    }
+}
