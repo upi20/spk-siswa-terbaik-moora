@@ -1,4 +1,4 @@
-@extends('layouts.admin.rockeradmin.master')
+@extends('layouts.admin.sash.master')
 @section('content')
     @php
         $can_insert = auth_can(h_prefix('insert'));

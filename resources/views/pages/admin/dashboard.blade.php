@@ -1,4 +1,4 @@
-@extends('layouts.admin.rockeradmin.master')
+@extends('layouts.admin.sash.master')
 
 @section('content')
     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">

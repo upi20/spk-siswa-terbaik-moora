@@ -178,7 +178,7 @@ $page_attr_title = ($page_attr->title == '' ? '' : $page_attr->title . ' | ') . 
     <script src="{{ asset_admin('plugins/metismenu/js/metisMenu.min.js', name: 'rockeradmin') }}"></script>
     <script src="{{ resource_loader('app.js') }}"></script>
 
-    <script src="{{ asset_admin('plugins/sweet-alert/sweetalert2.all.js', name: 'sash', name: 'rockeradmin') }}"></script>
+    <script src="{{ asset_admin('plugins/sweet-alert/sweetalert2.all.js', name: 'sash') }}"></script>
     <script src="{{ resource_loader('pages/admin/auth/login.js', params: ['redirect' => $redirect]) }}"></script>
 
     <script>
