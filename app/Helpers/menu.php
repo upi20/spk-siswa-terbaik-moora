@@ -193,3 +193,80 @@ if (!function_exists('sidebar_menu_admin_sash')) {
         return $menu_head . $menu_body . $menu_footer;
     }
 }
+
+if (!function_exists('sidebar_menu_admin_sbadmin')) {
+    /**
+     * Helpers for build menu admin sidebar admin.
+     *
+     * @return array
+     */
+    function sidebar_menu_admin_sbadmin($navigation = null)
+    {
+        // $user_id = auth_has_role(config('app.role_super_admin')) ? null : auth()->user()->id;
+        $user_id = auth()->user()->id;
+        $menus = menu($user_id);
+        $menu_body = '';
+        foreach ($menus as $k => $m) {
+            $menu = (object)$m;
+
+            // 1 check separator
+            $separator = $menu->type == 0;
+
+            // active
+            $menu->active = $menu->active || ($menu->route === $navigation);
+            $active_class = $menu->active ? 'active' : '';
+
+            if ($separator) {
+                // separator
+                $menu_body .= <<<HTML
+                        <hr class="sidebar-divider">
+                        <div class="sidebar-heading"> $menu->title </div>
+                    HTML;
+            } elseif ($menu->children) {
+                $child_menu = '';
+                $child_active = false;
+                foreach ($menu->children as $c) {
+                    $child = (object)$c;
+                    $child->active = $child->active || ($child->route === $navigation);
+                    $active = $child->active ? 'active' : '';
+                    $child_menu .= <<<HTML
+                        <a class="collapse-item $active" href="$child->url">$child->title</a>
+                    HTML;
+                    if ($child->active) $child_active = $child->active;
+                }
+
+                $active_1 = ($menu->active || $child_active) ? 'show' : '';
+                $active_2 = ($menu->active || $child_active) ? 'true' : 'false';
+                $active_3 = ($menu->active || $child_active) ? 'active' : '';
+                $menu_body .= <<<HTML
+                    <li class="nav-item $active_3">
+                        <a class="nav-link" href="javascript:void(0);" data-toggle="collapse" data-target="#collapseMenu$k" aria-expanded="$active_2"
+                            aria-controls="collapseMenu$k">
+                            <i class="$menu->icon"></i>
+                            <span>$menu->title</span>
+                        </a>
+                        <div id="collapseMenu$k" class="collapse $active_1" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                $child_menu
+                            </div>
+                        </div>
+                    </li>
+                HTML;
+            } else {
+                $menu_body .= <<<HTML
+                    <li class="nav-item $active_class">
+                        <a class="nav-link" href="$menu->url">
+                            <i class="$menu->icon"></i>
+                            <span>$menu->title</span>
+                        </a>
+                    </li>
+                HTML;
+            }
+        }
+
+        // head element
+        $menu_head = '<hr class="sidebar-divider my-0">';
+        $menu_footer = '<hr class="sidebar-divider d-none d-md-block">';
+        return $menu_head . $menu_body . $menu_footer;
+    }
+}

@@ -1,4 +1,4 @@
-@extends('layouts.admin.sash.master')
+@extends('layouts.admin.sbadmin.master')
 
 @section('content')
     <div class="row">

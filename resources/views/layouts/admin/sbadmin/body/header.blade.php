@@ -1,56 +1,54 @@
-<!--start header -->
-<header>
-    <div class="topbar d-flex align-items-center">
-        <nav class="navbar navbar-expand gap-3">
-            <div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
-            </div>
-            <div class="top-menu ms-auto">
-                <ul class="navbar-nav align-items-center gap-1">
-                    <li class="nav-item dark-mode d-sm-flex">
-                        <a class="nav-link dark-mode-icon" href="javascript:void(0);"><i class='bx bx-moon'></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="user-box dropdown px-3">
-                <a class="d-flex align-items-center nav-link dropdown-toggle gap-3 dropdown-toggle-nocaret"
-                    href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    @php
-                        $templateProfileFoto = auth()->user()->foto ? asset('assets/profile/' . auth()->user()->foto) : asset('profile.png');
-                    @endphp
-                    <img src="{{ $templateProfileFoto }}" class="user-img" alt="{{ auth()->user()->name }}">
+<!-- Topbar -->
+<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-                    <div class="user-info">
-                        <p class="user-name mb-0"> {{ ucfirst(auth()->user()->name) }}</p>
-                        <p class="designattion mb-0">
-                            {{ ucfirst(
-                                implode(
-                                    ', ',
-                                    auth()->user()->roles->map(function ($v) {
-                                            return $v->name;
-                                        })->toArray(),
-                                ),
-                            ) }}
-                        </p>
-                    </div>
+    <!-- Sidebar Toggle (Topbar) -->
+    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+        <i class="fa fa-bars"></i>
+    </button>
+
+
+    <!-- Topbar Navbar -->
+    <ul class="navbar-nav ml-auto">
+
+        <div class="topbar-divider d-none d-sm-block"></div>
+
+        <!-- Nav Item - User Information -->
+        <li class="nav-item dropdown no-arrow">
+            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ ucfirst(auth()->user()->name) }}
+                    <br>
+                    <small>{{ ucfirst(
+                        implode(
+                            ', ',
+                            auth()->user()->roles->map(function ($v) {
+                                    return $v->name;
+                                })->toArray(),
+                        ),
+                    ) }}</small>
+                </span>
+
+                @php
+                    $templateProfileFoto = auth()->user()->foto ? asset('assets/profile/' . auth()->user()->foto) : asset('profile.png');
+                @endphp
+                <img class="img-profile rounded-circle" src="{{ $templateProfileFoto }}"
+                    alt="{{ auth()->user()->name }}">
+            </a>
+            <!-- Dropdown - User Information -->
+            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="{{ route('admin.profile') }}">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Profile
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end">
-                    <li>
-                        <a class="dropdown-item d-flex align-items-center" href="{{ route('admin.profile') }}">
-                            <i class="bx bx-user fs-5"></i><span>Profile</span>
-                        </a>
-                    </li>
-                    <li>
-                        <div class="dropdown-divider mb-0"></div>
-                    </li>
-                    <li>
-                        <a class="dropdown-item d-flex align-items-center" href="{{ route('login.logout') }}">
-                            <i class="bx bx-log-out-circle"></i><span>Logout</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="{{ route('login.logout') }}">
+                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Logout
+                </a>
             </div>
-        </nav>
-    </div>
-</header>
-<!--end header -->
+        </li>
+
+    </ul>
+
+</nav>
+<!-- End of Topbar -->

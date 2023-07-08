@@ -14,7 +14,8 @@ $page_attr = (object) [
 $page_attr_title = ($page_attr->title == '' ? '' : $page_attr->title . ' | ') . setting_get(set_admin('app.title'), env('APP_NAME'));
 $notifikasi = beTopNotification();
 ?>
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -38,11 +39,10 @@ $notifikasi = beTopNotification();
     <meta name="theme-color" content="#0191D7">
     <meta name="msapplication-TileImage" content="{{ asset('favicon/icon-144x144.png') }}">
 
-    <!-- META DATA -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 
     <!-- SEO -->
     <!-- Primary Meta Tags -->
@@ -70,238 +70,85 @@ $notifikasi = beTopNotification();
     <meta itemprop="description" content="{{ $page_attr->description }}">
     <meta itemprop="image" content="{{ $page_attr->image }}">
 
-    <!--plugins-->
-    <link href="{{ asset_admin('plugins/simplebar/css/simplebar.css', name: 'sbadmin') }}" rel="stylesheet" />
-    <link href="{{ asset_admin('plugins/metismenu/css/metisMenu.min.css', name: 'sbadmin') }}" rel="stylesheet" />
-
-    @if ($page_attr->loader)
-        <!-- loader-->
-        <link href="{{ asset_admin('css/pace.min.css', name: 'sbadmin') }}" rel="stylesheet" />
-        <script src="{{ asset_admin('js/pace.min.js', name: 'sbadmin') }}"></script>
-    @endif
-
-    <!-- Bootstrap CSS -->
-    <link href="{{ asset_admin('css/bootstrap.min.css', name: 'sbadmin') }}" rel="stylesheet">
-    <link href="{{ asset_admin('css/bootstrap-extended.css', name: 'sbadmin') }}" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link href="{{ asset_admin('css/app.css', name: 'sbadmin') }}" rel="stylesheet">
-    <link href="{{ asset_admin('css/icons.css', name: 'sbadmin') }}" rel="stylesheet">
-
-    <!-- Theme Style CSS -->
-    <link rel="stylesheet" href="{{ asset_admin('css/dark-theme.css', name: 'sbadmin') }}" />
-    <link rel="stylesheet" href="{{ asset_admin('css/semi-dark.css', name: 'sbadmin') }}" />
-    <link rel="stylesheet" href="{{ asset_admin('css/header-colors.css', name: 'sbadmin') }}" />
+    <!-- Custom fonts for this template-->
     <link rel="stylesheet"
         href="{{ asset_admin('plugins/fontawesome-free-5.15.4-web/css/all.min.css', name: 'sash') }}">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 
-    <!-- CSS PLUGINS -->
-    @yield('stylesheet')
+    <!-- Custom styles for this template-->
+    <link href="{{ asset_admin('css/sb-admin-2.min.css', name: 'sbadmin') }}" rel="stylesheet">
 
-    <!-- Dark mode-->
-    <script>
-        const templateHasDarkMode = localStorage.getItem('dark-mode') == 'true';
-        const templateTheme = localStorage.getItem('theme');
-        if (localStorage.getItem('dark-mode') !== null) {
-            if (templateHasDarkMode) {
-                document.querySelector('html').setAttribute('class', 'dark-theme');
-            } else {
-                document.querySelector('html').classList.remove("dark-theme");
-                if (templateTheme) {
-                    document.querySelector('html').classList.add(templateTheme);
-                }
-            }
+    <style>
+        .sidebar-toggled .logo-landscape {
+            display: none;
         }
-    </script>
 
-    @foreach (json_decode(setting_get(set_admin('meta_list'), '{}')) as $meta)
-        <!-- custom {{ $meta->name }} -->
-        {!! $meta->value !!}
-    @endforeach
+        .logo-icon {
+            display: none;
+        }
+
+        .sidebar-toggled .logo-icon {
+            display: block;
+        }
+    </style>
+
+    @yield('stylesheet')
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body>
-    <input type="text" id="clipboard" style="position: fixed; top:-50px">
-    <div class="wrapper">
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
         @include('layouts.admin.sbadmin.body.sidebar', [
             'page_attr' => $page_attr,
             'page_attr_navigation' => $page_attr->navigation,
         ])
 
-        @include('layouts.admin.sbadmin.body.header')
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
 
-        <!--start page wrapper -->
-        <div class="page-wrapper">
-            <div class="page-content">
-                @if ($notifikasi->count() > 0)
-                    @foreach ($notifikasi as $v)
-                        <div class="alert alert-primary alert-dismissible fade show" role="alert">
-                            <span class="alert-inner--text">
-                                {{ $v->deskripsi }}
-                                @if ($v->link)
-                                    <a href="{{ $v->link }}" class="fw-bold">{{ $v->link_nama }}</a>
-                                @endif
-                            </span>
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                    @endforeach
-                @endif
+            <!-- Main Content -->
+            <div id="content">
 
-                @if ($page_attr->breadcrumbs)
-                    <!--breadcrumb-->
-                    <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-                        <div class="breadcrumb-title pe-3">{{ $page_attr->title }}</div>
-                        <div class="ps-3">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb mb-0 p-0">
-                                    @foreach ($page_attr->breadcrumbs as $breadcrumb)
-                                        <li class="breadcrumb-item">
-                                            @if (isset($breadcrumb['url']))
-                                                @php
-                                                    $url = is_array($breadcrumb['url']) ? route($breadcrumb['url'][0], $breadcrumb['url'][1]) : route($breadcrumb['url']);
-                                                @endphp
-                                                <a href="{{ $url }}"
-                                                    title="Page To {{ $breadcrumb['name'] }}">
-                                                    {{ $breadcrumb['name'] }}
-                                                </a>
-                                            @else
-                                                <span class="text-dark">
-                                                    {{ $breadcrumb['name'] }}
-                                                </span>
-                                            @endif
-                                        </li>
-                                    @endforeach
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                @endif
+                @include('layouts.admin.sbadmin.body.header')
 
-                @yield('content')
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    @yield('content')
+
+                </div>
+                <!-- /.container-fluid -->
 
             </div>
+            <!-- End of Main Content -->
+
+            @include('layouts.admin.sbadmin.body.footer')
+
         </div>
-        <!--end page wrapper -->
-        @include('layouts.admin.sbadmin.body.footer')
+        <!-- End of Content Wrapper -->
+
     </div>
-    <!--end wrapper-->
+    <!-- End of Page Wrapper -->
 
-    <!--start switcher-->
-    <div class="switcher-wrapper">
-        <div class="switcher-btn"> <i class='bx bx-cog bx-spin'></i>
-        </div>
-        <div class="switcher-body">
-            <div class="d-flex align-items-center">
-                <h5 class="mb-0 text-uppercase">Theme Customizer</h5>
-                <button type="button" class="btn-close ms-auto close-switcher" aria-label="Close"></button>
-            </div>
-            <hr />
-            <h6 class="mb-0">Theme Styles</h6>
-            <hr />
-            <div class="d-flex align-items-center justify-content-between">
-                <div class="form-check">
-                    <input class="form-check-input" theme="light-theme" type="radio" name="flexRadioDefault"
-                        id="lightmode" checked>
-                    <label class="form-check-label" for="lightmode">Light</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" theme="dark-theme" type="radio" name="flexRadioDefault"
-                        id="darkmode">
-                    <label class="form-check-label" for="darkmode">Dark</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" theme="semi-dark" type="radio" name="flexRadioDefault"
-                        id="semidark">
-                    <label class="form-check-label" for="semidark">Semi Dark</label>
-                </div>
-            </div>
-            <hr />
-            <div class="form-check">
-                <input class="form-check-input" theme="minimal-theme" type="radio" id="minimaltheme"
-                    name="flexRadioDefault">
-                <label class="form-check-label" for="minimaltheme">Minimal Theme</label>
-            </div>
-            <hr />
-            <h6 class="mb-0">Header Colors</h6>
-            <hr />
-            <div class="header-colors-indigators">
-                <div class="row row-cols-auto g-3">
-                    <div class="col">
-                        <div class="indigator bg-white border headercolorbtn" data-number="0"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator headercolor1 headercolorbtn" data-number="1"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator headercolor2 headercolorbtn" data-number="2"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator headercolor3 headercolorbtn" data-number="3"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator headercolor4 headercolorbtn" data-number="4"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator headercolor5 headercolorbtn" data-number="5"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator headercolor6 headercolorbtn" data-number="6"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator headercolor7 headercolorbtn" data-number="7"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator headercolor8 headercolorbtn" data-number="8"></div>
-                    </div>
-                </div>
-            </div>
-            <hr />
-            <h6 class="mb-0">Sidebar Colors</h6>
-            <hr />
-            <div class="header-colors-indigators">
-                <div class="row row-cols-auto g-3">
-                    <div class="col">
-                        <div class="indigator bg-white border sidebarcolorbtn" data-number="0"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator sidebarcolor1 sidebarcolorbtn" data-number="1"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator sidebarcolor2 sidebarcolorbtn" data-number="2"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator sidebarcolor3 sidebarcolorbtn" data-number="3"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator sidebarcolor4 sidebarcolorbtn" data-number="4"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator sidebarcolor5 sidebarcolorbtn" data-number="5"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator sidebarcolor6 sidebarcolorbtn" data-number="6"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator sidebarcolor7 sidebarcolorbtn" data-number="7"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator sidebarcolor8 sidebarcolorbtn" data-number="8"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--end switcher-->
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
 
-    <!-- Bootstrap JS -->
-    <script src="{{ asset_admin('js/bootstrap.bundle.min.js', name: 'sbadmin') }}"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="{{ asset_admin('vendor/jquery/jquery.min.js', name: 'sbadmin') }}"></script>
+    <script src="{{ asset_admin('vendor/bootstrap/js/bootstrap.bundle.min.js', name: 'sbadmin') }}"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="{{ asset_admin('vendor/jquery-easing/jquery.easing.min.js', name: 'sbadmin') }}"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="{{ asset_admin('js/sb-admin-2.min.js', name: 'sbadmin') }}"></script>
 
-    <!--plugins-->
-    <script src="{{ asset_admin('js/jquery.min.js', name: 'sbadmin') }}"></script>
-    <script src="{{ asset_admin('plugins/simplebar/js/simplebar.min.js', name: 'sbadmin') }}"></script>
-    <script src="{{ asset_admin('plugins/metismenu/js/metisMenu.min.js', name: 'sbadmin') }}"></script>
     <script src="{{ resource_loader('pages/admin/admin.js') }}"></script>
     <script src="{{ resource_loader('app.js') }}"></script>
     @yield('javascript')
