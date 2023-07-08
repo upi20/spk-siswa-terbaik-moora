@@ -1,4 +1,4 @@
-@extends('layouts.admin.sbadmin.master')
+@extends('layouts.admin.rockeradmin.master')
 
 @section('content')
     <div class="card radius-10 border-start border-0 border-4 border-primary mt-4">
