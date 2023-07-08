@@ -1,4 +1,4 @@
-@extends('layouts.admin.master')
+@extends('layouts.admin.rockeradmin.master')
 
 @section('content')
     @php
@@ -156,18 +156,22 @@
 
 
 @section('stylesheet')
-    <link rel="stylesheet" href="{{ asset_admin('plugins/datatable/css/dataTables.bootstrap5.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset_admin('plugins/select2/css/select2.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset_admin('plugins/select2/css/select2-bootstrap-5-theme.min.css') }}" />
+    <link rel="stylesheet"
+        href="{{ asset_admin('plugins/datatable/css/dataTables.bootstrap5.min.css', name: 'rockeradmin_vertical') }}" />
+    <link rel="stylesheet"
+        href="{{ asset_admin('plugins/select2/css/select2.min.css', name: 'rockeradmin_vertical') }}" />
+    <link rel="stylesheet"
+        href="{{ asset_admin('plugins/select2/css/select2-bootstrap-5-theme.min.css', name: 'rockeradmin_vertical') }}" />
 @endsection
 
 @section('javascript')
-    <script src="{{ asset_admin('plugins/datatable/js/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset_admin('plugins/datatable/js/dataTables.bootstrap5.min.js') }}"></script>
+    <script src="{{ asset_admin('plugins/datatable/js/jquery.dataTables.min.js', name: 'rockeradmin_vertical') }}"></script>
+    <script src="{{ asset_admin('plugins/datatable/js/dataTables.bootstrap5.min.js', name: 'rockeradmin_vertical') }}">
+    </script>
     <script src="{{ asset_admin('plugins/loading/loadingoverlay.min.js', name: 'sash') }}"></script>
     <script src="{{ asset_admin('plugins/sweet-alert/sweetalert2.all.js', name: 'sash') }}"></script>
-    <script src="{{ asset_admin('plugins/select2/js/select2.min.js') }}"></script>
-    <script src="{{ asset_admin('plugins/select2/js/select2-custom.js') }}"></script>
+    <script src="{{ asset_admin('plugins/select2/js/select2.min.js', name: 'rockeradmin_vertical') }}"></script>
+    <script src="{{ asset_admin('plugins/select2/js/select2-custom.js', name: 'rockeradmin_vertical') }}"></script>
     @php
         $resource = resource_loader(
             blade_path: $view,

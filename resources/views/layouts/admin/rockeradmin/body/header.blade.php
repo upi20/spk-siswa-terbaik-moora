@@ -16,7 +16,7 @@
                 <a class="d-flex align-items-center nav-link dropdown-toggle gap-3 dropdown-toggle-nocaret"
                     href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     @php
-                        $templateProfileFoto = auth()->user()->foto ? asset('assets/profile/' . auth()->user()->foto) : asset_admin('images/profile.png');
+                        $templateProfileFoto = auth()->user()->foto ? asset('assets/profile/' . auth()->user()->foto) : asset('profile.png');
                     @endphp
                     <img src="{{ $templateProfileFoto }}" class="user-img" alt="{{ auth()->user()->name }}">
 

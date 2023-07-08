@@ -1,4 +1,4 @@
-@extends('layouts.admin.master')
+@extends('layouts.admin.rockeradmin.master')
 
 @section('content')
     <div class="row">
@@ -7,7 +7,7 @@
                 <div class="card-body">
                     <div class="d-flex flex-column align-items-center text-center">
                         @php
-                            $templateProfileFoto = auth()->user()->foto ? asset('assets/profile/' . auth()->user()->foto) : asset_admin('images/profile.png');
+                            $templateProfileFoto = auth()->user()->foto ? asset('assets/profile/' . auth()->user()->foto) : asset('profile.png');
                         @endphp
 
                         <img src="{{ $templateProfileFoto }}" alt="Admin" class="rounded-circle p-1 bg-primary"

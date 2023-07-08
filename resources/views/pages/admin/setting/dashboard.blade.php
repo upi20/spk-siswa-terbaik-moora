@@ -1,4 +1,4 @@
-@extends('layouts.admin.master')
+@extends('layouts.admin.rockeradmin.master')
 
 @section('content')
     <div class="card border-primary">

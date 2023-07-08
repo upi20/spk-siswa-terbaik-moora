@@ -71,26 +71,28 @@ $notifikasi = beTopNotification();
     <meta itemprop="image" content="{{ $page_attr->image }}">
 
     <!--plugins-->
-    <link href="{{ asset_admin('plugins/simplebar/css/simplebar.css') }}" rel="stylesheet" />
-    <link href="{{ asset_admin('plugins/metismenu/css/metisMenu.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset_admin('plugins/simplebar/css/simplebar.css', name: 'rockeradmin_vertical') }}"
+        rel="stylesheet" />
+    <link href="{{ asset_admin('plugins/metismenu/css/metisMenu.min.css', name: 'rockeradmin_vertical') }}"
+        rel="stylesheet" />
 
     @if ($page_attr->loader)
         <!-- loader-->
-        <link href="{{ asset_admin('css/pace.min.css') }}" rel="stylesheet" />
-        <script src="{{ asset_admin('js/pace.min.js') }}"></script>
+        <link href="{{ asset_admin('css/pace.min.css', name: 'rockeradmin_vertical') }}" rel="stylesheet" />
+        <script src="{{ asset_admin('js/pace.min.js', name: 'rockeradmin_vertical') }}"></script>
     @endif
 
     <!-- Bootstrap CSS -->
-    <link href="{{ asset_admin('css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset_admin('css/bootstrap-extended.css') }}" rel="stylesheet">
+    <link href="{{ asset_admin('css/bootstrap.min.css', name: 'rockeradmin_vertical') }}" rel="stylesheet">
+    <link href="{{ asset_admin('css/bootstrap-extended.css', name: 'rockeradmin_vertical') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link href="{{ asset_admin('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset_admin('css/icons.css') }}" rel="stylesheet">
+    <link href="{{ asset_admin('css/app.css', name: 'rockeradmin_vertical') }}" rel="stylesheet">
+    <link href="{{ asset_admin('css/icons.css', name: 'rockeradmin_vertical') }}" rel="stylesheet">
 
     <!-- Theme Style CSS -->
-    <link rel="stylesheet" href="{{ asset_admin('css/dark-theme.css') }}" />
-    <link rel="stylesheet" href="{{ asset_admin('css/semi-dark.css') }}" />
-    <link rel="stylesheet" href="{{ asset_admin('css/header-colors.css') }}" />
+    <link rel="stylesheet" href="{{ asset_admin('css/dark-theme.css', name: 'rockeradmin_vertical') }}" />
+    <link rel="stylesheet" href="{{ asset_admin('css/semi-dark.css', name: 'rockeradmin_vertical') }}" />
+    <link rel="stylesheet" href="{{ asset_admin('css/header-colors.css', name: 'rockeradmin_vertical') }}" />
     <link rel="stylesheet"
         href="{{ asset_admin('plugins/fontawesome-free-5.15.4-web/css/all.min.css', name: 'sash') }}">
 
@@ -123,12 +125,12 @@ $notifikasi = beTopNotification();
 <body>
     <input type="text" id="clipboard" style="position: fixed; top:-50px">
     <div class="wrapper">
-        @include('layouts.admin.body.sidebar', [
+        @include('layouts.admin.rockeradmin.body.sidebar', [
             'page_attr' => $page_attr,
             'page_attr_navigation' => $page_attr->navigation,
         ])
 
-        @include('layouts.admin.body.header')
+        @include('layouts.admin.rockeradmin.body.header')
 
         <!--start page wrapper -->
         <div class="page-wrapper">
@@ -184,7 +186,7 @@ $notifikasi = beTopNotification();
             </div>
         </div>
         <!--end page wrapper -->
-        @include('layouts.admin.body.footer')
+        @include('layouts.admin.rockeradmin.body.footer')
     </div>
     <!--end wrapper-->
 
@@ -296,12 +298,12 @@ $notifikasi = beTopNotification();
     <!--end switcher-->
 
     <!-- Bootstrap JS -->
-    <script src="{{ asset_admin('js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset_admin('js/bootstrap.bundle.min.js', name: 'rockeradmin_vertical') }}"></script>
 
     <!--plugins-->
-    <script src="{{ asset_admin('js/jquery.min.js') }}"></script>
-    <script src="{{ asset_admin('plugins/simplebar/js/simplebar.min.js') }}"></script>
-    <script src="{{ asset_admin('plugins/metismenu/js/metisMenu.min.js') }}"></script>
+    <script src="{{ asset_admin('js/jquery.min.js', name: 'rockeradmin_vertical') }}"></script>
+    <script src="{{ asset_admin('plugins/simplebar/js/simplebar.min.js', name: 'rockeradmin_vertical') }}"></script>
+    <script src="{{ asset_admin('plugins/metismenu/js/metisMenu.min.js', name: 'rockeradmin_vertical') }}"></script>
     <script src="{{ resource_loader('pages/admin/admin.js') }}"></script>
     <script src="{{ resource_loader('app.js') }}"></script>
     @yield('javascript')
