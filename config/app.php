@@ -219,6 +219,10 @@ return [
             'https://assets.iseplutpi.site/sbadmin/',
             'http://localhost:8080/aplikasi/assets/sbadmin/',
         ],
+        'adminlte3' => [
+            'https://assets.iseplutpi.site/adminlte3/',
+            'http://localhost:8080/aplikasi/assets/adminlte3/',
+        ],
     ],
     'admin_assets_default' => env('ADMIN_ASSETS_DEFAULT', 'rockeradmin'),
     'admin_assets_number' => env('ADMIN_ASSETS_NUMBER', 0),
