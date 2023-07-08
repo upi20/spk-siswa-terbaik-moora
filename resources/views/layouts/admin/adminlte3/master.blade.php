@@ -109,6 +109,14 @@ $notifikasi = beTopNotification();
         .sidebar-collapse .logo-icon {
             display: block;
         }
+
+        .main-sidebar:hover .logo-icon {
+            display: none;
+        }
+
+        .main-sidebar:hover .logo-landscape {
+            display: block;
+        }
     </style>
 
     <!-- CSS PLUGINS -->
