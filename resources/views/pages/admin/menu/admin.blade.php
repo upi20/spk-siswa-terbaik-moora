@@ -155,8 +155,8 @@
     <script src="{{ asset_admin('plugins/nestable2v1.6.0/jquery.nestable.min.js', name: 'sash') }}"></script>
     <script src="{{ asset_admin('plugins/sweet-alert/sweetalert2.all.js', name: 'sash') }}"></script>
     <script src="{{ asset_admin('plugins/loading/loadingoverlay.min.js', name: 'sash') }}"></script>
-    <script src="{{ asset_admin('plugins/select2/js/select2.min.js', name: 'rockeradmin_vertical') }}"></script>
-    <script src="{{ asset_admin('plugins/select2/js/select2-custom.js', name: 'rockeradmin_vertical') }}"></script>
+    <script src="{{ asset_admin('plugins/select2/js/select2.min.js', name: 'rockeradmin') }}"></script>
+    <script src="{{ asset_admin('plugins/select2/js/select2-custom.js', name: 'rockeradmin') }}"></script>
     @php
         $resource = resource_loader(
             blade_path: $view,
@@ -174,8 +174,7 @@
 @section('stylesheet')
     @php $resource = resource_loader(blade_path: 'pages.admin.menu', type: 'css'); @endphp
     <link rel="stylesheet" href="{{ $resource }}">
+    <link rel="stylesheet" href="{{ asset_admin('plugins/select2/css/select2.min.css', name: 'rockeradmin') }}" />
     <link rel="stylesheet"
-        href="{{ asset_admin('plugins/select2/css/select2.min.css', name: 'rockeradmin_vertical') }}" />
-    <link rel="stylesheet"
-        href="{{ asset_admin('plugins/select2/css/select2-bootstrap-5-theme.min.css', name: 'rockeradmin_vertical') }}" />
+        href="{{ asset_admin('plugins/select2/css/select2-bootstrap-5-theme.min.css', name: 'rockeradmin') }}" />
 @endsection

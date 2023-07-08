@@ -230,8 +230,7 @@
 @endsection
 
 @section('javascript')
-    <script src="{{ asset_admin('plugins/nestable2v1.6.0/jquery.nestable.min.js', name: 'rockeradmin_vertical') }}">
-    </script>
+    <script src="{{ asset_admin('plugins/nestable2v1.6.0/jquery.nestable.min.js', name: 'rockeradmin') }}"></script>
     <script src="{{ asset_admin('plugins/sweet-alert/sweetalert2.all.js', name: 'sash') }}"></script>
     <script src="{{ asset_admin('plugins/loading/loadingoverlay.min.js', name: 'sash') }}"></script>
     <script src="{{ asset_admin('plugins/select2/js/select2.full.min.js', name: 'sash') }}"></script>

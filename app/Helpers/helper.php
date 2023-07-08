@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\Contact\ListContact;
 use App\Models\Utility\NotifAdminAtas;
 use App\Models\Utility\NotifDepanAtas;
 use Illuminate\Support\Facades\Blade;
@@ -219,13 +218,6 @@ if (!function_exists('get_youtube_id')) {
             $matches
         );
         return isset($matches[1]) ? $matches[1] : null;
-    }
-}
-
-if (!function_exists('feKontakList')) {
-    function feKontakList()
-    {
-        return ListContact::getFeViewData();
     }
 }
 
