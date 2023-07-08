@@ -18,7 +18,7 @@ class LoginController extends Controller
             return Redirect::route('dashboard');
         }
         $page_attr = ['title' => 'Login'];
-        return view('auth.login', compact('page_attr', 'redirect'));
+        return view('auth.login_sash', compact('page_attr', 'redirect'));
     }
 
     /**

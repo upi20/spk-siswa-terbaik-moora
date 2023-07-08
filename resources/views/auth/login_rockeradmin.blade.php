@@ -149,9 +149,9 @@ $page_attr_title = ($page_attr->title == '' ? '' : $page_attr->title . ' | ') . 
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            {{-- <div class="col-md-6">
                                                 <a href="{{ url('forgot-password') }}">Lupa Password ?</a>
-                                            </div>
+                                            </div> --}}
                                             <div class="col-12">
                                                 <div class="d-grid">
                                                     <button type="submit" class="btn btn-primary">Masuk</button>
@@ -179,7 +179,8 @@ $page_attr_title = ($page_attr->title == '' ? '' : $page_attr->title . ' | ') . 
     <script src="{{ resource_loader('app.js') }}"></script>
 
     <script src="{{ asset_admin('plugins/sweet-alert/sweetalert2.all.js', name: 'sash') }}"></script>
-    <script src="{{ resource_loader('pages/admin/auth/login.js', params: ['redirect' => $redirect]) }}"></script>
+    <script src="{{ resource_loader('pages/admin/auth/login_rockeradmin.js', params: ['redirect' => $redirect]) }}">
+    </script>
 
     <script>
         $(document).ready(function() {
