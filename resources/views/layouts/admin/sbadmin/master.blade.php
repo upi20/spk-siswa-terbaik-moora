@@ -150,7 +150,6 @@ $notifikasi = beTopNotification();
     <script src="{{ asset_admin('js/sb-admin-2.min.js', name: 'sbadmin') }}"></script>
 
     <script src="{{ resource_loader('pages/admin/admin.js') }}"></script>
-    <script src="{{ resource_loader('app.js') }}"></script>
     @yield('javascript')
 </body>
 
