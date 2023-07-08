@@ -13,7 +13,7 @@
         </div>
     </div>
     <!--navigation-->
-    {!! sidebar_menu_admin($page_attr->navigation) !!}
+    {!! sidebar_menu_admin_rockeradmin($page_attr->navigation) !!}
     <!--end navigation-->
 </div>
 <!--end sidebar wrapper -->
