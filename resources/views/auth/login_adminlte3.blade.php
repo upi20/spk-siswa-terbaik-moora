@@ -57,8 +57,8 @@ $page_attr_title = ($page_attr->title == '' ? '' : $page_attr->title . ' | ') . 
 <body class="hold-transition login-page">
     <div class="login-box">
         <!-- /.login-logo -->
-        <div class="card card-outline card-primary">
-            <div class="card-header text-center">
+        <div class="card card-primary">
+            <div class="card-header text-center bg-gray">
                 <img src="{{ asset(setting_get(set_admin('app.foto_dark_landscape_mode'))) }}"
                     style="max-height: 65px;" alt="Logo" />
             </div>

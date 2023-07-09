@@ -1,4 +1,4 @@
-@extends('layouts.admin.rockeradmin.master')
+@extends('layouts.admin.adminlte3.master')
 
 @section('content')
     <div class="card radius-10 border-start border-0 border-4 border-primary mt-4">
@@ -17,7 +17,7 @@
         $index = 0;
         $datas = $hitung[$index++];
     @endphp
-    <div class="card mt-3">
+    <div class="card">
         <div class="card-body">
             <div class="card-title d-md-flex flex-row justify-content-between">
                 <div>
@@ -65,7 +65,7 @@
     </div>
 
     @php $datas = $hitung[$index++]; @endphp
-    <div class="card mt-3">
+    <div class="card">
         <div class="card-body">
             <div class="card-title d-md-flex flex-row justify-content-between">
                 <div>
@@ -113,7 +113,7 @@
     </div>
 
     @php $datas = $hitung[$index++]; @endphp
-    <div class="card mt-3">
+    <div class="card">
         <div class="card-body">
             <div class="card-title d-md-flex flex-row justify-content-between">
                 <div>
@@ -135,7 +135,7 @@
     </div>
 
     @php $datas = $hitung[$index++]; @endphp
-    <div class="card mt-3">
+    <div class="card">
         <div class="card-body">
             <div class="card-title d-md-flex flex-row justify-content-between">
                 <div>
@@ -177,7 +177,7 @@
     </div>
 
     @php $datas = $hitung[$index++]; @endphp
-    <div class="card mt-3">
+    <div class="card">
         <div class="card-body">
             <div class="card-title d-md-flex flex-row justify-content-between">
                 <div>
@@ -236,7 +236,7 @@
     </div>
 
     @php $datas = $hitung[$index++]; @endphp
-    <div class="card mt-3">
+    <div class="card">
         <div class="card-body">
             <div class="card-title d-md-flex flex-row justify-content-between">
                 <div>

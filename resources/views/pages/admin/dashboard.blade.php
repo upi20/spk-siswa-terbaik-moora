@@ -1,43 +1,40 @@
-@extends('layouts.admin.rockeradmin.master')
+@extends('layouts.admin.adminlte3.master')
 
 @section('content')
-    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
-        <div class="col">
-            <a href="{{ route('admin.alternatif') }}">
-                <div class="card radius-10 border-start border-0 border-4 border-info">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center">
-                            <div>
-                                <p class="mb-0 text-secondary">Jumlah Alternatif</p>
-                                <h4 class="my-1 text-info">{{ $total_alternatif }}</h4>
-                            </div>
-                            <div class="widgets-icons-2 rounded-circle bg-gradient-blues text-white ms-auto">
-                                <i class='fas fa-map-marked-alt'></i>
-                            </div>
-                        </div>
-                    </div>
+    <div class="row">
+        <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+                <div class="inner">
+                    <h3>{{ $total_alternatif }}</h3>
+
+                    <p>Jumlah Alternatif</p>
                 </div>
-            </a>
+                <div class="icon">
+                    <i class="ion ion-bag"></i>
+                </div>
+                <a href="{{ route('admin.alternatif') }}" class="small-box-footer">
+                    Selengkapnya<i class="fas fa-arrow-circle-right"></i></a>
+            </div>
         </div>
-        <div class="col"> <a href="{{ route('admin.password') }}">
-                <div class="card radius-10 border-start border-0 border-4 border-warning">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center">
-                            <div>
-                                <p class="mb-0 text-secondary">Ganti Password</p>
-                                <h4 class="my-1 text-warning"><br></h4>
-                            </div>
-                            <div class="widgets-icons-2 rounded-circle bg-gradient-orange text-white ms-auto">
-                                <i class='bx bxs-key'></i>
-                            </div>
-                        </div>
-                    </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+                <div class="inner">
+                    <h3>-</h3>
+                    <p>Ganti Pasword</p>
                 </div>
-            </a>
+                <div class="icon">
+                    <i class="ion ion-stats-bars"></i>
+                </div>
+                <a href="{{ route('admin.password') }}" class="small-box-footer">Ganti
+                    <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
         </div>
     </div>
 
-    <div class="card mt-3">
+    <div class="card">
         <div class="card-body">
             {!! setting_get('dashboard.html') !!}
         </div>

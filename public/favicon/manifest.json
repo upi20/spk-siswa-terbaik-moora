@@ -1,7 +1,7 @@
 {
-    "name": "SPK Wisata Pendakian Bandung Raya",
-    "short_name": "Wipeban",
-    "description": "SISTEM PENDUKUNG KEPUTUSAN REKOMENDASI DESTINASI WISATA PENDAKIAN DI BANDUNG RAYA MENGGUNAKAN METODE MOORA",
+    "name": "SPK Siswa Teladan SDN Cipetir 4",
+    "short_name": "Siswa Teladan",
+    "description": "Sistem Pendukung Keputusan Pemilihan Siswa Teladan Di SD Negeri Cipetir 4 Dengan Menggunakan Metode Multi-Objective Optimization On The Basis Of Ratio Analysis (Moora)",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",

@@ -1,4 +1,4 @@
-@extends('layouts.admin.rockeradmin.master')
+@extends('layouts.admin.adminlte3.master')
 
 @section('content')
     @php
@@ -6,7 +6,7 @@
         $can_update = auth_can(h_prefix('update'));
         $can_delete = auth_can(h_prefix('delete'));
     @endphp
-    <div class="card mt-3">
+    <div class="card">
         <div class="card-body">
             <div class="card-title d-md-flex flex-row justify-content-between">
                 <h6 class="mt-2 text-uppercase">Nilai Kriteria {{ $kriteria->nama }}</h6>

@@ -178,7 +178,7 @@ $notifikasi = beTopNotification();
             @endif
 
             <!-- Main content -->
-            <div id="main-content" class="content mt-2">
+            <div id="main-content" class="content pt-2">
                 <div class="container-fluid">
                     @yield('content')
                 </div><!-- /.container-fluid -->
@@ -186,60 +186,6 @@ $notifikasi = beTopNotification();
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-
-        <!--start page wrapper -->
-        {{-- <div class="page-wrapper">
-            <div class="page-content">
-                @if ($notifikasi->count() > 0)
-                    @foreach ($notifikasi as $v)
-                        <div class="alert alert-primary alert-dismissible fade show" role="alert">
-                            <span class="alert-inner--text">
-                                {{ $v->deskripsi }}
-                                @if ($v->link)
-                                    <a href="{{ $v->link }}" class="fw-bold">{{ $v->link_nama }}</a>
-                                @endif
-                            </span>
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                    @endforeach
-                @endif
-
-                @if ($page_attr->breadcrumbs)
-                    <!--breadcrumb-->
-                    <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-                        <div class="breadcrumb-title pe-3">{{ $page_attr->title }}</div>
-                        <div class="ps-3">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb mb-0 p-0">
-                                    @foreach ($page_attr->breadcrumbs as $breadcrumb)
-                                        <li class="breadcrumb-item">
-                                            @if (isset($breadcrumb['url']))
-                                                @php
-                                                    $url = is_array($breadcrumb['url']) ? route($breadcrumb['url'][0], $breadcrumb['url'][1]) : route($breadcrumb['url']);
-                                                @endphp
-                                                <a href="{{ $url }}"
-                                                    title="Page To {{ $breadcrumb['name'] }}">
-                                                    {{ $breadcrumb['name'] }}
-                                                </a>
-                                            @else
-                                                <span class="text-dark">
-                                                    {{ $breadcrumb['name'] }}
-                                                </span>
-                                            @endif
-                                        </li>
-                                    @endforeach
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                @endif
-
-                
-
-            </div>
-        </div> --}}
         <!--end page wrapper -->
         @include('layouts.admin.adminlte3.body.footer')
     </div>

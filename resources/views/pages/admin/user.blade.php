@@ -1,4 +1,4 @@
-@extends('layouts.admin.rockeradmin.master')
+@extends('layouts.admin.adminlte3.master')
 
 @section('content')
     @php
@@ -7,7 +7,7 @@
         $can_delete = auth_can(h_prefix('delete'));
         $can_excel = auth_can(h_prefix('excel'));
     @endphp
-    <div class="card mt-3">
+    <div class="card">
         <div class="card-body">
             <div class="card-title d-md-flex flex-row justify-content-between">
                 <div>
