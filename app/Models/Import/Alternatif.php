@@ -209,7 +209,7 @@ class Alternatif extends Model
 
             // insert nilai
             foreach ($kriterias as $j => $kriteria) {
-                $nilai = $v[4 + $j];
+                $nilai = $v[3 + $j];
 
                 // cek nilai id
                 $a_nilai = new AlternatifNilai();

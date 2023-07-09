@@ -14,67 +14,69 @@ class KriteriaTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('kriteria')->delete();
-
-        \DB::table('kriteria')->insert(array(
-            0 =>
-            array(
-                'id' => 1,
-                'bobot' => 40,
+        
+        \DB::table('kriteria')->insert(array (
+            0 => 
+            array (
+                'id' => 5,
+                'bobot' => 30,
                 'jenis' => 'Cost',
-                'nama' => 'Biaya',
-                'slug' => 'biaya',
+                'nama' => 'Absensi',
+                'slug' => 'absensi',
                 'kode' => 'C1',
-
-                'dari' => 10000,
-                'sampai' => 35000,
-                'created_at' => '2023-07-01 16:01:00',
-                'updated_at' => '2023-07-01 18:57:00',
+                'satuan' => NULL,
+                'dari' => 0,
+                'sampai' => 100,
+                'created_at' => '2023-07-09 15:00:51',
+                'updated_at' => '2023-07-09 15:06:45',
             ),
-            1 =>
-            array(
-                'id' => 2,
-                'bobot' => 25,
-                'jenis' => 'Benefit',
-                'nama' => 'Jarak',
-                'slug' => 'jarak',
-                'kode' => 'C2',
-
-                'dari' => 11,
-                'sampai' => 70,
-                'created_at' => '2023-07-01 16:01:18',
-                'updated_at' => '2023-07-01 18:57:13',
-            ),
-            2 =>
-            array(
-                'id' => 3,
+            1 => 
+            array (
+                'id' => 6,
                 'bobot' => 20,
                 'jenis' => 'Benefit',
-                'nama' => 'Waktu',
-                'slug' => 'waktu',
-                'kode' => 'C3',
-
-                'dari' => 30,
-                'sampai' => 150,
-                'created_at' => '2023-07-01 16:01:32',
-                'updated_at' => '2023-07-01 18:57:23',
+                'nama' => 'Nilai Raport',
+                'slug' => 'nilai-raport',
+                'kode' => 'C2',
+                'satuan' => NULL,
+                'dari' => 0,
+                'sampai' => 100,
+                'created_at' => '2023-07-09 15:01:02',
+                'updated_at' => '2023-07-09 15:06:50',
             ),
-            3 =>
-            array(
-                'id' => 4,
-                'bobot' => 15,
+            2 => 
+            array (
+                'id' => 7,
+                'bobot' => 25,
                 'jenis' => 'Benefit',
-                'nama' => 'Ketinggian',
-                'slug' => 'ketinggian',
+                'nama' => 'Keaktifan',
+                'slug' => 'keaktifan',
+                'kode' => 'C3',
+                'satuan' => NULL,
+                'dari' => 0,
+                'sampai' => 100,
+                'created_at' => '2023-07-09 15:01:17',
+                'updated_at' => '2023-07-09 15:06:58',
+            ),
+            3 => 
+            array (
+                'id' => 8,
+                'bobot' => 25,
+                'jenis' => 'Benefit',
+                'nama' => 'Budi Pekerti',
+                'slug' => 'budi-pekerti',
                 'kode' => 'C4',
-
-                'dari' => 601,
-                'sampai' => 3000,
-                'created_at' => '2023-07-01 16:01:48',
-                'updated_at' => '2023-07-01 18:57:36',
+                'satuan' => NULL,
+                'dari' => 0,
+                'sampai' => 100,
+                'created_at' => '2023-07-09 15:01:29',
+                'updated_at' => '2023-07-09 15:07:04',
             ),
         ));
+        
+        
     }
 }
