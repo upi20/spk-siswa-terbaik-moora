@@ -73,7 +73,7 @@ $(document).ready(function () {
       data: 'id',
       name: 'id',
       render(data, type, full, meta) {
-        const btn_nilai = `<a class="btn btn-rounded btn-secondary btn-sm mr-1 mt-1" href="{{url(l_prefix_uri($hpu, 'nilai'))}}/${full.slug}"  title="Daftar Nilai Kriteria">
+        const btn_nilai = `<a class="btn btn-rounded btn-secondary btn-sm mr-1 mt-1" href="{{url(l_prefix_uri($hpu, 'nilai'))}}/${full.slug}" data-toggle="tooltip" title="Daftar Nilai Kriteria">
                         <i class="fas fa-square-root-alt"></i></a>`;
         const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm mr-1 mt-1" onClick="editFunc('${data}')">
                         <i class="fas fa-edit"></i></button>` : '';
