@@ -153,7 +153,7 @@ function getTable() {
         // generate table header
         let table_head_html_item = '';
         datas.header.forEach((e, i) => {
-            table_head_html_item += ` <th   title="${e.dari} - ${e.sampai} ${e.satuan}" >${e.nama}(${e.kode})</th>`;
+            table_head_html_item += ` <th  data-toggle="tooltip" title="${e.dari} - ${e.sampai} ${e.satuan}" >${e.nama}(${e.kode})</th>`;
         });
 
         let table_head_html = `<tr>
@@ -174,13 +174,13 @@ function getTable() {
                     danger = j.kirteria_nilai ? false : true;
                     title = j.kirteria_nilai ? `${j.kirteria_nilai.nilai} | ${j.kirteria_nilai.nama} (${j.kirteria_nilai.dari} - ${j.kirteria_nilai.sampai})` : 'Nilai Tidak Valid';
                 }
-                table_body_html_item += ` <td  title="${title}" class=${danger ? 'text-danger' : ''}>
+                table_body_html_item += ` <td data-toggle="tooltip" title="${title}" class=${danger ? 'text-danger' : ''}>
                     ${j ? j.nilai : ''}
                 </td> `;
             });
 
             const id = e.id
-            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm mr-1 mt-1" onClick="editFunc('${id}')">
+            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm mr-1 mt-1" data-toggle="tooltip" title="Ubah Data" onClick="editFunc('${id}')">
             <i class="fas fa-edit"></i></button>` : '';
             const btn = btn_update;
             table_body_html += ` <tr> <td></td><td>${e.nama}</td> ${table_body_html_item} <td class="text-nowrap">${btn}</td></tr> `;
