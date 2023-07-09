@@ -55,9 +55,9 @@ $(document).ready(function () {
             data: 'id',
             name: 'id',
             render(data, type, full, meta) {
-                const btn_update = can_update ? `<button type="button" data-toggle="tooltip" class="btn btn-rounded btn-primary btn-sm mr-1" title="Ubah Data" onClick="editFunc('${data}')">
+                const btn_update = can_update ? `<button type="button"  class="btn btn-rounded btn-primary btn-sm mr-1" title="Ubah Data" onClick="editFunc('${data}')">
             <i class="fas fa-edit"></i> </button>` : '';
-                const btn_delete = can_delete ? `<button type="button" data-toggle="tooltip" class="btn btn-rounded btn-danger btn-sm mr-1" title="Hapus Data" onClick="deleteFunc('${data}')">
+                const btn_delete = can_delete ? `<button type="button"  class="btn btn-rounded btn-danger btn-sm mr-1" title="Hapus Data" onClick="deleteFunc('${data}')">
             <i class="fas fa-trash"></i> </button>` : '';
                 return btn_update + btn_delete;
             },

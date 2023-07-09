@@ -84,7 +84,7 @@ function youtube_parser(url) {
 }
 
 function tooltip_refresh() {
-    $('[data-toggle="tooltip"]').tooltip();
+    $('[]').tooltip();
 }
 
 // Admin master

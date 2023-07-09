@@ -18,3 +18,7 @@ git add .
 git commit -m "Perbaikan tombol tambah function add jadi addFunc"
 clear
 npm run dev
+
+
+
+Fix bulk delete

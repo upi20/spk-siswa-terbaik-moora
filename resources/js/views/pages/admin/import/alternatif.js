@@ -38,7 +38,7 @@ $(document).ready(function () {
             data: 'file',
             name: 'file',
             render(data, type, full, meta) {
-                return `<a type="button" href="${full.excel_link}" class="btn btn-rounded btn-secondary btn-sm mr-1 mt-1" data-toggle="tooltip" title="Download">
+                return `<a type="button" href="${full.excel_link}" class="btn btn-rounded btn-secondary btn-sm mr-1 mt-1"  title="Download">
                 <i class="fas fa-download"></i></a>`;
             }
         },
@@ -46,9 +46,9 @@ $(document).ready(function () {
             data: 'id',
             name: 'id',
             render(data, type, full, meta) {
-                const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm mr-1 mt-1" data-toggle="tooltip" title="Ubah Data" onClick="editFunc('${data}')">
+                const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm mr-1 mt-1" onClick="editFunc('${data}')">
                         <i class="fas fa-edit"></i></button>` : '';
-                const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm mr-1 mt-1" data-toggle="tooltip" title="Hapus Data" onClick="deleteFunc('${data}')">
+                const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm mr-1 mt-1"  onClick="deleteFunc('${data}')">
                         <i class="fas fa-trash"></i></button>` : '';
                 return btn_update + btn_delete;
             },
