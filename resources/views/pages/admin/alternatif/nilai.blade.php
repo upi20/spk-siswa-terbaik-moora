@@ -1,4 +1,4 @@
-@extends('layouts.admin.adminlte3.master')
+@extends('layouts.admin.rockeradmin.master')
 
 @section('content')
     @php

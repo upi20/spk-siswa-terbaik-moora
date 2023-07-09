@@ -18,7 +18,7 @@ class LoginController extends Controller
             return Redirect::route('dashboard');
         }
         $page_attr = ['title' => 'Login'];
-        return view('auth.login_adminlte3', compact('page_attr', 'redirect'));
+        return view('auth.login_rockeradmin', compact('page_attr', 'redirect'));
     }
 
     /**
