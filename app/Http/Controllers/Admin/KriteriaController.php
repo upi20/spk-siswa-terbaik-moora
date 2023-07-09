@@ -14,7 +14,6 @@ class KriteriaController extends Controller
         'bobot' => ['required', 'integer'],
         'jenis' => ['required', 'string'],
         'nama' => ['required', 'string'],
-        'satuan' => ['required', 'string'],
         'kode' => ['required', 'string'],
     ];
 
@@ -39,7 +38,6 @@ class KriteriaController extends Controller
             $model->bobot = $request->bobot;
             $model->jenis = $request->jenis;
             $model->nama = $request->nama;
-            $model->satuan = $request->satuan;
             $model->kode = $request->kode;
             $model->save();
             return response()->json();
@@ -61,7 +59,6 @@ class KriteriaController extends Controller
             $model->bobot = $request->bobot;
             $model->jenis = $request->jenis;
             $model->nama = $request->nama;
-            $model->satuan = $request->satuan;
             $model->kode = $request->kode;
             $model->save();
 

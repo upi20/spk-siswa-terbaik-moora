@@ -68,7 +68,6 @@
                         <th>No</th>
                         <th>Kode</th>
                         <th>Nama</th>
-                        <th>Satuan</th>
                         <th>Jenis</th>
                         <th>Bobot</th>
                         <th>Aksi</th>
@@ -99,10 +98,6 @@
                         <div class="form-group">
                             <label for="nama">Nama</label>
                             <input type="text" class="form-control" id="nama" name="nama" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="satuan">Satuan</label>
-                            <input type="text" class="form-control" id="satuan" name="satuan" required />
                         </div>
                         <div class="form-group">
                             <label for="jenis">Jenis</label>

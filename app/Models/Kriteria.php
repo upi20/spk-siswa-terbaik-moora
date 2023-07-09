@@ -20,7 +20,6 @@ class Kriteria extends Model
         'nama',
         'slug',
         'kode',
-        'satuan',
         'dari',
         'sampai',
     ];

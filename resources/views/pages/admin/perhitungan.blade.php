@@ -26,8 +26,7 @@
                         <th>No</th>
                         <th>Nama</th>
                         @foreach ($datas['header'] as $header)
-                            <th title="{{ $header->dari }}-{{ $header->sampai }} {{ $header->satuan }}"
-                                data-toggle="tooltip">
+                            <th title="{{ $header->dari }}-{{ $header->sampai }}" data-toggle="tooltip">
                                 {{ $header->nama }} ({{ $header->kode }})
                             </th>
                         @endforeach
@@ -74,8 +73,7 @@
                         <th>No</th>
                         <th>Nama</th>
                         @foreach ($datas['header'] as $header)
-                            <th title="{{ $header->dari }}-{{ $header->sampai }} {{ $header->satuan }}"
-                                data-toggle="tooltip">
+                            <th title="{{ $header->dari }}-{{ $header->sampai }}" data-toggle="tooltip">
                                 {{ $header->nama }} ({{ $header->kode }})
                             </th>
                         @endforeach
@@ -150,8 +148,7 @@
                         <th>No</th>
                         <th>Nama</th>
                         @foreach ($datas['header'] as $header)
-                            <th title="{{ $header->dari }}-{{ $header->sampai }} {{ $header->satuan }}"
-                                data-toggle="tooltip">
+                            <th title="{{ $header->dari }}-{{ $header->sampai }}" data-toggle="tooltip">
                                 {{ $header->nama }} ({{ $header->kode }})
                             </th>
                         @endforeach

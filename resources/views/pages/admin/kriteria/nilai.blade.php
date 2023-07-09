@@ -76,13 +76,13 @@
                         <div class="row">
                             <div class="col-6">
                                 <div class="form-group">
-                                    <label for="dari">Dari ({{ $kriteria->satuan }})</label>
+                                    <label for="dari">Dari</label>
                                     <input type="number" class="form-control" id="dari" name="dari" required />
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="form-group">
-                                    <label for="sampai">Sampai ({{ $kriteria->satuan }})</label>
+                                    <label for="sampai">Sampai</label>
                                     <input type="number" class="form-control" id="sampai" name="sampai" required />
                                 </div>
                             </div>

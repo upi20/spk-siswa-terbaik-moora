@@ -13,7 +13,6 @@ class AlternatifController extends Controller
     private $validate_model = [
         'nama' => ['required', 'string'],
         'kelas' => ['nullable', 'string'],
-        'deskripsi' => ['nullable', 'string'],
     ];
 
     public function index(Request $request)
@@ -37,7 +36,6 @@ class AlternatifController extends Controller
             $model = new Alternatif();
             $model->nama = $request->nama;
             $model->kelas = $request->kelas;
-            $model->deskripsi = $request->deskripsi;
             $model->save();
             return response()->json();
         } catch (ValidationException $error) {
@@ -58,7 +56,6 @@ class AlternatifController extends Controller
 
             $model->nama = $request->nama;
             $model->kelas = $request->kelas;
-            $model->deskripsi = $request->deskripsi;
             $model->save();
             return response()->json();
         } catch (ValidationException $error) {

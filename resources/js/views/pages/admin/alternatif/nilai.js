@@ -66,7 +66,7 @@ function editFunc(id) {
         datas.kriterias.forEach(e => {
             const values = e.alternatif_nilais.length ? e.alternatif_nilais[0].nilai : '';
             html += `<div class="form-group">
-                <label class="form-label mb-1" for="nilai${e.id}" title="nilai${e.kode}">${e.nama} (${e.satuan})<span class="text-danger">*</span> </label>
+                <label class="form-label mb-1" for="nilai${e.id}" title="nilai${e.kode}">${e.nama}<span class="text-danger">*</span> </label>
                 <input type="number" step="any" min="${e.dari}" max="${e.sampai}" class="form-control" id="nilai${e.id}" name="nilais[${e.id}]" placeholder="${e.dari}-${e.sampai}" required="" value="${values}" />
             </div>`;
         });
@@ -153,7 +153,7 @@ function getTable() {
         // generate table header
         let table_head_html_item = '';
         datas.header.forEach((e, i) => {
-            table_head_html_item += ` <th  data-toggle="tooltip" title="${e.dari} - ${e.sampai} ${e.satuan}" >${e.nama}(${e.kode})</th>`;
+            table_head_html_item += ` <th  data-toggle="tooltip" title="${e.dari} - ${e.sampai}" >${e.nama}(${e.kode})</th>`;
         });
 
         let table_head_html = `<tr>

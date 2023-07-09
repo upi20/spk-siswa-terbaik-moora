@@ -58,10 +58,6 @@ $(document).ready(function () {
       name: 'nama'
     },
     {
-      data: 'satuan',
-      name: 'satuan'
-    },
-    {
       data: 'jenis',
       name: 'jenis'
     },
@@ -184,7 +180,6 @@ function editFunc(id) {
       $('#nama').val(data.nama);
       $('#jenis').val(data.jenis);
       $('#bobot').val(data.bobot);
-      $('#satuan').val(data.satuan);
 
     },
     error: function (data) {

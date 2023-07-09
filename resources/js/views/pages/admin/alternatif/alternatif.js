@@ -57,10 +57,6 @@ $(document).ready(function () {
       data: 'kelas',
       name: 'kelas'
     },
-    {
-      data: 'deskripsi',
-      name: 'deskripsi'
-    },
     ...(can_update || can_delete ? [{
       data: 'id',
       name: 'id',
@@ -172,7 +168,6 @@ function editFunc(id) {
       $('#id').val(data.id);
       $('#nama').val(data.nama);
       $('#kelas').val(data.kelas);
-      $('#deskripsi').val(data.deskripsi);
 
     },
     error: function (data) {

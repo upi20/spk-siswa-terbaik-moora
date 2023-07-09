@@ -18,7 +18,6 @@ class Alternatif extends Model
         'slug',
         'nama',
         'kelas',
-        'deskripsi',
     ];
 
     protected $primaryKey = 'id';

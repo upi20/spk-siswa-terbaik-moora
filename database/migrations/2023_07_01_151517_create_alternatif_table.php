@@ -18,7 +18,6 @@ return new class extends Migration
             $table->text('nama')->nullable()->default(null);
             $table->text('slug')->nullable()->default(null);
             $table->text('kelas')->nullable()->default(null);
-            $table->text('deskripsi')->nullable()->default(null);
             $table->bigInteger('import_id', false, true)->nullable()->default(null);
             $table->timestamps();
 
