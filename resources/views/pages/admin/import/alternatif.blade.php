@@ -11,6 +11,10 @@
             <div class="d-flex justify-content-between w-100">
                 <h3 class="card-title">Data {{ $page_attr['title'] }}</h3>
                 <div>
+                    <a href="{{ route(h_prefix('format')) }}" class="btn btn-success btn-primary btn-sm" data-toggle="tooltip"
+                        title="Formulir Import Data">
+                        <i class="fas fa-file-excel"></i> Format
+                    </a>
                     @if ($can_delete)
                         <button type="button" class="btn btn-rounded btn-danger btn-sm mr-1" data-toggle="tooltip"
                             title="Hapus Data Yang Dipilih" id="btnCheckboxDelete" style="display: none"
