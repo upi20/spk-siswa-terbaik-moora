@@ -1,5 +1,5 @@
 {
-    "name": "upi20/sipankab",
+    "name": "upi20/spk-siswa-terbaik-moora",
     "type": "project",
     "description": "Sistem Pendukung Keputusan untuk Proses seleksi penerimaan panwaslu kecamatan",
     "keywords": [
@@ -10,8 +10,7 @@
         "bootstrap5",
         "rbac",
         "menu-management",
-        "spk",
-        "pkh"
+        "spk"
     ],
     "license": "GNU",
     "require": {

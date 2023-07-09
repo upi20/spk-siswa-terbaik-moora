@@ -22,8 +22,8 @@ class UsersTableSeeder extends Seeder
             0 =>
             array(
                 'id' => 1,
-                'name' => 'Isep Lutpi Nur',
-                'email' => 'iseplutpinur7@gmail.com',
+                'name' => 'Super Admin',
+                'email' => 'superadmin@gmail.com',
                 'foto' => '202304182058334.png',
                 'username' => NULL,
                 'email_verified_at' => NULL,
