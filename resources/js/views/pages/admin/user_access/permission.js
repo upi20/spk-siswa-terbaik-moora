@@ -216,6 +216,7 @@ function deleteFunc(id) {
                     })
                     var oTable = table_html.dataTable();
                     oTable.fnDraw(false);
+                    checkBoxBtnReset();
                 },
                 complete: function () {
                     swal.hideLoading();

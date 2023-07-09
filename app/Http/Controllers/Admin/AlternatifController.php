@@ -91,4 +91,22 @@ class AlternatifController extends Controller
     {
         return ImportAlternatif::export($request);
     }
+
+    public function delete_bulk(Request $request): mixed
+    {
+        try {
+            foreach ($request->ids as $id) {
+                $return = $this->delete(Alternatif::find($id));
+                if ($return->getStatusCode() != 200) {
+                    return response()->json($return->original, $return->getStatusCode());
+                }
+            }
+            return response()->json();
+        } catch (ValidationException $error) {
+            return response()->json([
+                'message' => 'Something went wrong',
+                'error' => $error,
+            ], 500);
+        }
+    }
 }
