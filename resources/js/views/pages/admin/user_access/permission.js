@@ -43,7 +43,7 @@ $(document).ready(function () {
             name: 'id',
             orderable: false,
             render(data, type, full, meta) {
-                return `<input type="checkbox" id="checkbox-${data}" data-id="${data}" class="form-check-input position-relative ms-1" class="checkbox-bulk" onclick="checkBoxSet(this)">`;
+                return `<input type="checkbox" id="checkbox-${data}" data-id="${data}" class="form-check-input position-relative ml-1" class="checkbox-bulk" onclick="checkBoxSet(this)">`;
             },
         },
         {
@@ -67,13 +67,13 @@ $(document).ready(function () {
             data: 'id',
             name: 'id',
             render(data, type, full, meta) {
-                const btn_update = can_update ? `<button type="button" data-toggle="tooltip" class="btn btn-rounded btn-primary btn-sm me-1" title="Ubah Data"
+                const btn_update = can_update ? `<button type="button" data-toggle="tooltip" class="btn btn-rounded btn-primary btn-sm mr-1" title="Ubah Data"
                         data-id="${full.id}"
                         data-name="${full.name}"
                         data-guard_name="${full.guard_name}"
                         onClick="editFunc(this)">
                         <i class="fas fa-edit"></i></button>` : '';
-                const btn_delete = can_delete ? `<button type="button" data-toggle="tooltip" class="btn btn-rounded btn-danger btn-sm me-1" title="Hapus Data" onClick="deleteFunc('${data}')">
+                const btn_delete = can_delete ? `<button type="button" data-toggle="tooltip" class="btn btn-rounded btn-danger btn-sm mr-1" title="Hapus Data" onClick="deleteFunc('${data}')">
                         <i class="fas fa-trash"></i></button>` : '';
                 return btn_update + btn_delete;
             },
@@ -160,10 +160,10 @@ $(document).ready(function () {
 });
 
 function addFunc() {
+    $('#modal-default').modal('show');
     if (!isUpdate) return;
     $('#MainForm').trigger("reset");
     $('#modal-default-title').html("Tambah Permission");
-    $('#modal-default').modal('show');
     $('#id').val('');
     $('#guard_name').val('web');
     resetErrorAfterInput();

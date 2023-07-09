@@ -6,15 +6,13 @@
         $can_update = auth_can(h_prefix('update'));
         $can_delete = auth_can(h_prefix('delete'));
     @endphp
-    <div class="card">
-        <div class="card-body">
-            <div class="card-title d-md-flex flex-row justify-content-between">
-                <div>
-                    <h6 class="mt-2 text-uppercase">Data {{ $page_attr['title'] }}</h6>
-                </div>
+    <div class="card card-primary card-outline">
+        <div class="card-header">
+            <div class="d-flex justify-content-between w-100">
+                <h3 class="card-title">Data {{ $page_attr['title'] }}</h3>
                 <div>
                     @if ($can_delete)
-                        <button type="button" class="btn btn-rounded btn-danger btn-sm me-1" data-toggle="tooltip"
+                        <button type="button" class="btn btn-rounded btn-danger btn-sm mr-1" data-toggle="tooltip"
                             title="Hapus Data Yang Dipilih" id="btnCheckboxDelete" style="display: none"
                             onclick="checkBoxActionDelete()">
                             <i class="fas fa-trash"></i> Hapus Data</button>
@@ -27,45 +25,45 @@
                     @endif
                 </div>
             </div>
+        </div>
 
-            <hr class="mt-1 mb-0" />
-            <div class="accordion accordion-flush" id="accordionOption">
-                <div class="accordion-item">
-                    <h6 class="accordion-header" id="headingSix">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#filterData" aria-expanded="false" aria-controls="filterData">
+        <div class="card-body" id="card-body">
+            <div class="card card-primary">
+                <div class="card-header">
+                    <h4 class="card-title w-100">
+                        <a class="d-block w-100" data-toggle="collapse" href="#collapseOne">
                             Filter Data
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="collapse" data-parent="#card-body">
+                    <div class="card-body">
+                        <form action="javascript:void(0)" id="FilterForm">
+                            <div class="form-group  float-start mr-2 mt-lg-0">
+                                <label for="filter_jenis" class="mr-md-2">Jenis</label>
+                                <select class="form-control select2" id="filter_jenis" name="filter_jenis"
+                                    style="width: 200px">
+                                    <option value="">Semua Jenis</option>
+                                    <option value="Benefit">Benefit</option>
+                                    <option value="Cost">Cost</option>
+                                </select>
+                            </div>
+                        </form>
+                        <div style="clear: both"></div>
+                        <button type="submit" form="FilterForm" class="btn btn-rounded btn-sm btn-secondary mt-2"
+                            data-toggle="tooltip" title="Refresh Filter Table">
+                            <i class="fas fa-sync-alt mr-1"></i> Terapkan filter
                         </button>
-                    </h6>
-                    <div id="filterData" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                        data-bs-parent="#accordionOption">
-                        <div class="accordion-body">
-                            <form action="javascript:void(0)" id="FilterForm">
-                                <div class="form-group  float-start me-2 mt-lg-0">
-                                    <label for="filter_jenis" class="me-md-2">Jenis</label>
-                                    <select class="form-control select2" id="filter_jenis" name="filter_jenis"
-                                        style="width: 200px">
-                                        <option value="">Semua Jenis</option>
-                                        <option value="Benefit">Benefit</option>
-                                        <option value="Cost">Cost</option>
-                                    </select>
-                                </div>
-                            </form>
-                            <div style="clear: both"></div>
-                            <button type="submit" form="FilterForm" class="btn btn-rounded btn-sm btn-secondary mt-2"
-                                data-toggle="tooltip" title="Refresh Filter Table">
-                                <i class="fas fa-sync-alt me-1"></i> Terapkan filter
-                            </button>
-                        </div>
                     </div>
                 </div>
             </div>
+
             <table class="table table-striped table-hover w-100" id="tbl_main">
                 <thead>
                     <tr>
                         <th>
                             <input type="checkbox" id="checkboxAll" onclick="checkBoxSetAll(this)"
-                                class="form-check-input position-relative ms-1">
+                                class="form-check-input position-relative ml-1">
                         </th>
                         <th>No</th>
                         <th>Kode</th>
@@ -85,8 +83,10 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content modal-content-demo">
                 <div class="modal-header">
-                    <h6 class="modal-title" id="modal-default-title"></h6><button aria-label="Tutup" class="btn-close"
-                        data-bs-dismiss="modal"><span aria-hidden="true"></span></button>
+                    <h6 class="modal-title" id="modal-default-title"></h6><button type="button" class="close"
+                        data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
                     <form action="javascript:void(0)" id="MainForm" name="MainForm" method="POST"
@@ -121,7 +121,7 @@
                     <button type="submit" class="btn btn-primary" id="btn-save" form="MainForm">
                         <li class="fas fa-save mr-1"></li> Simpan Perubahan
                     </button>
-                    <button class="btn btn-light" data-bs-dismiss="modal">
+                    <button class="btn btn-light" data-dismiss="modal">
                         <i class="fas fa-times"></i> Tutup
                     </button>
                 </div>
@@ -132,12 +132,20 @@
 
 @section('stylesheet')
     <link rel="stylesheet"
-        href="{{ asset_admin('plugins/datatable/css/dataTables.bootstrap5.min.css', name: 'rockeradmin') }}" />
+        href="{{ asset_admin('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css', name: 'adminlte3') }}" />
+    <link rel="stylesheet"
+        href="{{ asset_admin('plugins/datatables-responsive/css/responsive.bootstrap4.min.css', name: 'adminlte3') }}" />
 @endsection
 
 @section('javascript')
-    <script src="{{ asset_admin('plugins/datatable/js/jquery.dataTables.min.js', name: 'rockeradmin') }}"></script>
-    <script src="{{ asset_admin('plugins/datatable/js/dataTables.bootstrap5.min.js', name: 'rockeradmin') }}"></script>
+    <script src="{{ asset_admin('plugins/datatables/jquery.dataTables.min.js', name: 'adminlte3') }}"></script>
+    <script src="{{ asset_admin('plugins/datatables/jquery.dataTables.min.js', name: 'adminlte3') }}"></script>
+    <script src="{{ asset_admin('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js', name: 'adminlte3') }}"></script>
+    <script src="{{ asset_admin('plugins/datatables-responsive/js/dataTables.responsive.min.js', name: 'adminlte3') }}">
+    </script>
+    <script src="{{ asset_admin('plugins/datatables-responsive/js/responsive.bootstrap4.min.js', name: 'adminlte3') }}">
+    </script>
+
     <script src="{{ asset_admin('plugins/sweet-alert/sweetalert2.all.js', name: 'sash') }}"></script>
     <script src="{{ asset_admin('plugins/loading/loadingoverlay.min.js', name: 'sash') }}"></script>
     @php

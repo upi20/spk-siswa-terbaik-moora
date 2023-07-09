@@ -4,8 +4,8 @@
     <div class="row">
         <div class="col-lg-6">
             <div class="card">
-                <div class="card-body">
-                    <div class="card-title d-md-flex flex-row justify-content-between">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between w-100">
                         <div>
                             <h6 class="mt-2 text-uppercase">Application</h6>
                         </div>
@@ -17,8 +17,8 @@
                             </label>
                         </div>
                     </div>
-                    <hr class="mt-1" />
-
+                </div>
+                <div class="card-body">
                     <form class="form-horizontal" id="app-form">
                         <div class="form-group">
                             <label class="form-label mb-1" for="{{ set_admin('app.title') }}">Title
@@ -98,14 +98,12 @@
 
         <div class="col-lg-6">
             <div class="card">
-                <div class="card-body">
-                    <div class="card-title d-md-flex flex-row justify-content-between">
-                        <div>
-                            <h6 class="mt-2 text-uppercase">Meta Data</h6>
-                        </div>
+                <div class="card-header">
+                    <div class="d-flex justify-content-between w-100">
+                        <h6 class="mt-2 text-uppercase">Meta Data</h6>
                     </div>
-                    <hr class="mt-1" />
-
+                </div>
+                <div class="card-body">
                     <form class="form-horizontal" id="meta-form">
                         <div class="form-group">
                             <label class="form-label mb-1" for="{{ set_admin('meta.author') }}">Author
@@ -152,12 +150,15 @@
 
         <div class="col-lg-6">
             <div class="card">
-                <div class="card-header d-flex flex-row justify-content-between">
-                    <div class="card-title">Meta Header List</div>
-                    <button class="btn btn-primary btn-sm" data-bs-effect="effect-scale" data-bs-toggle="modal"
-                        href="#modal-meta_list" onclick="meta_list_add()" data-target="#modal-meta_list"><i
-                            class="fa fa-plus me-2"></i>Tambah</button>
+                <div class="card-header">
+                    <div class="d-flex justify-content-between w-100">
+                        <div class="card-title">Meta Header List</div>
+                        <button class="btn btn-primary btn-sm" data-bs-effect="effect-scale" data-bs-toggle="modal"
+                            href="#modal-meta_list" onclick="meta_list_add()" data-target="#modal-meta_list"><i
+                                class="fa fa-plus mr-2"></i>Tambah</button>
+                    </div>
                 </div>
+
                 <div class="card-body p-0">
                     <div class="list-group list-group-flush" id="meta_list-body"> </div>
                 </div>
@@ -178,7 +179,7 @@
                     <img src="" class="img-fluid" id="modal-image-element" alt="Icon Pendaftaran">
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-light" data-bs-dismiss="modal">
+                    <button class="btn btn-light" data-dismiss="modal">
                         <i class="fas fa-times"></i>
                         Close
                     </button>
@@ -219,7 +220,7 @@
                     <button type="submit" class="btn btn-primary" form="meta_list_form">
                         <li class="fas fa-save mr-1"></li> Simpan
                     </button>
-                    <button class="btn btn-light" data-bs-dismiss="modal">
+                    <button class="btn btn-light" data-dismiss="modal">
                         <i class="fas fa-times"></i>
                         Close
                     </button>

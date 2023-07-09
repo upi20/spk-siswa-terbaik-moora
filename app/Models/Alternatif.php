@@ -17,7 +17,7 @@ class Alternatif extends Model
     protected $fillable = [
         'slug',
         'nama',
-        'alamat',
+        'kelas',
         'deskripsi',
     ];
 

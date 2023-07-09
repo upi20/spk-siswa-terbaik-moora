@@ -7,13 +7,12 @@
         $can_delete = auth_can(h_prefix('delete'));
         $can_excel = auth_can(h_prefix('excel'));
     @endphp
-    <div class="card">
-        <div class="card-body">
-            <div class="card-title d-md-flex flex-row justify-content-between">
+    <div class="card card-primary card-outline">
+        <div class="card-header">
+            <div class="d-flex justify-content-between w-100">
+                <h3 class="card-title">Data {{ $page_attr['title'] }}</h3>
                 <div>
-                    <h6 class="mt-2 text-uppercase">Data {{ $page_attr['title'] }}</h6>
-                </div>
-                <div>
+
                     @if ($can_excel)
                         <button class="btn btn-success btn-sm" onclick="exportExcel()">
                             <i class="fas fa-file-excel"></i> Excel
@@ -27,50 +26,45 @@
                     @endif
                 </div>
             </div>
-            <hr class="mt-1 mb-0" />
-            <div class="accordion accordion-flush" id="accordionOption">
-                <div class="accordion-item">
-                    <h6 class="accordion-header" id="headingSix">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#filterData" aria-expanded="false" aria-controls="filterData">
+        </div>
+
+        <div class="card-body" id="card-body">
+            <div class="card card-primary">
+                <div class="card-header">
+                    <h4 class="card-title w-100">
+                        <a class="d-block w-100" data-toggle="collapse" href="#collapseOne">
                             Filter Data
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="collapse" data-parent="#card-body">
+                    <div class="card-body">
+                        <form action="javascript:void(0)" class="ml-md-3 mb-md-3" id="FilterForm">
+                            <label for="filter_role">Sebagai</label>
+                            <select class="form-control" id="filter_role" name="filter_role" style="max-width: 200px">
+                                <option value="">Semua</option>
+                                @foreach ($user_role as $role)
+                                    <option value="{{ $role->name }}">
+                                        {{ ucfirst(implode(' ', explode('_', $role->name))) }}
+                                    </option>
+                                @endforeach
+                            </select>
+                            <label for="filter_active">Status Akun</label>
+                            <select class="form-control" id="filter_active" name="filter_active" style="max-width: 200px">
+                                <option value="">Semua</option>
+                                <option value="1">Aktif</option>
+                                <option value="0">Tidak Aktif</option>
+                            </select>
+                        </form>
+                        <div style="clear: both"></div>
+                        <button type="submit" form="FilterForm" class="btn btn-rounded btn-sm btn-secondary mt-2"
+                            data-toggle="tooltip" title="Refresh Filter Table">
+                            <i class="fas fa-sync-alt mr-1"></i> Terapkan filter
                         </button>
-                    </h6>
-                    <div id="filterData" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                        data-bs-parent="#accordionOption">
-                        <div class="accordion-body">
-                            <form action="javascript:void(0)" class="ml-md-3 mb-md-3" id="FilterForm">
-                                <div class="form-group float-start me-2">
-                                    <label for="filter_role">Sebagai</label>
-                                    <select class="form-control" id="filter_role" name="filter_role"
-                                        style="max-width: 200px">
-                                        <option value="">Semua</option>
-                                        @foreach ($user_role as $role)
-                                            <option value="{{ $role->name }}">
-                                                {{ ucfirst(implode(' ', explode('_', $role->name))) }}
-                                            </option>
-                                        @endforeach
-                                    </select>
-                                </div>
-                                <div class="form-group float-start me-2">
-                                    <label for="filter_active">Status Akun</label>
-                                    <select class="form-control" id="filter_active" name="filter_active"
-                                        style="max-width: 200px">
-                                        <option value="">Semua</option>
-                                        <option value="1">Aktif</option>
-                                        <option value="0">Tidak Aktif</option>
-                                    </select>
-                                </div>
-                            </form>
-                            <div style="clear: both"></div>
-                            <button type="submit" form="FilterForm" class="btn btn-rounded btn-sm btn-secondary mt-2"
-                                data-toggle="tooltip" title="Refresh Filter Table">
-                                <i class="fas fa-sync-alt me-1"></i> Terapkan filter
-                            </button>
-                        </div>
                     </div>
                 </div>
             </div>
+
             <table class="table table-striped table-hover" id="tbl_main">
                 <thead>
                     <tr>
@@ -92,8 +86,8 @@
             <div class="modal-content modal-content-demo">
                 <div class="modal-header">
                     <h6 class="modal-title" id="modal-default-title"></h6>
-                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal">
-                        <span aria-hidden="true"></span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
@@ -144,7 +138,7 @@
                     <button type="submit" class="btn btn-primary" id="btn-save" form="UserForm">
                         <li class="fas fa-save mr-1"></li> Simpan
                     </button>
-                    <button class="btn btn-light" data-bs-dismiss="modal">
+                    <button class="btn btn-light" data-dismiss="modal">
                         <i class="fas fa-times"></i>
                         Close
                     </button>

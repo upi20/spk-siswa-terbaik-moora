@@ -50,7 +50,7 @@ $(document).ready(function () {
             name: 'roles',
             render(data, type, full, meta) {
                 return String(data).split(', ').reduce((r, v) => {
-                    return r + `<span class="badge bg-primary me-2">${v}</span>`;
+                    return r + `<span class="badge bg-primary mr-2">${v}</span>`;
                 }, "");
             },
         },
@@ -60,7 +60,7 @@ $(document).ready(function () {
             render(data, type, full, meta) {
                 const class_el = full.active == 1 ? 'text-success' :
                     'text-danger';
-                return `<i class="fas fa-circle me-2 ${class_el}"></i>${full.active_str}`;
+                return `<i class="fas fa-circle mr-2 ${class_el}"></i>${full.active_str}`;
             },
             className: 'text-nowrap'
         },
@@ -68,10 +68,10 @@ $(document).ready(function () {
             data: 'id',
             name: 'id',
             render(data, type, full, meta) {
-                const btn_update = can_update ? `<button type="button" data-toggle="tooltip" class="btn btn-rounded btn-primary btn-sm me-1" title="Ubah Data"
+                const btn_update = can_update ? `<button type="button" data-toggle="tooltip" class="btn btn-rounded btn-primary btn-sm mr-1" title="Ubah Data"
                         onClick="editFunc('${full.id}')">
                         <i class="fas fa-edit"></i> </button>` : '';
-                const btn_delete = can_delete ? `<button type="button" data-toggle="tooltip" class="btn btn-rounded btn-danger btn-sm me-1" title="Hapus Data" onClick="deleteFunc('${data}')">
+                const btn_delete = can_delete ? `<button type="button" data-toggle="tooltip" class="btn btn-rounded btn-danger btn-sm mr-1" title="Hapus Data" onClick="deleteFunc('${data}')">
                         <i class="fas fa-trash"></i></button>` : '';
                 return btn_update + btn_delete;
             },

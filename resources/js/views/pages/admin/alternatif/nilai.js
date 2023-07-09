@@ -180,7 +180,7 @@ function getTable() {
             });
 
             const id = e.id
-            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1 mt-1" data-toggle="tooltip" title="Ubah Data" onClick="editFunc('${id}')">
+            const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm mr-1 mt-1" data-toggle="tooltip" title="Ubah Data" onClick="editFunc('${id}')">
             <i class="fas fa-edit"></i></button>` : '';
             const btn = btn_update;
             table_body_html += ` <tr> <td></td><td>${e.nama}</td> ${table_body_html_item} <td class="text-nowrap">${btn}</td></tr> `;

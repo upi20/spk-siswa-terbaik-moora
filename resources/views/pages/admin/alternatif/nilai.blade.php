@@ -6,13 +6,13 @@
         $can_update = auth_can(h_prefix('update'));
         $can_delete = auth_can(h_prefix('delete'));
     @endphp
-    <div class="card">
-        <div class="card-body">
-            <div class="card-title d-md-flex flex-row justify-content-between">
-                <div>
-                    <h6 class="mt-2 text-uppercase">Data {{ $page_attr['title'] }}</h6>
-                </div>
+    <div class="card card-primary card-outline">
+        <div class="card-header">
+            <div class="d-flex justify-content-between w-100">
+                <h3 class="card-title">Data {{ $page_attr['title'] }}</h3>
             </div>
+        </div>
+        <div class="card-body">
             <table class="table table-striped table-hover w-100" id="tbl_main">
                 <thead>
                     <tr>
@@ -35,8 +35,8 @@
             <div class="modal-content modal-content-demo">
                 <div class="modal-header">
                     <h6 class="modal-title" id="modal-default-title"></h6>
-                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal">
-                        <span aria-hidden="true"></span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
@@ -57,7 +57,7 @@
                     <button type="submit" class="btn btn-primary" id="btn-save" form="MainForm">
                         <li class="fas fa-save mr-1"></li> Simpan Perubahan
                     </button>
-                    <button class="btn btn-light" data-bs-dismiss="modal">
+                    <button class="btn btn-light" data-dismiss="modal">
                         <i class="fas fa-times"></i>
                         Tutup
                     </button>
@@ -69,12 +69,19 @@
 
 @section('stylesheet')
     <link rel="stylesheet"
-        href="{{ asset_admin('plugins/datatable/css/dataTables.bootstrap5.min.css', name: 'rockeradmin') }}" />
+        href="{{ asset_admin('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css', name: 'adminlte3') }}" />
+    <link rel="stylesheet"
+        href="{{ asset_admin('plugins/datatables-responsive/css/responsive.bootstrap4.min.css', name: 'adminlte3') }}" />
 @endsection
 
 @section('javascript')
-    <script src="{{ asset_admin('plugins/datatable/js/jquery.dataTables.min.js', name: 'rockeradmin') }}"></script>
-    <script src="{{ asset_admin('plugins/datatable/js/dataTables.bootstrap5.min.js', name: 'rockeradmin') }}"></script>
+    <script src="{{ asset_admin('plugins/datatables/jquery.dataTables.min.js', name: 'adminlte3') }}"></script>
+    <script src="{{ asset_admin('plugins/datatables/jquery.dataTables.min.js', name: 'adminlte3') }}"></script>
+    <script src="{{ asset_admin('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js', name: 'adminlte3') }}"></script>
+    <script src="{{ asset_admin('plugins/datatables-responsive/js/dataTables.responsive.min.js', name: 'adminlte3') }}">
+    </script>
+    <script src="{{ asset_admin('plugins/datatables-responsive/js/responsive.bootstrap4.min.js', name: 'adminlte3') }}">
+    </script>
     <script src="{{ asset_admin('plugins/loading/loadingoverlay.min.js', name: 'sash') }}"></script>
     <script src="{{ asset_admin('plugins/sweet-alert/sweetalert2.all.js', name: 'sash') }}"></script>
     @php

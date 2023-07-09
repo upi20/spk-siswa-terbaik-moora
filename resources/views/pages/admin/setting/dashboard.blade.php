@@ -2,12 +2,14 @@
 
 @section('content')
     <div class="card border-primary">
-        <div class="card-body">
-            <div class="card-title d-md-flex flex-row justify-content-between">
+        <div class="card-header">
+            <div class="d-flex justify-content-between w-100">
                 <div>
-                    <h6 class="mt-2 text-uppercase">form {{ $page_attr['title'] }}</h6>
+                    <h3 class="card-title">Form {{ $page_attr['title'] }}</h6>
                 </div>
             </div>
+        </div>
+        <div class="card-body">
 
             <form method="post" action="" enctype="multipart/form-data" id="MainForm">
                 <div class="form-group">

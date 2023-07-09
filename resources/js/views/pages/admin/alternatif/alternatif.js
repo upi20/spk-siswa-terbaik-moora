@@ -25,7 +25,7 @@ $(document).ready(function () {
     ajax: {
       url: "{{ route(l_prefix($hpu)) }}",
       data: function (d) {
-        d['filter[alamat]'] = $('#filter_alamat').val();
+        d['filter[kelas]'] = $('#filter_kelas').val();
       },
       complete: function (data) {
         data.responseJSON.data.forEach(e => {
@@ -42,7 +42,7 @@ $(document).ready(function () {
       name: 'id',
       orderable: false,
       render(data, type, full, meta) {
-        return `<input type="checkbox" id="checkbox-${data}" data-id="${data}" class="form-check-input position-relative ms-1" class="checkbox-bulk" onclick="checkBoxSet(this)">`;
+        return `<input type="checkbox" id="checkbox-${data}" data-id="${data}" class="form-check-input position-relative ml-1" class="checkbox-bulk" onclick="checkBoxSet(this)">`;
       },
     },
     {
@@ -54,8 +54,8 @@ $(document).ready(function () {
       name: 'nama'
     },
     {
-      data: 'alamat',
-      name: 'alamat'
+      data: 'kelas',
+      name: 'kelas'
     },
     {
       data: 'deskripsi',
@@ -65,9 +65,9 @@ $(document).ready(function () {
       data: 'id',
       name: 'id',
       render(data, type, full, meta) {
-        const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm me-1 mt-1" data-toggle="tooltip" title="Ubah Data" onClick="editFunc('${data}')">
+        const btn_update = can_update ? `<button type="button" class="btn btn-rounded btn-primary btn-sm mr-1 mt-1" data-toggle="tooltip" title="Ubah Data" onClick="editFunc('${data}')">
                         <i class="fas fa-edit"></i></button>` : '';
-        const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm me-1 mt-1" data-toggle="tooltip" title="Hapus Data" onClick="deleteFunc('${data}')">
+        const btn_delete = can_delete ? `<button type="button" class="btn btn-rounded btn-danger btn-sm mr-1 mt-1" data-toggle="tooltip" title="Hapus Data" onClick="deleteFunc('${data}')">
                         <i class="fas fa-trash"></i></button>` : '';
         return btn_update + btn_delete;
       },
@@ -149,10 +149,10 @@ $(document).ready(function () {
 
 
 function addFunc() {
+  $('#modal-default').modal('show');
   if (!isEdit) return false;
   $('#MainForm').trigger("reset");
   $('#modal-default-title').html("Tambah");
-  $('#modal-default').modal('show');
   $('#id').val('');
   isEdit = false;
   return true;
@@ -171,7 +171,7 @@ function editFunc(id) {
       $('#modal-default').modal('show');
       $('#id').val(data.id);
       $('#nama').val(data.nama);
-      $('#alamat').val(data.alamat);
+      $('#kelas').val(data.kelas);
       $('#deskripsi').val(data.deskripsi);
 
     },

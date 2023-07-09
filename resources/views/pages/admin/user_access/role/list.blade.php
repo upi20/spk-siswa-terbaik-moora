@@ -6,11 +6,11 @@
         $can_update = auth_can('h_prefix().update');
         $can_delete = auth_can('h_prefix().delete');
     @endphp
-    <div class="card">
+    <div class="card card-primary card-outline">
         <div class="card-body">
-            <div class="card-title d-md-flex flex-row justify-content-between">
+            <div class="d-flex justify-content-between w-100">
                 <div>
-                    <h6 class="mt-2 text-uppercase">Data {{ $page_attr['title'] }}</h6>
+                    <h3 class="card-title">Data {{ $page_attr['title'] }}</h6>
                 </div>
                 @if ($can_insert)
                     <div>
@@ -39,12 +39,19 @@
 
 @section('stylesheet')
     <link rel="stylesheet"
-        href="{{ asset_admin('plugins/datatable/css/dataTables.bootstrap5.min.css', name: 'rockeradmin') }}" />
+        href="{{ asset_admin('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css', name: 'adminlte3') }}" />
+    <link rel="stylesheet"
+        href="{{ asset_admin('plugins/datatables-responsive/css/responsive.bootstrap4.min.css', name: 'adminlte3') }}" />
 @endsection
 
 @section('javascript')
-    <script src="{{ asset_admin('plugins/datatable/js/jquery.dataTables.min.js', name: 'rockeradmin') }}"></script>
-    <script src="{{ asset_admin('plugins/datatable/js/dataTables.bootstrap5.min.js', name: 'rockeradmin') }}"></script>
+    <script src="{{ asset_admin('plugins/datatables/jquery.dataTables.min.js', name: 'adminlte3') }}"></script>
+    <script src="{{ asset_admin('plugins/datatables/jquery.dataTables.min.js', name: 'adminlte3') }}"></script>
+    <script src="{{ asset_admin('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js', name: 'adminlte3') }}"></script>
+    <script src="{{ asset_admin('plugins/datatables-responsive/js/dataTables.responsive.min.js', name: 'adminlte3') }}">
+    </script>
+    <script src="{{ asset_admin('plugins/datatables-responsive/js/responsive.bootstrap4.min.js', name: 'adminlte3') }}">
+    </script>
     <script src="{{ asset_admin('plugins/loading/loadingoverlay.min.js', name: 'sash') }}"></script>
     <script src="{{ asset_admin('plugins/sweet-alert/sweetalert2.all.js', name: 'sash') }}"></script>
     @php

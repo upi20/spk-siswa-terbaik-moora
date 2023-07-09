@@ -203,7 +203,7 @@ class Alternatif extends Model
             if ($i < $start) continue;
             $alternatif = new ModelsAlternatif();
             $alternatif->nama = $v[1];
-            $alternatif->alamat = $v[2];
+            $alternatif->kelas = $v[2];
             $alternatif->deskripsi = $v[3];
             $alternatif->import_id = $model->id;
             $alternatif->save();
@@ -266,7 +266,7 @@ class Alternatif extends Model
         $headers = [
             'No',
             'Nama',
-            'Alamat',
+            'Kelas',
             'Deskripsi',
         ];
 
@@ -442,7 +442,7 @@ class Alternatif extends Model
         $headers = [
             'No',
             'Nama',
-            'Alamat',
+            'Kelas',
             'Deskripsi',
         ];
 
@@ -538,7 +538,7 @@ class Alternatif extends Model
             $detail = (object)$detail;
             $sheet->setCellValue(chr(65 + $c) . "$row", ($row - 5));
             $sheet->setCellValue(chr(65 + ++$c) . "$row", $detail->nama);
-            $sheet->setCellValue(chr(65 + ++$c) . "$row", $detail->alamat);
+            $sheet->setCellValue(chr(65 + ++$c) . "$row", $detail->kelas);
             $sheet->setCellValue(chr(65 + ++$c) . "$row", $detail->deskripsi);
             foreach ($detail->nilais as $nilai) {
                 $sheet->setCellValue(chr(65 + ++$c) . "$row", $nilai ? $nilai->nilai : '');

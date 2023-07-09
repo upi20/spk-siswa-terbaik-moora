@@ -12,18 +12,18 @@
                 <div class="card-body">
                     <div id="nestable-menu">
                         <div class="btn-group">
-                            <button class="btn me-1 btn-info btn-sm tree-tools" data-action="expand" title="Expand"
+                            <button class="btn mr-1 btn-info btn-sm tree-tools" data-action="expand" title="Expand"
                                 style="border: 0; border-radius: 4px">
                                 <i class="fas fa-stream"></i>&nbsp;Expand
                             </button>
-                            <button class="btn me-1 btn-info btn-sm tree-tools" data-action="collapse" title="Collapse"
+                            <button class="btn mr-1 btn-info btn-sm tree-tools" data-action="collapse" title="Collapse"
                                 style="border: 0; border-radius: 4px">
                                 <i class="fas fa-th-list"></i>&nbsp;Collapse
                             </button>
                         </div>
                         @if ($can_save)
                             <div class="btn-group">
-                                <button class="btn me-1 btn-primary btn-sm save" data-action="save" title="Save"
+                                <button class="btn mr-1 btn-primary btn-sm save" data-action="save" title="Save"
                                     onclick="save()" style="border: 0; border-radius: 4px">
                                     <i class="fas fa-save"></i><span class="hidden-xs">&nbsp;Save</span>
                                 </button>
@@ -31,7 +31,7 @@
                         @endif
 
                         <div class="btn-group">
-                            <button class="btn me-1 btn-warning btn-sm refresh" data-action="refresh" title="Refresh"
+                            <button class="btn mr-1 btn-warning btn-sm refresh" data-action="refresh" title="Refresh"
                                 style="border: 0; border-radius: 4px" onclick="menu()">
                                 <i class="fas fa-sync-alt"></i><span class="hidden-xs">&nbsp;Refresh</span>
                             </button>

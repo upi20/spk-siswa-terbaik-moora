@@ -20932,7 +20932,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 18:14:38',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Burangrang","alamat":null,"deskripsi":null,"slug":"g-burangrang","updated_at":"2023-07-01T11:14:38.000000Z","created_at":"2023-07-01T11:14:38.000000Z","id":1}',
+                'data' => '{"nama":"G. Burangrang","kelas":null,"deskripsi":null,"slug":"g-burangrang","updated_at":"2023-07-01T11:14:38.000000Z","created_at":"2023-07-01T11:14:38.000000Z","id":1}',
             ),
             323 => 
             array (
@@ -20941,7 +20941,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 18:16:02',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Putri Lembang","alamat":null,"deskripsi":null,"slug":"g-putri-lembang","updated_at":"2023-07-01T11:16:02.000000Z","created_at":"2023-07-01T11:16:02.000000Z","id":2}',
+                'data' => '{"nama":"G. Putri Lembang","kelas":null,"deskripsi":null,"slug":"g-putri-lembang","updated_at":"2023-07-01T11:16:02.000000Z","created_at":"2023-07-01T11:16:02.000000Z","id":2}',
             ),
             324 => 
             array (
@@ -21760,7 +21760,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:23:33',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Burangrang","alamat":null,"deskripsi":null,"slug":"g-burangrang-2","updated_at":"2023-07-01T12:23:33.000000Z","created_at":"2023-07-01T12:23:33.000000Z","id":3}',
+                'data' => '{"nama":"G. Burangrang","kelas":null,"deskripsi":null,"slug":"g-burangrang-2","updated_at":"2023-07-01T12:23:33.000000Z","created_at":"2023-07-01T12:23:33.000000Z","id":3}',
             ),
             415 => 
             array (
@@ -21769,7 +21769,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:23:33',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Putri Lembang","alamat":null,"deskripsi":null,"slug":"g-putri-lembang-2","updated_at":"2023-07-01T12:23:33.000000Z","created_at":"2023-07-01T12:23:33.000000Z","id":4}',
+                'data' => '{"nama":"G. Putri Lembang","kelas":null,"deskripsi":null,"slug":"g-putri-lembang-2","updated_at":"2023-07-01T12:23:33.000000Z","created_at":"2023-07-01T12:23:33.000000Z","id":4}',
             ),
             416 => 
             array (
@@ -21778,7 +21778,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:23:34',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Bukit Tunggul","alamat":null,"deskripsi":null,"slug":"g-bukit-tunggul","updated_at":"2023-07-01T12:23:34.000000Z","created_at":"2023-07-01T12:23:34.000000Z","id":5}',
+                'data' => '{"nama":"G. Bukit Tunggul","kelas":null,"deskripsi":null,"slug":"g-bukit-tunggul","updated_at":"2023-07-01T12:23:34.000000Z","created_at":"2023-07-01T12:23:34.000000Z","id":5}',
             ),
             417 => 
             array (
@@ -21787,7 +21787,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:23:34',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Manglayang","alamat":null,"deskripsi":null,"slug":"g-manglayang","updated_at":"2023-07-01T12:23:34.000000Z","created_at":"2023-07-01T12:23:34.000000Z","id":6}',
+                'data' => '{"nama":"G. Manglayang","kelas":null,"deskripsi":null,"slug":"g-manglayang","updated_at":"2023-07-01T12:23:34.000000Z","created_at":"2023-07-01T12:23:34.000000Z","id":6}',
             ),
             418 => 
             array (
@@ -21796,7 +21796,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:23:34',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Mandalawangi","alamat":null,"deskripsi":null,"slug":"g-mandalawangi","updated_at":"2023-07-01T12:23:34.000000Z","created_at":"2023-07-01T12:23:34.000000Z","id":7}',
+                'data' => '{"nama":"G. Mandalawangi","kelas":null,"deskripsi":null,"slug":"g-mandalawangi","updated_at":"2023-07-01T12:23:34.000000Z","created_at":"2023-07-01T12:23:34.000000Z","id":7}',
             ),
             419 => 
             array (
@@ -21805,7 +21805,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:23:34',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Artapela ","alamat":null,"deskripsi":null,"slug":"g-artapela","updated_at":"2023-07-01T12:23:34.000000Z","created_at":"2023-07-01T12:23:34.000000Z","id":8}',
+                'data' => '{"nama":"G. Artapela ","kelas":null,"deskripsi":null,"slug":"g-artapela","updated_at":"2023-07-01T12:23:34.000000Z","created_at":"2023-07-01T12:23:34.000000Z","id":8}',
             ),
             420 => 
             array (
@@ -21814,7 +21814,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:23:34',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Patuha","alamat":null,"deskripsi":null,"slug":"g-patuha","updated_at":"2023-07-01T12:23:34.000000Z","created_at":"2023-07-01T12:23:34.000000Z","id":9}',
+                'data' => '{"nama":"G. Patuha","kelas":null,"deskripsi":null,"slug":"g-patuha","updated_at":"2023-07-01T12:23:34.000000Z","created_at":"2023-07-01T12:23:34.000000Z","id":9}',
             ),
             421 => 
             array (
@@ -21823,7 +21823,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:23:34',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Puntang","alamat":null,"deskripsi":null,"slug":"g-puntang","updated_at":"2023-07-01T12:23:34.000000Z","created_at":"2023-07-01T12:23:34.000000Z","id":10}',
+                'data' => '{"nama":"G. Puntang","kelas":null,"deskripsi":null,"slug":"g-puntang","updated_at":"2023-07-01T12:23:34.000000Z","created_at":"2023-07-01T12:23:34.000000Z","id":10}',
             ),
             422 => 
             array (
@@ -21832,7 +21832,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:23:34',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Tambakruyung","alamat":null,"deskripsi":null,"slug":"g-tambakruyung","updated_at":"2023-07-01T12:23:34.000000Z","created_at":"2023-07-01T12:23:34.000000Z","id":11}',
+                'data' => '{"nama":"G. Tambakruyung","kelas":null,"deskripsi":null,"slug":"g-tambakruyung","updated_at":"2023-07-01T12:23:34.000000Z","created_at":"2023-07-01T12:23:34.000000Z","id":11}',
             ),
             423 => 
             array (
@@ -21841,7 +21841,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:23:34',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Bendera","alamat":null,"deskripsi":null,"slug":"g-bendera","updated_at":"2023-07-01T12:23:34.000000Z","created_at":"2023-07-01T12:23:34.000000Z","id":12}',
+                'data' => '{"nama":"G. Bendera","kelas":null,"deskripsi":null,"slug":"g-bendera","updated_at":"2023-07-01T12:23:34.000000Z","created_at":"2023-07-01T12:23:34.000000Z","id":12}',
             ),
             424 => 
             array (
@@ -21877,7 +21877,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:29:34',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Burangrang","alamat":null,"deskripsi":null,"slug":"g-burangrang-3","updated_at":"2023-07-01T12:29:34.000000Z","created_at":"2023-07-01T12:29:34.000000Z","id":23}',
+                'data' => '{"nama":"G. Burangrang","kelas":null,"deskripsi":null,"slug":"g-burangrang-3","updated_at":"2023-07-01T12:29:34.000000Z","created_at":"2023-07-01T12:29:34.000000Z","id":23}',
             ),
             428 => 
             array (
@@ -21922,7 +21922,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:29:34',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Putri Lembang","alamat":null,"deskripsi":null,"slug":"g-putri-lembang-3","updated_at":"2023-07-01T12:29:34.000000Z","created_at":"2023-07-01T12:29:34.000000Z","id":24}',
+                'data' => '{"nama":"G. Putri Lembang","kelas":null,"deskripsi":null,"slug":"g-putri-lembang-3","updated_at":"2023-07-01T12:29:34.000000Z","created_at":"2023-07-01T12:29:34.000000Z","id":24}',
             ),
             433 => 
             array (
@@ -21967,7 +21967,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:29:34',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Bukit Tunggul","alamat":null,"deskripsi":null,"slug":"g-bukit-tunggul-2","updated_at":"2023-07-01T12:29:34.000000Z","created_at":"2023-07-01T12:29:34.000000Z","id":25}',
+                'data' => '{"nama":"G. Bukit Tunggul","kelas":null,"deskripsi":null,"slug":"g-bukit-tunggul-2","updated_at":"2023-07-01T12:29:34.000000Z","created_at":"2023-07-01T12:29:34.000000Z","id":25}',
             ),
             438 => 
             array (
@@ -22012,7 +22012,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:29:34',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Manglayang","alamat":null,"deskripsi":null,"slug":"g-manglayang-2","updated_at":"2023-07-01T12:29:34.000000Z","created_at":"2023-07-01T12:29:34.000000Z","id":26}',
+                'data' => '{"nama":"G. Manglayang","kelas":null,"deskripsi":null,"slug":"g-manglayang-2","updated_at":"2023-07-01T12:29:34.000000Z","created_at":"2023-07-01T12:29:34.000000Z","id":26}',
             ),
             443 => 
             array (
@@ -22057,7 +22057,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:29:35',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Mandalawangi","alamat":null,"deskripsi":null,"slug":"g-mandalawangi-2","updated_at":"2023-07-01T12:29:35.000000Z","created_at":"2023-07-01T12:29:35.000000Z","id":27}',
+                'data' => '{"nama":"G. Mandalawangi","kelas":null,"deskripsi":null,"slug":"g-mandalawangi-2","updated_at":"2023-07-01T12:29:35.000000Z","created_at":"2023-07-01T12:29:35.000000Z","id":27}',
             ),
             448 => 
             array (
@@ -22102,7 +22102,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:29:35',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Artapela ","alamat":null,"deskripsi":null,"slug":"g-artapela-2","updated_at":"2023-07-01T12:29:35.000000Z","created_at":"2023-07-01T12:29:35.000000Z","id":28}',
+                'data' => '{"nama":"G. Artapela ","kelas":null,"deskripsi":null,"slug":"g-artapela-2","updated_at":"2023-07-01T12:29:35.000000Z","created_at":"2023-07-01T12:29:35.000000Z","id":28}',
             ),
             453 => 
             array (
@@ -22147,7 +22147,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:29:35',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Patuha","alamat":null,"deskripsi":null,"slug":"g-patuha-2","updated_at":"2023-07-01T12:29:35.000000Z","created_at":"2023-07-01T12:29:35.000000Z","id":29}',
+                'data' => '{"nama":"G. Patuha","kelas":null,"deskripsi":null,"slug":"g-patuha-2","updated_at":"2023-07-01T12:29:35.000000Z","created_at":"2023-07-01T12:29:35.000000Z","id":29}',
             ),
             458 => 
             array (
@@ -22192,7 +22192,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:29:35',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Puntang","alamat":null,"deskripsi":null,"slug":"g-puntang-2","updated_at":"2023-07-01T12:29:35.000000Z","created_at":"2023-07-01T12:29:35.000000Z","id":30}',
+                'data' => '{"nama":"G. Puntang","kelas":null,"deskripsi":null,"slug":"g-puntang-2","updated_at":"2023-07-01T12:29:35.000000Z","created_at":"2023-07-01T12:29:35.000000Z","id":30}',
             ),
             463 => 
             array (
@@ -22237,7 +22237,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:29:35',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Tambakruyung","alamat":null,"deskripsi":null,"slug":"g-tambakruyung-2","updated_at":"2023-07-01T12:29:35.000000Z","created_at":"2023-07-01T12:29:35.000000Z","id":31}',
+                'data' => '{"nama":"G. Tambakruyung","kelas":null,"deskripsi":null,"slug":"g-tambakruyung-2","updated_at":"2023-07-01T12:29:35.000000Z","created_at":"2023-07-01T12:29:35.000000Z","id":31}',
             ),
             468 => 
             array (
@@ -22282,7 +22282,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:29:35',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Bendera","alamat":null,"deskripsi":null,"slug":"g-bendera-2","updated_at":"2023-07-01T12:29:35.000000Z","created_at":"2023-07-01T12:29:35.000000Z","id":32}',
+                'data' => '{"nama":"G. Bendera","kelas":null,"deskripsi":null,"slug":"g-bendera-2","updated_at":"2023-07-01T12:29:35.000000Z","created_at":"2023-07-01T12:29:35.000000Z","id":32}',
             ),
             473 => 
             array (
@@ -22354,7 +22354,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:32:53',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Burangrang","alamat":null,"deskripsi":null,"slug":"g-burangrang-4","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":35}',
+                'data' => '{"nama":"G. Burangrang","kelas":null,"deskripsi":null,"slug":"g-burangrang-4","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":35}',
             ),
             481 => 
             array (
@@ -22399,7 +22399,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:32:53',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Putri Lembang","alamat":null,"deskripsi":null,"slug":"g-putri-lembang-4","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":36}',
+                'data' => '{"nama":"G. Putri Lembang","kelas":null,"deskripsi":null,"slug":"g-putri-lembang-4","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":36}',
             ),
             486 => 
             array (
@@ -22444,7 +22444,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:32:53',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Bukit Tunggul","alamat":null,"deskripsi":null,"slug":"g-bukit-tunggul-3","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":37}',
+                'data' => '{"nama":"G. Bukit Tunggul","kelas":null,"deskripsi":null,"slug":"g-bukit-tunggul-3","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":37}',
             ),
             491 => 
             array (
@@ -22489,7 +22489,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:32:53',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Manglayang","alamat":null,"deskripsi":null,"slug":"g-manglayang-3","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":38}',
+                'data' => '{"nama":"G. Manglayang","kelas":null,"deskripsi":null,"slug":"g-manglayang-3","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":38}',
             ),
             496 => 
             array (
@@ -22536,7 +22536,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:32:53',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Mandalawangi","alamat":null,"deskripsi":null,"slug":"g-mandalawangi-3","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":39}',
+                'data' => '{"nama":"G. Mandalawangi","kelas":null,"deskripsi":null,"slug":"g-mandalawangi-3","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":39}',
             ),
             1 => 
             array (
@@ -22581,7 +22581,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:32:53',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Artapela ","alamat":null,"deskripsi":null,"slug":"g-artapela-3","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":40}',
+                'data' => '{"nama":"G. Artapela ","kelas":null,"deskripsi":null,"slug":"g-artapela-3","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":40}',
             ),
             6 => 
             array (
@@ -22626,7 +22626,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:32:53',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Patuha","alamat":null,"deskripsi":null,"slug":"g-patuha-3","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":41}',
+                'data' => '{"nama":"G. Patuha","kelas":null,"deskripsi":null,"slug":"g-patuha-3","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":41}',
             ),
             11 => 
             array (
@@ -22671,7 +22671,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:32:53',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Puntang","alamat":null,"deskripsi":null,"slug":"g-puntang-3","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":42}',
+                'data' => '{"nama":"G. Puntang","kelas":null,"deskripsi":null,"slug":"g-puntang-3","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":42}',
             ),
             16 => 
             array (
@@ -22716,7 +22716,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:32:53',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Tambakruyung","alamat":null,"deskripsi":null,"slug":"g-tambakruyung-3","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":43}',
+                'data' => '{"nama":"G. Tambakruyung","kelas":null,"deskripsi":null,"slug":"g-tambakruyung-3","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":43}',
             ),
             21 => 
             array (
@@ -22761,7 +22761,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:32:53',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Bendera","alamat":null,"deskripsi":null,"slug":"g-bendera-3","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":44}',
+                'data' => '{"nama":"G. Bendera","kelas":null,"deskripsi":null,"slug":"g-bendera-3","updated_at":"2023-07-01T12:32:53.000000Z","created_at":"2023-07-01T12:32:53.000000Z","id":44}',
             ),
             26 => 
             array (
@@ -22833,7 +22833,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:34:47',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Burangrang","alamat":null,"deskripsi":null,"import_id":16,"slug":"g-burangrang","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":1}',
+                'data' => '{"nama":"G. Burangrang","kelas":null,"deskripsi":null,"import_id":16,"slug":"g-burangrang","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":1}',
             ),
             34 => 
             array (
@@ -22878,7 +22878,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:34:47',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Putri Lembang","alamat":null,"deskripsi":null,"import_id":16,"slug":"g-putri-lembang","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":2}',
+                'data' => '{"nama":"G. Putri Lembang","kelas":null,"deskripsi":null,"import_id":16,"slug":"g-putri-lembang","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":2}',
             ),
             39 => 
             array (
@@ -22923,7 +22923,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:34:47',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Bukit Tunggul","alamat":null,"deskripsi":null,"import_id":16,"slug":"g-bukit-tunggul","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":3}',
+                'data' => '{"nama":"G. Bukit Tunggul","kelas":null,"deskripsi":null,"import_id":16,"slug":"g-bukit-tunggul","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":3}',
             ),
             44 => 
             array (
@@ -22968,7 +22968,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:34:47',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Manglayang","alamat":null,"deskripsi":null,"import_id":16,"slug":"g-manglayang","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":4}',
+                'data' => '{"nama":"G. Manglayang","kelas":null,"deskripsi":null,"import_id":16,"slug":"g-manglayang","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":4}',
             ),
             49 => 
             array (
@@ -23013,7 +23013,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:34:47',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Mandalawangi","alamat":null,"deskripsi":null,"import_id":16,"slug":"g-mandalawangi","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":5}',
+                'data' => '{"nama":"G. Mandalawangi","kelas":null,"deskripsi":null,"import_id":16,"slug":"g-mandalawangi","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":5}',
             ),
             54 => 
             array (
@@ -23058,7 +23058,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:34:47',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Artapela ","alamat":null,"deskripsi":null,"import_id":16,"slug":"g-artapela","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":6}',
+                'data' => '{"nama":"G. Artapela ","kelas":null,"deskripsi":null,"import_id":16,"slug":"g-artapela","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":6}',
             ),
             59 => 
             array (
@@ -23103,7 +23103,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:34:47',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Patuha","alamat":null,"deskripsi":null,"import_id":16,"slug":"g-patuha","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":7}',
+                'data' => '{"nama":"G. Patuha","kelas":null,"deskripsi":null,"import_id":16,"slug":"g-patuha","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":7}',
             ),
             64 => 
             array (
@@ -23148,7 +23148,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:34:47',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Puntang","alamat":null,"deskripsi":null,"import_id":16,"slug":"g-puntang","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":8}',
+                'data' => '{"nama":"G. Puntang","kelas":null,"deskripsi":null,"import_id":16,"slug":"g-puntang","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":8}',
             ),
             69 => 
             array (
@@ -23193,7 +23193,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:34:47',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Tambakruyung","alamat":null,"deskripsi":null,"import_id":16,"slug":"g-tambakruyung","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":9}',
+                'data' => '{"nama":"G. Tambakruyung","kelas":null,"deskripsi":null,"import_id":16,"slug":"g-tambakruyung","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":9}',
             ),
             74 => 
             array (
@@ -23238,7 +23238,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 19:34:47',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Bendera","alamat":null,"deskripsi":null,"import_id":16,"slug":"g-bendera","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":10}',
+                'data' => '{"nama":"G. Bendera","kelas":null,"deskripsi":null,"import_id":16,"slug":"g-bendera","updated_at":"2023-07-01T12:34:47.000000Z","created_at":"2023-07-01T12:34:47.000000Z","id":10}',
             ),
             79 => 
             array (
@@ -23382,7 +23382,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 20:24:06',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Burangrang","alamat":null,"deskripsi":null,"import_id":17,"slug":"g-burangrang","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":11}',
+                'data' => '{"nama":"G. Burangrang","kelas":null,"deskripsi":null,"import_id":17,"slug":"g-burangrang","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":11}',
             ),
             95 => 
             array (
@@ -23427,7 +23427,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 20:24:06',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Putri Lembang","alamat":null,"deskripsi":null,"import_id":17,"slug":"g-putri-lembang","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":12}',
+                'data' => '{"nama":"G. Putri Lembang","kelas":null,"deskripsi":null,"import_id":17,"slug":"g-putri-lembang","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":12}',
             ),
             100 => 
             array (
@@ -23472,7 +23472,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 20:24:06',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Bukit Tunggul","alamat":null,"deskripsi":null,"import_id":17,"slug":"g-bukit-tunggul","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":13}',
+                'data' => '{"nama":"G. Bukit Tunggul","kelas":null,"deskripsi":null,"import_id":17,"slug":"g-bukit-tunggul","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":13}',
             ),
             105 => 
             array (
@@ -23517,7 +23517,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 20:24:06',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Manglayang","alamat":null,"deskripsi":null,"import_id":17,"slug":"g-manglayang","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":14}',
+                'data' => '{"nama":"G. Manglayang","kelas":null,"deskripsi":null,"import_id":17,"slug":"g-manglayang","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":14}',
             ),
             110 => 
             array (
@@ -23562,7 +23562,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 20:24:06',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Mandalawangi","alamat":null,"deskripsi":null,"import_id":17,"slug":"g-mandalawangi","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":15}',
+                'data' => '{"nama":"G. Mandalawangi","kelas":null,"deskripsi":null,"import_id":17,"slug":"g-mandalawangi","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":15}',
             ),
             115 => 
             array (
@@ -23607,7 +23607,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 20:24:06',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Artapela ","alamat":null,"deskripsi":null,"import_id":17,"slug":"g-artapela","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":16}',
+                'data' => '{"nama":"G. Artapela ","kelas":null,"deskripsi":null,"import_id":17,"slug":"g-artapela","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":16}',
             ),
             120 => 
             array (
@@ -23652,7 +23652,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 20:24:06',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Patuha","alamat":null,"deskripsi":null,"import_id":17,"slug":"g-patuha","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":17}',
+                'data' => '{"nama":"G. Patuha","kelas":null,"deskripsi":null,"import_id":17,"slug":"g-patuha","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":17}',
             ),
             125 => 
             array (
@@ -23697,7 +23697,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 20:24:06',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Puntang","alamat":null,"deskripsi":null,"import_id":17,"slug":"g-puntang","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":18}',
+                'data' => '{"nama":"G. Puntang","kelas":null,"deskripsi":null,"import_id":17,"slug":"g-puntang","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":18}',
             ),
             130 => 
             array (
@@ -23742,7 +23742,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 20:24:06',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Tambakruyung","alamat":null,"deskripsi":null,"import_id":17,"slug":"g-tambakruyung","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":19}',
+                'data' => '{"nama":"G. Tambakruyung","kelas":null,"deskripsi":null,"import_id":17,"slug":"g-tambakruyung","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":19}',
             ),
             135 => 
             array (
@@ -23787,7 +23787,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 20:24:06',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Bendera","alamat":null,"deskripsi":null,"import_id":17,"slug":"g-bendera","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":20}',
+                'data' => '{"nama":"G. Bendera","kelas":null,"deskripsi":null,"import_id":17,"slug":"g-bendera","updated_at":"2023-07-01T13:24:06.000000Z","created_at":"2023-07-01T13:24:06.000000Z","id":20}',
             ),
             140 => 
             array (
@@ -23931,7 +23931,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 22:45:45',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Burangrang","alamat":null,"deskripsi":null,"import_id":18,"slug":"g-burangrang","updated_at":"2023-07-01T15:45:45.000000Z","created_at":"2023-07-01T15:45:45.000000Z","id":21}',
+                'data' => '{"nama":"G. Burangrang","kelas":null,"deskripsi":null,"import_id":18,"slug":"g-burangrang","updated_at":"2023-07-01T15:45:45.000000Z","created_at":"2023-07-01T15:45:45.000000Z","id":21}',
             ),
             156 => 
             array (
@@ -23976,7 +23976,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 22:45:45',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Putri Lembang","alamat":null,"deskripsi":null,"import_id":18,"slug":"g-putri-lembang","updated_at":"2023-07-01T15:45:45.000000Z","created_at":"2023-07-01T15:45:45.000000Z","id":22}',
+                'data' => '{"nama":"G. Putri Lembang","kelas":null,"deskripsi":null,"import_id":18,"slug":"g-putri-lembang","updated_at":"2023-07-01T15:45:45.000000Z","created_at":"2023-07-01T15:45:45.000000Z","id":22}',
             ),
             161 => 
             array (
@@ -24021,7 +24021,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 22:45:45',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Bukit Tunggul","alamat":null,"deskripsi":null,"import_id":18,"slug":"g-bukit-tunggul","updated_at":"2023-07-01T15:45:45.000000Z","created_at":"2023-07-01T15:45:45.000000Z","id":23}',
+                'data' => '{"nama":"G. Bukit Tunggul","kelas":null,"deskripsi":null,"import_id":18,"slug":"g-bukit-tunggul","updated_at":"2023-07-01T15:45:45.000000Z","created_at":"2023-07-01T15:45:45.000000Z","id":23}',
             ),
             166 => 
             array (
@@ -24066,7 +24066,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 22:45:45',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Manglayang","alamat":null,"deskripsi":null,"import_id":18,"slug":"g-manglayang","updated_at":"2023-07-01T15:45:45.000000Z","created_at":"2023-07-01T15:45:45.000000Z","id":24}',
+                'data' => '{"nama":"G. Manglayang","kelas":null,"deskripsi":null,"import_id":18,"slug":"g-manglayang","updated_at":"2023-07-01T15:45:45.000000Z","created_at":"2023-07-01T15:45:45.000000Z","id":24}',
             ),
             171 => 
             array (
@@ -24111,7 +24111,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 22:45:45',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Mandalawangi","alamat":null,"deskripsi":null,"import_id":18,"slug":"g-mandalawangi","updated_at":"2023-07-01T15:45:45.000000Z","created_at":"2023-07-01T15:45:45.000000Z","id":25}',
+                'data' => '{"nama":"G. Mandalawangi","kelas":null,"deskripsi":null,"import_id":18,"slug":"g-mandalawangi","updated_at":"2023-07-01T15:45:45.000000Z","created_at":"2023-07-01T15:45:45.000000Z","id":25}',
             ),
             176 => 
             array (
@@ -24156,7 +24156,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 22:45:45',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Artapela ","alamat":null,"deskripsi":null,"import_id":18,"slug":"g-artapela","updated_at":"2023-07-01T15:45:45.000000Z","created_at":"2023-07-01T15:45:45.000000Z","id":26}',
+                'data' => '{"nama":"G. Artapela ","kelas":null,"deskripsi":null,"import_id":18,"slug":"g-artapela","updated_at":"2023-07-01T15:45:45.000000Z","created_at":"2023-07-01T15:45:45.000000Z","id":26}',
             ),
             181 => 
             array (
@@ -24201,7 +24201,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 22:45:46',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Patuha","alamat":null,"deskripsi":null,"import_id":18,"slug":"g-patuha","updated_at":"2023-07-01T15:45:46.000000Z","created_at":"2023-07-01T15:45:46.000000Z","id":27}',
+                'data' => '{"nama":"G. Patuha","kelas":null,"deskripsi":null,"import_id":18,"slug":"g-patuha","updated_at":"2023-07-01T15:45:46.000000Z","created_at":"2023-07-01T15:45:46.000000Z","id":27}',
             ),
             186 => 
             array (
@@ -24246,7 +24246,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 22:45:46',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Puntang","alamat":null,"deskripsi":null,"import_id":18,"slug":"g-puntang","updated_at":"2023-07-01T15:45:46.000000Z","created_at":"2023-07-01T15:45:46.000000Z","id":28}',
+                'data' => '{"nama":"G. Puntang","kelas":null,"deskripsi":null,"import_id":18,"slug":"g-puntang","updated_at":"2023-07-01T15:45:46.000000Z","created_at":"2023-07-01T15:45:46.000000Z","id":28}',
             ),
             191 => 
             array (
@@ -24291,7 +24291,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 22:45:46',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Tambakruyung","alamat":null,"deskripsi":null,"import_id":18,"slug":"g-tambakruyung","updated_at":"2023-07-01T15:45:46.000000Z","created_at":"2023-07-01T15:45:46.000000Z","id":29}',
+                'data' => '{"nama":"G. Tambakruyung","kelas":null,"deskripsi":null,"import_id":18,"slug":"g-tambakruyung","updated_at":"2023-07-01T15:45:46.000000Z","created_at":"2023-07-01T15:45:46.000000Z","id":29}',
             ),
             196 => 
             array (
@@ -24336,7 +24336,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 22:45:46',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Bendera","alamat":null,"deskripsi":null,"import_id":18,"slug":"g-bendera","updated_at":"2023-07-01T15:45:46.000000Z","created_at":"2023-07-01T15:45:46.000000Z","id":30}',
+                'data' => '{"nama":"G. Bendera","kelas":null,"deskripsi":null,"import_id":18,"slug":"g-bendera","updated_at":"2023-07-01T15:45:46.000000Z","created_at":"2023-07-01T15:45:46.000000Z","id":30}',
             ),
             201 => 
             array (
@@ -24669,7 +24669,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 23:16:57',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Burangrang","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-burangrang","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":31}',
+                'data' => '{"nama":"G. Burangrang","kelas":null,"deskripsi":null,"import_id":19,"slug":"g-burangrang","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":31}',
             ),
             238 => 
             array (
@@ -24714,7 +24714,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 23:16:57',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Putri Lembang","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-putri-lembang","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":32}',
+                'data' => '{"nama":"G. Putri Lembang","kelas":null,"deskripsi":null,"import_id":19,"slug":"g-putri-lembang","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":32}',
             ),
             243 => 
             array (
@@ -24759,7 +24759,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 23:16:57',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Bukit Tunggul","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-bukit-tunggul","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":33}',
+                'data' => '{"nama":"G. Bukit Tunggul","kelas":null,"deskripsi":null,"import_id":19,"slug":"g-bukit-tunggul","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":33}',
             ),
             248 => 
             array (
@@ -24804,7 +24804,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 23:16:57',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Manglayang","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-manglayang","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":34}',
+                'data' => '{"nama":"G. Manglayang","kelas":null,"deskripsi":null,"import_id":19,"slug":"g-manglayang","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":34}',
             ),
             253 => 
             array (
@@ -24849,7 +24849,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 23:16:57',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Mandalawangi","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-mandalawangi","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":35}',
+                'data' => '{"nama":"G. Mandalawangi","kelas":null,"deskripsi":null,"import_id":19,"slug":"g-mandalawangi","updated_at":"2023-07-01T16:16:57.000000Z","created_at":"2023-07-01T16:16:57.000000Z","id":35}',
             ),
             258 => 
             array (
@@ -24894,7 +24894,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 23:16:58',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Artapela ","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-artapela","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":36}',
+                'data' => '{"nama":"G. Artapela ","kelas":null,"deskripsi":null,"import_id":19,"slug":"g-artapela","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":36}',
             ),
             263 => 
             array (
@@ -24939,7 +24939,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 23:16:58',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Patuha","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-patuha","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":37}',
+                'data' => '{"nama":"G. Patuha","kelas":null,"deskripsi":null,"import_id":19,"slug":"g-patuha","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":37}',
             ),
             268 => 
             array (
@@ -24984,7 +24984,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 23:16:58',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Puntang","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-puntang","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":38}',
+                'data' => '{"nama":"G. Puntang","kelas":null,"deskripsi":null,"import_id":19,"slug":"g-puntang","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":38}',
             ),
             273 => 
             array (
@@ -25029,7 +25029,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 23:16:58',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Tambakruyung","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-tambakruyung","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":39}',
+                'data' => '{"nama":"G. Tambakruyung","kelas":null,"deskripsi":null,"import_id":19,"slug":"g-tambakruyung","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":39}',
             ),
             278 => 
             array (
@@ -25074,7 +25074,7 @@ class LogsTableSeeder extends Seeder
                 'log_date' => '2023-07-01 23:16:58',
                 'table_name' => 'alternatif',
                 'log_type' => 'create',
-                'data' => '{"nama":"G. Bendera","alamat":null,"deskripsi":null,"import_id":19,"slug":"g-bendera","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":40}',
+                'data' => '{"nama":"G. Bendera","kelas":null,"deskripsi":null,"import_id":19,"slug":"g-bendera","updated_at":"2023-07-01T16:16:58.000000Z","created_at":"2023-07-01T16:16:58.000000Z","id":40}',
             ),
             283 => 
             array (

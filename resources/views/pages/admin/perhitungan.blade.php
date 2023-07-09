@@ -1,15 +1,11 @@
 @extends('layouts.admin.adminlte3.master')
 
 @section('content')
-    <div class="card radius-10 border-start border-0 border-4 border-primary mt-4">
+    <div class="card card-info card-outline">
         <div class="card-body">
-            <div class="d-flex align-items-center">
-                <div>
-                    <h6 class="my-1 text-primary">
-                        Perhitungan dengan metode Multi-Objective Optimization by Ratio Analysis (MOORA)
-                    </h6>
-                </div>
-            </div>
+            <h3 class="my-1">
+                Perhitungan dengan metode Multi-Objective Optimization by Ratio Analysis (MOORA)
+            </h3>
         </div>
     </div>
 
@@ -17,13 +13,13 @@
         $index = 0;
         $datas = $hitung[$index++];
     @endphp
-    <div class="card">
-        <div class="card-body">
-            <div class="card-title d-md-flex flex-row justify-content-between">
-                <div>
-                    <h6 class="mt-2 text-uppercase">1. Tabel alternatif</h6>
-                </div>
+    <div class="card card-primary card-outline">
+        <div class="card-header">
+            <div class="d-flex justify-content-between w-100">
+                <h3 class="card-title">1. Tabel alternatif</h3>
             </div>
+        </div>
+        <div class="card-body">
             <table class="table table-striped table-hover w-100 datatable">
                 <thead>
                     <tr>
@@ -65,13 +61,13 @@
     </div>
 
     @php $datas = $hitung[$index++]; @endphp
-    <div class="card">
-        <div class="card-body">
-            <div class="card-title d-md-flex flex-row justify-content-between">
-                <div>
-                    <h6 class="mt-2 text-uppercase">2. Tabel Nilai alternatif berdasarkan kriteria</h6>
-                </div>
+    <div class="card card-primary card-outline">
+        <div class="card-header">
+            <div class="d-flex justify-content-between w-100">
+                <h3 class="card-title">2. Tabel Nilai alternatif berdasarkan kriteria</h3>
             </div>
+        </div>
+        <div class="card-body">
             <table class="table table-striped table-hover w-100 datatable">
                 <thead>
                     <tr>
@@ -113,14 +109,14 @@
     </div>
 
     @php $datas = $hitung[$index++]; @endphp
-    <div class="card">
-        <div class="card-body">
-            <div class="card-title d-md-flex flex-row justify-content-between">
-                <div>
-                    <h6 class="mt-2 text-uppercase">4. Buat tabel pembagi</h6>
-                    <small>Digunakan untuk proses normalisasi.</small>
-                </div>
+    <div class="card card-primary card-outline">
+        <div class="card-header">
+            <div class="d-flex justify-content-between w-100">
+                <h3 class="card-title">3. Buat tabel pembagi</h3>
+                <small>Digunakan untuk proses normalisasi.</small>
             </div>
+        </div>
+        <div class="card-body">
             <table class="table table-bordered">
                 <tr>
                     <td class="fw-bold">Pembagi</td>
@@ -135,11 +131,17 @@
     </div>
 
     @php $datas = $hitung[$index++]; @endphp
-    <div class="card">
+    <div class="card card-primary card-outline">
+        <div class="card-header">
+            <div class="d-flex justify-content-between w-100">
+                <h3 class="card-title">4. Normalisasi nilai alternatif</h3>
+            </div>
+        </div>
         <div class="card-body">
-            <div class="card-title d-md-flex flex-row justify-content-between">
+            <div class="d-flex justify-content-between w-100">
                 <div>
-                    <h6 class="mt-2 text-uppercase">4. Normalisasi nilai alternatif</h6>
+                    <h3 class="card-title">
+                        </h6>
                 </div>
             </div>
             <table class="table table-striped table-hover w-100 datatable">
@@ -177,14 +179,14 @@
     </div>
 
     @php $datas = $hitung[$index++]; @endphp
-    <div class="card">
-        <div class="card-body">
-            <div class="card-title d-md-flex flex-row justify-content-between">
-                <div>
-                    <h6 class="mt-2 text-uppercase">5. Nilai data alternatif dikali bobot</h6>
-                </div>
+    <div class="card card-primary card-outline">
+        <div class="card-header">
+            <div class="d-flex justify-content-between w-100">
+                <h3 class="card-title">5. Nilai data alternatif dikali bobot</h3>
             </div>
-            <table class="table table-bordered">
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered mb-3`">
                 <tr>
                     <td class="fw-bold">Kriteria</td>
                     @foreach ($datas['header'] as $header)
@@ -236,16 +238,15 @@
     </div>
 
     @php $datas = $hitung[$index++]; @endphp
-    <div class="card">
-        <div class="card-body">
-            <div class="card-title d-md-flex flex-row justify-content-between">
-                <div>
-                    <h6 class="mt-2 text-uppercase">
-                        6. Nilai data alternatif dijumlahan berdasarkan jenis dan dihitung
-                        dengan metode moora
-                    </h6>
-                </div>
+    <div class="card card-primary card-outline">
+        <div class="card-header">
+            <div class="d-flex justify-content-between w-100">
+                <h3 class="card-title">
+                    6. Nilai data alternatif dijumlahan berdasarkan jenis dan dihitung dengan metode moora
+                </h3>
             </div>
+        </div>
+        <div class="card-body">
             <table class="table table-striped table-hover w-100 datatable">
                 <thead>
                     <tr>
@@ -282,12 +283,19 @@
 
 @section('stylesheet')
     <link rel="stylesheet"
-        href="{{ asset_admin('plugins/datatable/css/dataTables.bootstrap5.min.css', name: 'rockeradmin') }}" />
+        href="{{ asset_admin('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css', name: 'adminlte3') }}" />
+    <link rel="stylesheet"
+        href="{{ asset_admin('plugins/datatables-responsive/css/responsive.bootstrap4.min.css', name: 'adminlte3') }}" />
 @endsection
 
 @section('javascript')
-    <script src="{{ asset_admin('plugins/datatable/js/jquery.dataTables.min.js', name: 'rockeradmin') }}"></script>
-    <script src="{{ asset_admin('plugins/datatable/js/dataTables.bootstrap5.min.js', name: 'rockeradmin') }}"></script>
+    <script src="{{ asset_admin('plugins/datatables/jquery.dataTables.min.js', name: 'adminlte3') }}"></script>
+    <script src="{{ asset_admin('plugins/datatables/jquery.dataTables.min.js', name: 'adminlte3') }}"></script>
+    <script src="{{ asset_admin('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js', name: 'adminlte3') }}"></script>
+    <script src="{{ asset_admin('plugins/datatables-responsive/js/dataTables.responsive.min.js', name: 'adminlte3') }}">
+    </script>
+    <script src="{{ asset_admin('plugins/datatables-responsive/js/responsive.bootstrap4.min.js', name: 'adminlte3') }}">
+    </script>
     <script src="{{ asset_admin('plugins/loading/loadingoverlay.min.js', name: 'sash') }}"></script>
     @php
         $resource = resource_loader(blade_path: $view);

@@ -16,10 +16,10 @@ $(document).ready(function () {
             data: 'id',
             name: 'id',
             render(data, type, full, meta) {
-                const btn_edit = can_update ? `<a href="{{ url(l_prefix_uri($hpu,'edit')) }}/${data}" type="button" data-toggle="tooltip" class="btn btn-rounded btn-primary btn-sm me-1" title="Ubah Data">
+                const btn_edit = can_update ? `<a href="{{ url(l_prefix_uri($hpu,'edit')) }}/${data}" type="button" data-toggle="tooltip" class="btn btn-rounded btn-primary btn-sm mr-1" title="Ubah Data">
                         <i class="fas fa-edit"></i></a>` : '';
 
-                const btn_delete = can_delete ? `<button type="button" data-toggle="tooltip" class="btn btn-rounded btn-danger btn-sm me-1" title="Hapus Data" onClick="deleteFunc('${data}')">
+                const btn_delete = can_delete ? `<button type="button" data-toggle="tooltip" class="btn btn-rounded btn-danger btn-sm mr-1" title="Hapus Data" onClick="deleteFunc('${data}')">
                         <i class="fas fa-trash"></i></button> ` : '';
                 return btn_edit + btn_delete;
             },

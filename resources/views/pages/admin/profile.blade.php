@@ -5,13 +5,15 @@
         <div class="col-lg-4">
             <div class="card">
                 <div class="card-body">
-                    <div class="d-flex flex-column align-items-center text-center">
+                    <div class="d-flex flex-column align-iteml-center text-center">
                         @php
                             $templateProfileFoto = auth()->user()->foto ? asset('assets/profile/' . auth()->user()->foto) : asset('profile.png');
                         @endphp
+                        <div>
 
-                        <img src="{{ $templateProfileFoto }}" alt="Admin" class="rounded-circle p-1 bg-primary"
-                            width="110">
+                            <img src="{{ $templateProfileFoto }}" alt="Admin" class="rounded-circle p-1 bg-primary"
+                                width="110">
+                        </div>
                         <div class="mt-3">
                             <h4>{{ auth()->user()->name }}</h4>
                             <p class="text-secondary mb-1">
@@ -86,7 +88,7 @@
                         <div class="row">
                             <label class="col-xl-3 col-form-label"></label>
                             <div class="col-xl-9">
-                                <div class="d-md-flex d-grid align-items-center gap-3">
+                                <div class="d-md-flex d-grid align-iteml-center gap-3">
                                     <button type="submit" class="btn btn-primary" form="form_password">
                                         <li class="fas fa-save mr-1"></li> Simpan
                                     </button>

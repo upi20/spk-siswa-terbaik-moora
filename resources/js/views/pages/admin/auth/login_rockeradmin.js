@@ -68,7 +68,7 @@ $(document).ready(function () {
         if (status) {
             el.attr("disabled", "");
             el.html(
-                `<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"> </span> ${text}`
+                `<span class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"> </span> ${text}`
             );
         } else {
             el.removeAttr("disabled");

@@ -1,11 +1,11 @@
 @extends('layouts.admin.adminlte3.master')
 
 @section('content')
-    <div class="card">
+    <div class="card card-primary card-outline">
         <div class="card-body">
-            <div class="card-title d-md-flex flex-row justify-content-between">
+            <div class="d-flex justify-content-between w-100">
                 <div>
-                    <h6 class="mt-2 text-uppercase">{{ $page_attr['title'] }}</h6>
+                    <h3 class="card-title">{{ $page_attr['title'] }}</h6>
                 </div>
 
                 <div>
