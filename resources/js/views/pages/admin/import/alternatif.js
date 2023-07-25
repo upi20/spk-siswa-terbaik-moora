@@ -38,7 +38,7 @@ $(document).ready(function () {
             data: 'file',
             name: 'file',
             render(data, type, full, meta) {
-                return `<a type="button" href="${full.excel_link}" class="btn btn-rounded btn-secondary btn-sm mr-1 mt-1" data-toggle="tooltip" title="Download">
+                return `<a type="button" href="${full.excel_link}" class="btn btn-rounded btn-secondary btn-sm mr-1 mt-1">
                 <i class="fas fa-download"></i></a>`;
             }
         },
